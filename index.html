@@ -4,255 +4,46 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Мир данных ИТ</title>
+    <title><%- title %></title>
     <link href="/src/style.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-light p-5 font-manrope font-light">
-    <main>
-      <div class="rounded-5xl bg-primary h-900px p-8">
-        <nav>
-          <div class="container mx-auto px-4">
-            <div class="flex justify-between">
-              <div class="flex items-center justify-between w-full">
-                <!-- Логотип -->
-                <div>
-                  <a href="/">
-                    <img src="/logo.svg" class="w-[80px]" />
-                  </a>
-                </div>
-                <!-- Основные пункты меню -->
-                <div class="hidden md:flex items-center ml-auto xl:mr-[108px]">
-                  <div class="relative group">
-                    <button
-                      class="py-4 px-2 text-white hover:text-gray-light transition duration-300 flex items-center"
-                    >
-                      <span class="text-t-2">Направления работы</span>
-                      <svg
-                        class="w-4 h-4 ml-1"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M19 9l-7 7-7-7"
-                        ></path>
-                      </svg>
-                    </button>
-                    <div
-                      class="absolute hidden group-hover:block bg-gray-light rounded-md mt-0 w-48 z-10"
-                    >
-                      <a
-                        href="#"
-                        class="block text-t-2 px-4 py-2 text-black hover:text-primary"
-                        >Аналитика и тестирование</a
-                      >
-                      <a
-                        href="#"
-                        class="block text-t-2 px-4 py-2 text-black hover:text-primary"
-                        >Администрирование</a
-                      >
-                      <a
-                        href="#"
-                        class="block px-4 py-2 text-black hover:text-primary"
-                        >Oracle</a
-                      >
-                      <a
-                        href="#"
-                        class="block text-t-2 px-4 py-2 text-black hover:text-primary"
-                      >
-                        Информационная безопасность
-                      </a>
-                    </div>
-                  </div>
-                  <a href="#" class="text-t-2 text-white py-4 px-2 ml-25"
-                    >О компании</a
-                  >
-                  <a href="#" class="text-t-2 text-white py-4 px-2 ml-25"
-                    >Контакты</a
-                  >
-                </div>
-                <div class="links flex items-center xl:ml-[108px]">
-                  <div
-                    class="flex items-center justify-center w-[40px] h-[40px] rounded-full border-1 border-neon"
-                  >
-                    <a href="/">
-                      <img src="/tg-icon.svg" />
-                    </a>
-                  </div>
-                  <div class="text-t-1 font-semibold text-neon ml-5">
-                    <a href="tel:+74957970416">+7 (495) 797 04 16</a>
-                  </div>
-                </div>
-              </div>
-              <!-- Мобильное меню кнопка -->
-              <div class="md:hidden flex items-center">
-                <button class="outline-none mobile-menu-button">
-                  <svg
-                    class="w-6 h-6 text-gray-500 hover:text-green-500"
-                    x-show="!showMenu"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path d="M4 6h16M4 12h16M4 18h16"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
+    <header class="rounded-5xl bg-primary p-8">
+      <%- headerNav %>
+      <div
+        class="container mx-auto flex justify-between items-center mt-[88px]"
+      >
+        <div>
+          <h1 class="text-h-1">
+            <span class="text-white">Центр разработки</span> <br />
+            <span class="text-neon">Мир данных ИТ</span>
+          </h1>
+
+          <button
+            type="button"
+            class="bg-tranparent border-1 border-neon rounded-btn text-neon hover:text-white hover:border-white px-[30px] py-5 mt-25"
+          >
+            Заказать консультацию
+          </button>
+
+          <div class="text-neon text-t-1 mt-27">
+            ИТ аутсорсинг. Полный комплекс услуг по разработке ПО
           </div>
-          <!-- Мобильное меню -->
-          <div class="hidden mobile-menu">
-            <ul>
-              <li class="active">
-                <a
-                  href="#"
-                  class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold"
-                  >Главная</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300 flex justify-between items-center"
-                >
-                  Услуги
-                  <svg
-                    class="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5l7 7-7 7"
-                    ></path>
-                  </svg>
-                </a>
-                <ul class="hidden">
-                  <li>
-                    <a
-                      href="#"
-                      class="block text-sm px-4 py-2 hover:bg-green-500 transition duration-300"
-                      >Веб-разработка</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block text-sm px-4 py-2 hover:bg-green-500 transition duration-300"
-                      >Дизайн</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block text-sm px-4 py-2 hover:bg-green-500 transition duration-300"
-                      >SEO</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
-                  >О нас</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300 flex justify-between items-center"
-                >
-                  Продукты
-                  <svg
-                    class="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5l7 7-7 7"
-                    ></path>
-                  </svg>
-                </a>
-                <ul class="hidden">
-                  <li>
-                    <a
-                      href="#"
-                      class="block text-sm px-4 py-2 hover:bg-green-500 transition duration-300"
-                      >Продукт 1</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block text-sm px-4 py-2 hover:bg-green-500 transition duration-300"
-                      >Продукт 2</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block text-sm px-4 py-2 hover:bg-green-500 transition duration-300"
-                      >Продукт 3</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
-                  >Контакты</a
-                >
-              </li>
-            </ul>
+          <div class="text-neon text-t-1 mt-1">
+            Функциональное тестирование высоконагруженных систем
           </div>
-        </nav>
-
-        <div
-          class="container mx-auto flex justify-between items-center mt-[88px]"
-        >
-          <div>
-            <h1 class="text-h-1">
-              <span class="text-white">Центр разработки</span> <br />
-              <span class="text-neon">Мир данных ИТ</span>
-            </h1>
-
-            <button
-              type="button"
-              class="bg-tranparent border-1 border-neon rounded-btn text-neon hover:text-white hover:border-white px-[30px] py-5 mt-25"
-            >
-              Заказать консультацию
-            </button>
-
-            <p class="text-neon text-t-1 mt-27">
-              ИТ аутсорсинг. Полный комплекс услуг по разработке ПО <br />
-              Функциональное тестирование высоконагруженных систем <br />
-              Разработка, производство и ТО криптографических средств <br />
-              Шифрование информации. Обслуживание и администрирование БД
-            </p>
+          <div class="text-neon text-t-1 mt-1">
+            Разработка, производство и ТО криптографических средств
           </div>
-
-          <img src="/ball.png" class="w-xl" />
+          <div class="text-neon text-t-1 mt-1">
+            Шифрование информации. Обслуживание и администрирование БД
+          </div>
         </div>
+
+        <img src="/ball.png" class="w-xl" />
       </div>
-    </main>
-    <script type="module" src="/src/main.js"></script>
+    </header>
+    <main></main>
+    <%- footer %>
   </body>
 </html>

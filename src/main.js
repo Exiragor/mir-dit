@@ -1,3 +1,5 @@
+console.log("test");
+
 // Мобильное меню toggle
 const btn = document.querySelector(".mobile-menu-button");
 const menu = document.querySelector(".mobile-menu");
