@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -12,7 +12,10 @@
   --radius-5xl: 2.5rem;
   --radius-btn: 50px;
 
+  --main-gradient: linear-gradient(180deg, #274a64 27.33%, #a1eaf7 79.33%);
+
   --font-manrope: "Manrope", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
 
   --text-h-1: 80px;
   --text-h-1--line-height: 100%;
@@ -29,4 +32,13 @@
   --text-t-2: 16px;
   --text-t-2--line-height: 120%;
   --text-t-2--font-weight: 300;
+
+  --text-t-3: 120px;
+  --text-t-3--line-height: 100%;
+  --text-t-3--font-weight: 400;
+  --text-t-3--letter-spacing: -5%;
+}
+
+.text-gradient {
+  background-image: var(--main-gradient);
 }
