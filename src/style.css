@@ -9,6 +9,7 @@
   --color-neon: #96d7e3;
   --color-neon-light: #a1eaf7;
 
+  --radius-2.5xl: 1.25rem;
   --radius-5xl: 2.5rem;
   --radius-btn: 50px;
 
@@ -20,6 +21,11 @@
   --text-h-1: 80px;
   --text-h-1--line-height: 100%;
   --text-h-1--font-weight: 500;
+
+  --text-h-2: 54px;
+  --text-h-2--line-height: 100%;
+  --text-h-2--font-weight: 500;
+  --text-h-2--letter-spacing: -5%;
 
   --text-h-3: 36px;
   --text-h-3--line-height: 95%;
@@ -37,8 +43,22 @@
   --text-t-3--line-height: 100%;
   --text-t-3--font-weight: 400;
   --text-t-3--letter-spacing: -5%;
+
+  --text-t-5: 250px;
+  --text-t-5--line-height: 100%;
+  --text-t-5--font-weight: 500;
+  --text-t-5--letter-spacing: -5%;
 }
 
 .text-gradient {
   background-image: var(--main-gradient);
+}
+
+.test {
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+.text-stroke-1 {
+  -webkit-text-stroke: 1px var(--color-primary);
 }
