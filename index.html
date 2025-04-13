@@ -8,6 +8,27 @@
     <link href="/src/style.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-light p-5 font-manrope font-light">
+    <svg
+      style="visibility: hidden; position: absolute"
+      width="0"
+      height="0"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+    >
+      <defs>
+        <filter id="round">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+            result="goo"
+          />
+          <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+        </filter>
+      </defs>
+    </svg>
+
     <header class="rounded-5xl bg-primary p-8">
       <%- headerNav %>
       <div
@@ -212,6 +233,67 @@
               шифрования информации
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="rounded-5xl bg-white my-5 py-40">
+        <div class="container mx-auto">
+          <div class="flex mb-20">
+            <div class="grow w-full">
+              <span class="text-t-2 text-primary"> Разработка </span>
+            </div>
+
+            <div class="grow w-full">
+              <h2 class="text-h-2">
+                <span class="text-primary"> Услуги в области <br /> </span>
+                <span> разработки ПО </span>
+              </h2>
+            </div>
+          </div>
+
+          <div class="flex pr-15">
+            <div
+              class="bg-primary relative grow w-[75%] h-[220px] flex items-center with-arrow rounded-tl-2.5xl rounded-bl-2.5xl z-2"
+            >
+              <span class="text-t-1 text-white ml-[137px]">
+                Разработка ТЗ, <br />
+                подготовка <br />
+                документации
+              </span>
+            </div>
+
+            <div
+              class="bg-white relative grow w-full h-[220px] flex items-center border-1 border-primary with-arrow _duplicate z-1 ml-[-65px]"
+            >
+              <span class="text-t-1 ml-[137px]"> Разработка ПО </span>
+            </div>
+
+            <div
+              class="bg-gray-light relative grow w-full h-[220px] flex items-center with-arrow z-0 ml-[-65px]"
+            >
+              <span class="text-t-1 ml-[137px]">
+                Внедрение <br />
+                созданного ПО
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="rounded-5xl bg-primary bg-(image:--bg-img-2) bg-cover my-5 py-40"
+      >
+        <div class="container mx-auto flex justify-between">
+          <h2 class="text-h-2">
+            <span class="text-white"> Оставьте данные, <br /> </span>
+            <span class="text-neon">
+              мы проконсультируем <br />
+              вас по вопросам <br />
+              сотрудничества
+            </span>
+          </h2>
+
+          <%- form %>
         </div>
       </div>
     </main>

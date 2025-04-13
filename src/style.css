@@ -18,6 +18,11 @@
   --font-manrope: "Manrope", sans-serif;
   --font-roboto: "Roboto", sans-serif;
 
+  --indicator-primary-img-l: url("/indicators/indicator-right-primary-l.svg");
+  --indicator-white-img-l: url("/indicators/indicator-right-white-l.svg");
+  --indicator-gray-img-l: url("/indicators/indicator-right-gray-l.svg");
+  --bg-img-2: url("/bg-2.svg");
+
   --text-h-1: 80px;
   --text-h-1--line-height: 100%;
   --text-h-1--font-weight: 500;
@@ -61,4 +66,37 @@
 
 .text-stroke-1 {
   -webkit-text-stroke: 1px var(--color-primary);
+}
+
+.with-arrow {
+  filter: url(#round);
+}
+
+.with-arrow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: calc(var(--spacing) * 15);
+  height: inherit;
+  background: inherit;
+  z-index: inherit;
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
+
+.with-arrow._left::after {
+  right: 100%;
+  transform: scaleX(-1);
+}
+
+.with-arrow._duplicate::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: calc(var(--spacing) * 15);
+  height: inherit;
+  background: var(--color-primary);
+  z-index: inherit;
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
 }

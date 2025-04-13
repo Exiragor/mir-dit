@@ -20,6 +20,7 @@ export default defineConfig({
               title: "Мир данных ИТ",
               headerNav: fs.readFileSync("./src/components/header-nav.html"),
               footer: fs.readFileSync("./src/components/footer.html"),
+              form: fs.readFileSync("./src/components/form.html"),
             },
           },
         },
