@@ -10,8 +10,9 @@
   --color-neon-light: #a1eaf7;
 
   --radius-2.5xl: 1.25rem;
+  --radius-3.5xl: 1.875rem;
   --radius-5xl: 2.5rem;
-  --radius-btn: 50px;
+  --radius-btn: 3.125rem;
 
   --main-gradient: linear-gradient(180deg, #274a64 27.33%, #a1eaf7 79.33%);
 
