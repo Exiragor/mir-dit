@@ -16,5 +16,8 @@
     "vite": "^6.2.0",
     "vite-plugin-ejs": "^1.7.0",
     "vite-plugin-html": "^3.2.2"
+  },
+  "dependencies": {
+    "swiper": "^11.2.6"
   }
 }

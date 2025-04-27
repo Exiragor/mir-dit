@@ -3,8 +3,10 @@
 
 @theme {
   --color-primary: #274a64;
+  --color-primary-light: rgba(39, 74, 100, 0.8);
   --color-white: #ffffff;
   --color-gray-light: #f2f2f2;
+  --color-gray-3: #828282;
   --color-black: #000206;
   --color-neon: #96d7e3;
   --color-neon-light: #a1eaf7;
@@ -23,6 +25,12 @@
   --indicator-white-img-l: url("/indicators/indicator-right-white-l.svg");
   --indicator-gray-img-l: url("/indicators/indicator-right-gray-l.svg");
   --bg-img-2: url("/bg-2.svg");
+
+  --breakpoint-mobile: 22.5rem;
+  --breakpoint-mobile+: 48rem;
+  --breakpoint-tablet: 64rem;
+  --breakpoint-laptop: 100rem;
+  --breakpoint-desktop: 120rem;
 
   --text-h-1: 80px;
   --text-h-1--line-height: 100%;
@@ -49,6 +57,11 @@
   --text-t-3--line-height: 100%;
   --text-t-3--font-weight: 400;
   --text-t-3--letter-spacing: -5%;
+
+  --text-t-4: 9px;
+  --text-t-4--line-height: auto;
+  --text-t-4--font-weight: 700;
+  --text-t-4--letter-spacing: 0%;
 
   --text-t-5: 250px;
   --text-t-5--line-height: 100%;
@@ -100,4 +113,13 @@
   background: var(--color-primary);
   z-index: inherit;
   clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
+
+.swiper {
+  width: 100%;
+  height: 276px;
+}
+
+.container {
+  max-width: 1405px;
 }

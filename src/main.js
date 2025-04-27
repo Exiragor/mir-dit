@@ -1,4 +1,20 @@
-console.log("test");
+import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
+// import Swiper styles
+import 'swiper/css';
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '#swiper-arrow-right',
+    prevEl: '#swiper-arrow-left',
+  },
+  modules: [Navigation],
+});
 
 // Мобильное меню toggle
 const btn = document.querySelector(".mobile-menu-button");
