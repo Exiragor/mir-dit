@@ -26,6 +26,9 @@
   --indicator-gray-img-l: url("/indicators/indicator-right-gray-l.svg");
   --bg-img-2: url("/bg-2.svg");
 
+  --slider-bg-1: url("/slider/1.svg");
+  --slider-bg-2: url("/slider/2.svg");
+
   --breakpoint-mobile: 22.5rem;
   --breakpoint-mobile+: 48rem;
   --breakpoint-tablet: 64rem;
