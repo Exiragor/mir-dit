@@ -130,3 +130,9 @@
 .container {
   max-width: 1405px;
 }
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1162px;
+  }
+}
