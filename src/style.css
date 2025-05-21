@@ -29,6 +29,10 @@
   --slider-bg-1: url("/slider/1.svg");
   --slider-bg-2: url("/slider/2.svg");
 
+  --pointer-bg-blue: url("/pointers/blue-pointer-big.svg");
+  --pointer-bg-white: url("/pointers/white-pointer-big.svg");
+  --pointer-bg-gray: url("/pointers/gray-pointer-big.svg");
+
   --breakpoint-mobile: 22.5rem;
   --breakpoint-mobile+: 48rem;
   --breakpoint-tablet: 64rem;
