@@ -42,6 +42,7 @@
   --text-h-1: 80px;
   --text-h-1--line-height: 100%;
   --text-h-1--font-weight: 500;
+  --text-h-1--letter-spacing: -5%;
 
   --text-h-2: 54px;
   --text-h-2--line-height: 100%;
@@ -74,6 +75,48 @@
   --text-t-5--line-height: 100%;
   --text-t-5--font-weight: 500;
   --text-t-5--letter-spacing: -5%;
+}
+
+@layer components {
+  .head-1 {
+    font-size: var(--text-h-1);
+    line-height: var(--text-h-1--line-height);
+    font-weight: var(--text-h-1--font-weight);
+    letter-spacing: var( --text-h-1--letter-spacing);
+
+    @media (min-width: 64rem) {
+        font-size: 50px;
+        line-height: 110%;
+    } 
+  }
+
+  .t-1 {
+    font-size: var(--text-t-1);
+    line-height: var(--text-t-1--line-heigh);
+    font-weight: var(--text-t-1--font-weight);
+
+    @media (min-width: 120rem) {
+      font-size: var(--text-t-1);
+    }
+
+    @media (min-width: 64rem) {
+        font-size: 20px;
+    } 
+  }
+
+  .t-2 {
+    font-size: var(--text-t-2);
+    line-height: var(--text-t-2--line-heigh);
+    font-weight: var(--text-t-2--font-weight);
+
+    @media (min-width: 120rem) {
+      font-size: var(--text-t-2);
+    }
+
+    @media (min-width: 64rem) {
+        font-size: 14px;
+    }   
+  }
 }
 
 .text-gradient {
@@ -128,11 +171,23 @@
 }
 
 .container {
-  max-width: 1405px;
+    max-width: 1405px;
+  }
+
+@media (min-width: 120rem) {
+  .container {
+    max-width: 1405px;
+  }
 }
 
-@media (max-width: 1600px) {
+@media (min-width: 1600px) {
   .container {
     max-width: 1162px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 984px;
   }
 }

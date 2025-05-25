@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%- title %></title>
+    <link href="/src/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-light p-5 font-manrope font-light">
+    <header class="rounded-5xl bg-primary p-8 pb-40">
+      <%- headerNav %>
+      <div
+        class="container mx-auto flex justify-between items-center mt-[88px]"
+      >
+        <div>
+          <h1 class="text-h-1">
+            <span class="text-white">Центр разработки</span> <br />
+            <span class="text-neon">Мир данных ИТ</span>
+          </h1>
+
+          <button
+            type="button"
+            class="bg-tranparent border-1 border-neon rounded-btn text-neon hover:text-white hover:border-white px-[30px] py-5 mt-25 cursor-pointer"
+          >
+            Заказать консультацию
+          </button>
+
+          <div class="text-neon text-t-1 mt-27 desktop:min-w-[910px] laptop:min-w-[788px]">
+            ИТ аутсорсинг. Полный комплекс услуг по разработке ПО
+          </div>
+          <div class="text-neon text-t-1 mt-1">
+            Функциональное тестирование высоконагруженных систем
+          </div>
+          <div class="text-neon text-t-1 mt-1">
+            Разработка, производство и ТО криптографических средств
+          </div>
+          <div class="text-neon text-t-1 mt-1">
+            Шифрование информации. Обслуживание и администрирование БД
+          </div>
+        </div>
+
+        <img class="mix-blend-luminosity desktop:w-[560px] laptop:w-[490px]" src="/ball.png" />
+      </div>
+    </header>
+    <%- footer %>
+  </body>
+</html>

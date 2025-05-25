@@ -8,34 +8,13 @@
     <link href="/src/style.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-light p-5 font-manrope font-light">
-    <svg
-      style="visibility: hidden; position: absolute"
-      width="0"
-      height="0"
-      xmlns="http://www.w3.org/2000/svg"
-      version="1.1"
-    >
-      <defs>
-        <filter id="round">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
-          <feColorMatrix
-            in="blur"
-            mode="matrix"
-            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-            result="goo"
-          />
-          <feComposite in="SourceGraphic" in2="goo" operator="atop" />
-        </filter>
-      </defs>
-    </svg>
-
-    <header class="rounded-5xl bg-primary p-8 pb-40">
+    <header class="rounded-5xl bg-primary p-8 laptop:pb-40 tablet:pb-30">
       <%- headerNav %>
       <div
         class="container mx-auto flex justify-between items-center mt-[88px]"
       >
         <div>
-          <h1 class="text-h-1">
+          <h1 class="head-1">
             <span class="text-white">Центр разработки</span> <br />
             <span class="text-neon">Мир данных ИТ</span>
           </h1>
@@ -47,21 +26,21 @@
             Заказать консультацию
           </button>
 
-          <div class="text-neon text-t-1 mt-27 desktop:min-w-[910px] laptop:min-w-[788px]">
+          <div class="text-neon t-1 mt-27 desktop:min-w-[910px] laptop:min-w-[788px] tablet:min-w-[657px]">
             ИТ аутсорсинг. Полный комплекс услуг по разработке ПО
           </div>
-          <div class="text-neon text-t-1 mt-1">
+          <div class="text-neon t-1 mt-1">
             Функциональное тестирование высоконагруженных систем
           </div>
-          <div class="text-neon text-t-1 mt-1">
+          <div class="text-neon t-1 mt-1">
             Разработка, производство и ТО криптографических средств
           </div>
-          <div class="text-neon text-t-1 mt-1">
+          <div class="text-neon t-1 mt-1">
             Шифрование информации. Обслуживание и администрирование БД
           </div>
         </div>
 
-        <img class="mix-blend-luminosity desktop:w-[560px] laptop:w-[490px]" src="/ball.png" />
+        <img class="mix-blend-luminosity desktop:w-[560px] laptop:w-[490px] tablet:w-[374px]" src="/ball.png" />
       </div>
     </header>
     <main>
