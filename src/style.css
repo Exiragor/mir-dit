@@ -84,7 +84,7 @@
     font-weight: var(--text-h-1--font-weight);
     letter-spacing: var( --text-h-1--letter-spacing);
 
-    @media (min-width: 64rem) {
+    @media (width <= 64rem) {
         font-size: 50px;
         line-height: 110%;
     } 
@@ -95,11 +95,7 @@
     line-height: var(--text-t-1--line-heigh);
     font-weight: var(--text-t-1--font-weight);
 
-    @media (min-width: 120rem) {
-      font-size: var(--text-t-1);
-    }
-
-    @media (min-width: 64rem) {
+    @media (width <= 64rem) {
         font-size: 20px;
     } 
   }
@@ -109,13 +105,15 @@
     line-height: var(--text-t-2--line-heigh);
     font-weight: var(--text-t-2--font-weight);
 
-    @media (min-width: 120rem) {
-      font-size: var(--text-t-2);
-    }
-
-    @media (min-width: 64rem) {
+    @media (width <= 64rem) {
         font-size: 14px;
     }   
+  }
+
+  .ball {
+    @media (width <= 64rem) {
+        margin-left: -100px;
+    }
   }
 }
 
@@ -171,22 +169,16 @@
 }
 
 .container {
-    max-width: 1405px;
-  }
-
-@media (min-width: 120rem) {
-  .container {
-    max-width: 1405px;
-  }
+  max-width: 1405px;
 }
 
-@media (min-width: 1600px) {
+
+@media (width <= 100rem) {
   .container {
     max-width: 1162px;
   }
 }
-
-@media (min-width: 1024px) {
+@media (width <= 64rem) {
   .container {
     max-width: 984px;
   }
