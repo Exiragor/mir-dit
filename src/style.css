@@ -30,9 +30,12 @@
   --slider-bg-2: url("/slider/2.svg");
 
   --pointer-bg-blue: url("/pointers/blue-pointer-big.svg");
+  --pointer-bg-blue-laptop: url("/pointers/blue-pointer-laptop.svg");
   --pointer-bg-white: url("/pointers/white-pointer-big.svg");
+  --pointer-bg-white-laptop: url("/pointers/white-pointer-laptop.svg");
   --pointer-bg-gray: url("/pointers/gray-pointer-big.svg");
-
+  --pointer-bg-gray-laptop: url("/pointers/gray-pointer-laptop.svg");
+  
   --breakpoint-mobile: 22.5rem;
   --breakpoint-mobile+: 48rem;
   --breakpoint-tablet: 64rem;
@@ -82,11 +85,22 @@
     font-size: var(--text-h-1);
     line-height: var(--text-h-1--line-height);
     font-weight: var(--text-h-1--font-weight);
-    letter-spacing: var( --text-h-1--letter-spacing);
+    letter-spacing: var(--text-h-1--letter-spacing);
 
     @media (width <= 64rem) {
         font-size: 50px;
         line-height: 110%;
+    } 
+  }
+
+  .head-2 {
+    font-size: var(--text-h-2);
+    line-height: var(--text-h-2--line-height);
+    font-weight: var(--text-h-2--font-weight);
+    letter-spacing: var(--text-h-2--letter-spacing);
+
+    @media (width <= 64rem) {
+        font-size: 36px;
     } 
   }
 
@@ -110,11 +124,52 @@
     }   
   }
 
+  .t-3 {
+    font-size: var(--text-t-3);
+    line-height: var(--text-t-3--line-heigh);
+    font-weight: var(--text-t-3--font-weight);
+    letter-spacing: var(--text-t-3--letter-spacing);
+
+    @media (width <= 64rem) {
+        font-size: 92px;
+    }  
+  }
+
   .ball {
     @media (width <= 64rem) {
         margin-left: -100px;
     }
   }
+
+  .pointer {
+    background-image: var(--pointer-bg-blue);
+
+    @media (width <= 100rem) {
+      background-image: var(--pointer-bg-blue-laptop);
+    }
+
+    @media (width <= 64rem) {
+        background-image: var(--pointer-bg-blue-tablet);
+    }
+  }
+}
+
+@utility pointer-* {
+    background-image: --value(--pointer-bg-*);
+
+    @media (width <= 100rem) {
+      background-image: --value(--pointer-bg-*-laptop);
+    }
+
+    @media (width <= 64rem) {
+        background-image: --value(--pointer-bg-*-tablet);
+    }
+}
+
+@utility constant-w-* {
+    width: --value(*px);
+    min-width: --value(*px);
+    max-width: --value(*px);
 }
 
 .text-gradient {
@@ -175,11 +230,11 @@
 
 @media (width <= 100rem) {
   .container {
-    max-width: 1162px;
+    max-width: 1200px;
   }
 }
 @media (width <= 64rem) {
   .container {
-    max-width: 984px;
+    max-width: 904px;
   }
 }
