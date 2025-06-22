@@ -60,7 +60,7 @@
   --text-t-1--line-height: 100%;
   --text-t-1--font-weight: 300;
 
-  --text-t-2: 16px;
+  --text-t-2: 14px;
   --text-t-2--line-height: 120%;
   --text-t-2--font-weight: 300;
 
@@ -119,9 +119,9 @@
     line-height: var(--text-t-2--line-heigh);
     font-weight: var(--text-t-2--font-weight);
 
-    @media (width <= 64rem) {
+    @media (width <= 100rem) {
         font-size: 14px;
-    }   
+    }  
   }
 
   .t-3 {
@@ -167,9 +167,9 @@
 }
 
 @utility constant-w-* {
-    width: --value(*px);
-    min-width: --value(*px);
-    max-width: --value(*px);
+    width: --value([integer])px;
+    min-width: --value([integer])px;
+    max-width: --value([integer])px;
 }
 
 .text-gradient {
@@ -237,4 +237,15 @@
   .container {
     max-width: 904px;
   }
+}
+
+.t-3_with-before:before, .t-3_with-before:after {
+  font-size: var(--text-t-3);
+    line-height: var(--text-t-3--line-heigh);
+    font-weight: var(--text-t-3--font-weight);
+    letter-spacing: var(--text-t-3--letter-spacing);
+
+    @media (width <= 64rem) {
+        font-size: 92px;
+    }
 }
