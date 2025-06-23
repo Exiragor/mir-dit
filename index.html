@@ -230,7 +230,7 @@
             </div>
           </div>
 
-          <div class="flex pr-15">
+          <!-- <div class="flex pr-15">
             <div
               class="pointer-blue bg-no-repeat bg-[length:100%_100%] relative grow desktop:constant-w-[475] laptop:constant-w-[395] tablet:constant-w-[337] h-[221px] flex items-center z-2"
             >
@@ -255,9 +255,9 @@
                 созданного ПО
               </span>
             </div>
-          </div>
+          </div> -->
 
-          <div class="flex pr-15 mt-5">
+          <!-- <div class="flex pr-15 mt-5">
             <div
               class="pointer-gray bg-no-repeat bg-[length:100%_100%] relative grow min-w-[543px] h-[221px] flex items-center z-0 scale-x-[-1]"
             >
@@ -279,24 +279,26 @@
                 Поддержка и развитие готового решения
               </span>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
       <div
         class="rounded-5xl bg-primary bg-(image:--bg-img-2) bg-cover my-5 laptop:py-40 tablet:py-30"
       >
-        <div class="container mx-auto flex justify-between">
-          <h2 class="head-2">
-            <span class="text-white"> Оставьте данные, <br /> </span>
+        <div class="container mx-auto flex justify-between laptop:flex-row tablet:flex-col text-center">
+          <h2 class="head-2 max-w-[680px] mx-auto mb-10 laptop:max-w-[600px] laptop:mr-14 laptop:constant-w-[565] laptop:text-left">
+            <span class="text-white"> Оставьте данные, <br class="hidden laptop:block"/></span>
             <span class="text-neon">
-              мы проконсультируем <br />
-              вас по вопросам <br />
+              мы проконсультируем
+              вас по вопросам
               сотрудничества
             </span>
           </h2>
-
-          <%- form %>
+          <div class="mx-auto min-w-[650px]">
+            <%- form %>
+          </div>
+          
         </div>
       </div>
 
@@ -314,13 +316,13 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-3 gap-5">
+          <div class="grid grid-cols-2 gap-5 laptop:grid-cols-3">
             <div
-              class="bg-primary rounded-3.5xl flex justify-center items-center pt-12 pb-20"
+              class="bg-primary rounded-3.5xl flex justify-center items-center pt-12 pb-20 min-h-[379px]"
             >
               <img src="/27-2.png" class="w-[246px] mix-blend-luminosity" />
             </div>
-            <div class="relative rounded-2.5xl border border-neon p-5 flex">
+            <div class="relative rounded-2.5xl border border-neon p-5 flex min-h-[379px]">
               <div
                 class="absolute bg-white top-[-10px] px-2 t-2 text-neon z-2"
               >
@@ -337,7 +339,7 @@
                 </div>
               </div>
             </div>
-            <div class="relative rounded-2.5xl border border-neon p-5 flex">
+            <div class="relative rounded-2.5xl border border-neon p-5 flex min-h-[379px]">
               <div
                 class="absolute bg-white top-[-10px] px-2 t-2 text-neon z-2"
               >
@@ -355,7 +357,7 @@
                 </div>
               </div>
             </div>
-            <div class="relative rounded-2.5xl border border-neon p-5 flex">
+            <div class="relative rounded-2.5xl border border-neon p-5 flex min-h-[379px]">
               <div
                 class="absolute bg-white top-[-10px] px-2 t-2 text-neon z-2"
               >
@@ -374,11 +376,11 @@
               </div>
             </div>
             <div
-              class="bg-primary rounded-3.5xl flex justify-center items-center py-16"
+              class="bg-primary rounded-3.5xl flex justify-center items-center py-16 min-h-[379px]"
             >
               <img src="/27-3.png" class="w-[246px] mix-blend-luminosity" />
             </div>
-            <div class="relative rounded-2.5xl border border-neon p-5 flex">
+            <div class="relative rounded-2.5xl border border-neon p-5 flex min-h-[379px]">
               <div
                 class="absolute bg-white top-[-10px] px-2 t-2 text-neon z-2"
               >
@@ -402,17 +404,17 @@
         <div class="container mx-auto">
           <span class="t-2 text-primary"> Цель компании </span>
           <div class="w-full flex flex-col items-center justify-center">
-            <img class="w-[374px] mb-15" src="/photo.png" />
+            <img class="laptop:w-[374px] w-[314px] mb-15" src="/photo.png" />
 
             <div
-              class="relative t-1 text-primary t-3_with-before before:absolute before:top-[-36%] before:left-[-9%] before:font-roboto before:content-['“'] after:content-['“'] after:absolute after:bottom-[-36%] after:right-[7%] after:font-roboto after:t-3 after:-scale-100 max-w-[671px]"
+              class="relative t-1 text-primary t-3_with-before before:absolute before:top-[-36%] before:left-[-9%] before:font-roboto before:content-['“'] after:content-['“'] after:absolute laptop:after:bottom-[-36%] after:bottom-[-26%] after:right-[7%] after:font-roboto after:t-3 after:-scale-100 laptop:max-w-[671px] max-w-[438px]"
             >
               Основная цель нашей компании — Выявление «узких мест» и
               всесторонняя оптимизация, приводящая к продуктивному использованию
-              ресурсов, высокой доступности и повышению&nbsp;качества
+              ресурсов, высокой доступности и повышению качества
               обслуживания пользователей.
             </div>
-            <div class="max-w-[414px]">
+            <div class="laptop:max-w-[414px] max-w-[314px]">
               <div class="t-2 my-5">
                 Разработка, усовершенствование и адаптирование программных
                 продуктов различного назначения, для широкого круга предметных
@@ -486,134 +488,134 @@
             </div>
           </div>
 
-          <div class="flex gap-5 h-[98px]">
-            <div class="rounded-2.5xl min-w-[124px] border border-primary flex items-center justify-center">
+          <div class="flex gap-5 laptop:h-[98px] h-[137px]">
+            <div class="rounded-2.5xl laptop:min-w-[124px] min-w-[107px] border border-primary flex items-center justify-center">
               <div class="text-primary text-h-3">01</div>
             </div>
 
-            <div class="rounded-2.5xl grow w-full px-[54px] bg-gray-light flex items-center">
-                <div class="t-1 text-primary w-full">
-                  <div class="max-w-[264px]">Помогаем воплотить в жизнь все ваши идеи</div>
+            <div class="rounded-2.5xl grow w-full laptop:px-[54px] px-8 bg-gray-light flex items-center">
+                <div class="laptop:t-1 t-2 text-primary w-full">
+                  <div class="laptop:max-w-[264px] max-w-[217px]">Помогаем воплотить в жизнь все ваши идеи</div>
                 </div>
 
-                <div class="t-2 w-full pr-[250px]">
+                <div class="t-2 w-full laptop:pr-[250px]">
                   <div class="max-w-[351px]">Мы уже внедрили ряд уникальных разработок в бизнес-процессы наших клиентов.</div>
                 </div>
             </div>
           </div>
 
-          <div class="flex gap-5 h-[98px] mt-[21px]">
-            <div class="rounded-2.5xl min-w-[124px] border border-primary flex items-center justify-center">
+          <div class="flex gap-5 laptop:h-[98px] h-[137px] mt-5">
+            <div class="rounded-2.5xl laptop:min-w-[124px] min-w-[107px] border border-primary flex items-center justify-center">
               <div class="text-primary text-h-3">02</div>
             </div>
 
-            <div class="rounded-2.5xl grow w-full px-[54px] bg-gray-light flex items-center">
-                <div class="t-1 text-primary w-full">
+            <div class="rounded-2.5xl grow w-full laptop:px-[54px] px-8 bg-gray-light flex items-center">
+                <div class="laptop:t-1 t-2 text-primary w-full">
                   <div class="max-w-[206px]">Замена штатного сотрудника</div>
                 </div>
 
-                <div class="t-2 w-full pr-[250px]">
+                <div class="t-2 w-full laptop:pr-[250px]">
                   <div class="max-w-[568px]">Вам не придется нанимать специалиста по БД Oracle Database,
                     Microsoft SQL Server, MySQL, PostgreSQL. Сертифицированные специалисты возьмут на себя всё обслуживание ваших БД.</div>
                 </div>
             </div>
           </div>
 
-          <div class="flex gap-5 h-[98px] mt-[21px]">
-            <div class="rounded-2.5xl min-w-[124px] border border-primary flex items-center justify-center">
+          <div class="flex gap-5 laptop:h-[98px] h-[137px] mt-5">
+            <div class="rounded-2.5xl laptop:min-w-[124px] min-w-[107px] border border-primary flex items-center justify-center">
               <div class="text-primary text-h-3">03</div>
             </div>
 
-            <div class="rounded-2.5xl grow w-full px-[54px] bg-gray-light flex items-center">
-                <div class="t-1 text-primary w-full">
-                  <div class="max-w-[342px]">Базы данных всегда находятся в вашем доступе</div>
+            <div class="rounded-2.5xl grow w-full laptop:px-[54px] px-8 bg-gray-light flex items-center">
+                <div class="laptop:t-1 t-2 text-primary w-full">
+                  <div class="laptop:max-w-[342px] max-w-[241px]">Базы данных всегда находятся в вашем доступе</div>
                 </div>
 
-                <div class="t-2 w-full pr-[250px]">
+                <div class="t-2 w-full laptop:pr-[250px]">
                   <div class="max-w-[570px]">Оптимизируем ваши Базы Данных Oracle Database, Microsoft SQL Server,
                     MySQL, PostgreSQL до идеального состояния и обеспечим бесперебойную работу. Ваши базы данных надежны и всегда доступны.</div>
                 </div>
             </div>
           </div>
 
-          <div class="flex gap-5 h-[98px] mt-[21px]">
-            <div class="rounded-2.5xl min-w-[124px] border border-primary flex items-center justify-center">
+          <div class="flex gap-5 laptop:h-[98px] h-[137px] mt-5">
+            <div class="rounded-2.5xl laptop:min-w-[124px] min-w-[107px] border border-primary flex items-center justify-center">
               <div class="text-primary text-h-3">04</div>
             </div>
 
-            <div class="rounded-2.5xl grow w-full px-[54px] bg-gray-light flex items-center">
-                <div class="t-1 text-primary w-full">
-                  <div class="max-w-[342px]">Решаем задачи любой сложности</div>
+            <div class="rounded-2.5xl grow w-full laptop:px-[54px] px-8 bg-gray-light flex items-center">
+                <div class="laptop:t-1 t-2 text-primary w-full">
+                  <div class="laptop:max-w-[342px] max-w-[200px]">Решаем задачи любой сложности</div>
                 </div>
 
-                <div class="t-2 w-full pr-[250px]">
+                <div class="t-2 w-full laptop:pr-[250px]">
                   <div class="max-w-[257px]">Работаем с любыми проектами: от простых до сложных.</div>
                 </div>
             </div>
           </div>
 
-          <div class="flex gap-5 h-[98px] mt-[21px]">
-            <div class="rounded-2.5xl min-w-[124px] border border-primary flex items-center justify-center">
+          <div class="flex gap-5 laptop:h-[98px] h-[137px] mt-5">
+            <div class="rounded-2.5xl laptop:min-w-[124px] min-w-[107px] border border-primary flex items-center justify-center">
               <div class="text-primary text-h-3">05</div>
             </div>
 
-            <div class="rounded-2.5xl grow w-full px-[54px] bg-gray-light flex items-center">
-                <div class="t-1 text-primary w-full">
-                  <div class="max-w-[342px]">Подбираем подходящий вариант сотрудничества</div>
+            <div class="rounded-2.5xl grow w-full laptop:px-[54px] px-8 bg-gray-light flex items-center">
+                <div class="laptop:t-1 t-2 text-primary w-full">
+                  <div class="laptop:max-w-[342px] max-w-[241px]">Подбираем подходящий вариант сотрудничества</div>
                 </div>
 
-                <div class="t-2 w-full pr-[250px]">
+                <div class="t-2 w-full laptop:pr-[250px]">
                   <div class="max-w-[200px]">Аутсорсинг, аутстаффинг,
                     классический подход.</div>
                 </div>
             </div>
           </div>
 
-          <div class="flex gap-5 h-[98px] mt-[21px]">
-            <div class="rounded-2.5xl min-w-[124px] border border-primary flex items-center justify-center">
+          <div class="flex gap-5 laptop:h-[98px] h-[137px] mt-5">
+            <div class="rounded-2.5xl laptop:min-w-[124px] min-w-[107px] border border-primary flex items-center justify-center">
               <div class="text-primary text-h-3">06</div>
             </div>
 
-            <div class="rounded-2.5xl grow w-full px-[54px] bg-gray-light flex items-center">
-                <div class="t-1 text-primary w-full">
+            <div class="rounded-2.5xl grow w-full laptop:px-[54px] px-8 bg-gray-light flex items-center">
+                <div class="laptop:t-1 t-2 text-primary w-full">
                   <div class="max-w-[217px]">Тарифные планы для всех случаев</div>
                 </div>
 
-                <div class="t-2 w-full pr-[250px]">
+                <div class="t-2 w-full laptop:pr-[250px]">
                   <div class="max-w-[508px]">Работаем с любым объёмом. Стоимость работ по каждому
                     проекту рассчитывается индивидуально.</div>
                 </div>
             </div>
           </div>
 
-          <div class="flex gap-5 h-[98px] mt-[21px]">
-            <div class="rounded-2.5xl min-w-[124px] border border-primary flex items-center justify-center">
+          <div class="flex gap-5 laptop:h-[98px] h-[137px] mt-5">
+            <div class="rounded-2.5xl laptop:min-w-[124px] min-w-[107px] border border-primary flex items-center justify-center">
               <div class="text-primary text-h-3">07</div>
             </div>
 
-            <div class="rounded-2.5xl grow w-full px-[54px] bg-gray-light flex items-center">
-                <div class="t-1 text-primary w-full">
-                  <div class="max-w-[280px]">Опыт успешной работы в России и странах СНГ</div>
+            <div class="rounded-2.5xl grow w-full laptop:px-[54px] px-8 bg-gray-light flex items-center">
+                <div class="laptop:t-1 t-2 text-primary w-full">
+                  <div class="laptop:max-w-[280px] max-w-[253px]">Опыт успешной работы в России и странах СНГ</div>
                 </div>
 
-                <div class="t-2 w-full pr-[250px]">
+                <div class="t-2 w-full laptop:pr-[250px]">
                   <div class="max-w-[449px]">Мы работаем над проектами независимо
                     от местоположения заказчика.</div>
                 </div>
             </div>
           </div>
 
-          <div class="flex gap-5 h-[98px] mt-[21px]">
-            <div class="rounded-2.5xl min-w-[124px] border border-primary flex items-center justify-center">
+          <div class="flex gap-5 laptop:h-[98px] h-[137px] mt-5">
+            <div class="rounded-2.5xl laptop:min-w-[124px] min-w-[107px] border border-primary flex items-center justify-center">
               <div class="text-primary text-h-3">08</div>
             </div>
 
-            <div class="rounded-2.5xl grow w-full px-[54px] bg-gray-light flex items-center">
-                <div class="t-1 text-primary w-full">
-                  <div class="max-w-[275px]">Гарантия безопасности данных</div>
+            <div class="rounded-2.5xl grow w-full laptop:px-[54px] px-8 bg-gray-light flex items-center">
+                <div class="laptop:t-1 t-2 text-primary w-full">
+                  <div class="laptop:max-w-[275px] max-w-[189px]">Гарантия безопасности данных</div>
                 </div>
 
-                <div class="t-2 w-full pr-[250px]">
+                <div class="t-2 w-full laptop:pr-[250px]">
                   <div class="max-w-[315px]">Обеспечим безопасность и целостность ваших Баз Данных.</div>
                 </div>
             </div>
@@ -734,8 +736,8 @@
           </div>
 
           <div class="flex gap-5">
-            <div class="border border-primary rounded-2.5xl px-5 flex w-full h-[117px] pb-[25px]">
-              <div class="min-w-[237px]">
+            <div class="border border-primary rounded-2.5xl px-5 flex w-full laptop:h-[117px] h-[156px] pb-[25px]">
+              <div class="laptop:min-w-[237px] min-w-[141px]">
                 <div class="t-2 mt-[21px]">СМП</div>
               </div>
 
@@ -747,8 +749,8 @@
               </div>
             </div>
 
-            <div class="border border-primary rounded-2.5xl px-5 flex w-full h-[117px] pb-[25px]">
-              <div class="min-w-[237px]">
+            <div class="border border-primary rounded-2.5xl px-5 flex w-full laptop:h-[117px] h-[156px] pb-[25px]">
+              <div class="laptop:min-w-[237px] min-w-[152px]">
                 <div class="t-2 mt-[21px]">Лицензия ФСТЭК</div>
               </div>
 
@@ -760,8 +762,8 @@
           </div>
 
           <div class="flex gap-5 mt-5">
-            <div class="border border-primary rounded-2.5xl px-5 flex w-full h-[117px] pb-[25px]">
-              <div class="min-w-[237px]">
+            <div class="border border-primary rounded-2.5xl px-5 flex w-full laptop:h-[117px] h-[156px] pb-[25px]">
+              <div class="laptop:min-w-[237px] min-w-[141px]">
                 <div class="t-2 mt-[21px]">Лицензия ФСБ</div>
               </div>
 
@@ -771,8 +773,8 @@
               </div>
             </div>
 
-            <div class="border border-primary rounded-2.5xl px-5 flex w-full h-[117px] pb-[25px]">
-              <div class="min-w-[237px]">
+            <div class="border border-primary rounded-2.5xl px-5 flex w-full laptop:h-[117px] h-[156px] pb-[25px]">
+              <div class="laptop:min-w-[237px] min-w-[152px]">
                 <div class="t-2 mt-[21px] max-w-[157px]">Лицензия на осуществление образовательной деятельности</div>
               </div>
 
@@ -783,9 +785,9 @@
           </div>
 
           <div class="flex gap-5 mt-5">
-            <div class="border border-primary rounded-2.5xl px-5 flex w-full h-[117px] pb-[25px]">
-              <div class="min-w-[237px]">
-                <div class="t-2 mt-[21px] max-w-[168px]">Оператор персональных данных Роскомнадзора</div>
+            <div class="border border-primary rounded-2.5xl px-5 flex w-full laptop:h-[117px] h-[156px] pb-[25px]">
+              <div class="laptop:min-w-[237px] min-w-[141px]">
+                <div class="t-2 mt-[21px] laptop:max-w-[168px] max-w-[141px]">Оператор персональных данных Роскомнадзора</div>
               </div>
 
               <div class="t-2 text-primary mt-5">
@@ -802,10 +804,10 @@
 
       <div class="laptop:py-40 tablet:py-30">
         <div class="container mx-auto">
-          <div class="flex">
+          <div class="flex laptop:flex-row flex-col laptop:max-w-auto max-w-[650px] mx-auto">
             <div class="grow w-full head-2">
-              <div>Реализуем</div>
-              <div class="text-primary">все ваши идеи!</div>
+              <div class="laptop:block inline-block">Реализуем</div>
+              <div class="text-primary laptop:block inline-block">все ваши идеи!</div>
             </div>
 
             <div class="grow w-full">
