@@ -1,19 +1,34 @@
-import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import Swiper from "swiper";
+import { Navigation } from "swiper/modules";
 // import Swiper styles
-import 'swiper/css';
+import "swiper/css";
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
   spaceBetween: 20,
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: '#swiper-arrow-right',
-    prevEl: '#swiper-arrow-left',
+    nextEl: "#swiper-arrow-right",
+    prevEl: "#swiper-arrow-left",
   },
   modules: [Navigation],
+
+  breakpoints: {
+    // when window width is >= 320px
+    768: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 480px
+    1024: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 640px
+    1600: {
+      slidesPerView: "auto",
+    },
+  },
 });
 
 // Мобильное меню toggle

@@ -35,9 +35,9 @@
   --pointer-bg-white-laptop: url("/pointers/white-pointer-laptop.svg");
   --pointer-bg-gray: url("/pointers/gray-pointer-big.svg");
   --pointer-bg-gray-laptop: url("/pointers/gray-pointer-laptop.svg");
-  
+
   --breakpoint-mobile: 22.5rem;
-  --breakpoint-mobile+: 48rem;
+  --breakpoint-mobile-plus: 48rem;
   --breakpoint-tablet: 64rem;
   --breakpoint-laptop: 100rem;
   --breakpoint-desktop: 120rem;
@@ -88,9 +88,9 @@
     letter-spacing: var(--text-h-1--letter-spacing);
 
     @media (width <= 64rem) {
-        font-size: 50px;
-        line-height: 110%;
-    } 
+      font-size: 50px;
+      line-height: 110%;
+    }
   }
 
   .head-2 {
@@ -100,8 +100,8 @@
     letter-spacing: var(--text-h-2--letter-spacing);
 
     @media (width <= 64rem) {
-        font-size: 36px;
-    } 
+      font-size: 36px;
+    }
   }
 
   .t-1 {
@@ -110,8 +110,8 @@
     font-weight: var(--text-t-1--font-weight);
 
     @media (width <= 64rem) {
-        font-size: 20px;
-    } 
+      font-size: 20px;
+    }
   }
 
   .t-2 {
@@ -120,8 +120,8 @@
     font-weight: var(--text-t-2--font-weight);
 
     @media (width <= 100rem) {
-        font-size: 14px;
-    }  
+      font-size: 14px;
+    }
   }
 
   .t-3 {
@@ -131,13 +131,13 @@
     letter-spacing: var(--text-t-3--letter-spacing);
 
     @media (width <= 64rem) {
-        font-size: 92px;
-    }  
+      font-size: 92px;
+    }
   }
 
   .ball {
     @media (width <= 64rem) {
-        margin-left: -100px;
+      margin-left: -100px;
     }
   }
 
@@ -149,27 +149,27 @@
     }
 
     @media (width <= 64rem) {
-        background-image: var(--pointer-bg-blue-tablet);
+      background-image: var(--pointer-bg-blue-tablet);
     }
   }
 }
 
 @utility pointer-* {
-    background-image: --value(--pointer-bg-*);
+  background-image: --value(--pointer-bg- *);
 
-    @media (width <= 100rem) {
-      background-image: --value(--pointer-bg-*-laptop);
-    }
+  @media (width <= 100rem) {
+    background-image: --value(--pointer-bg- * -laptop);
+  }
 
-    @media (width <= 64rem) {
-        background-image: --value(--pointer-bg-*-tablet);
-    }
+  @media (width <= 64rem) {
+    background-image: --value(--pointer-bg- * -tablet);
+  }
 }
 
 @utility constant-w-* {
-    width: --value([integer])px;
-    min-width: --value([integer])px;
-    max-width: --value([integer])px;
+  width: --value([integer]) px;
+  min-width: --value([integer]) px;
+  max-width: --value([integer]) px;
 }
 
 .text-gradient {
@@ -227,7 +227,6 @@
   max-width: 1405px;
 }
 
-
 @media (width <= 100rem) {
   .container {
     max-width: 1200px;
@@ -239,13 +238,20 @@
   }
 }
 
-.t-3_with-before:before, .t-3_with-before:after {
-  font-size: var(--text-t-3);
-    line-height: var(--text-t-3--line-heigh);
-    font-weight: var(--text-t-3--font-weight);
-    letter-spacing: var(--text-t-3--letter-spacing);
+@media (width <= 48rem) {
+  .container {
+    max-width: 648px;
+  }
+}
 
-    @media (width <= 64rem) {
-        font-size: 92px;
-    }
+.t-3_with-before:before,
+.t-3_with-before:after {
+  font-size: var(--text-t-3);
+  line-height: var(--text-t-3--line-heigh);
+  font-weight: var(--text-t-3--font-weight);
+  letter-spacing: var(--text-t-3--letter-spacing);
+
+  @media (width <= 64rem) {
+    font-size: 92px;
+  }
 }
