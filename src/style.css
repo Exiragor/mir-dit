@@ -91,6 +91,10 @@
       font-size: 50px;
       line-height: 110%;
     }
+
+    @media (width <= 22.5rem) {
+      font-size: 32px;
+    }
   }
 
   .head-2 {
@@ -102,6 +106,24 @@
     @media (width <= 64rem) {
       font-size: 36px;
     }
+
+    @media (width <= 22.5rem) {
+      font-size: 22px;
+    }
+  }
+
+  .head-3 {
+    font-size: var(--text-h-3);
+    line-height: var(--text-h-3--line-height);
+    font-weight: var(--text-h-3--font-weight);
+
+    @media (width <= 64rem) {
+      font-size: 24px;
+    }
+
+    @media (width <= 22.5rem) {
+      font-size: 17px;
+    }
   }
 
   .t-1 {
@@ -111,6 +133,10 @@
 
     @media (width <= 64rem) {
       font-size: 20px;
+    }
+
+    @media (width <= 22.5rem) {
+      font-size: 14px;
     }
   }
 
@@ -122,6 +148,10 @@
     @media (width <= 100rem) {
       font-size: 14px;
     }
+
+    @media (width <= 22.5rem) {
+      font-size: 12px;
+    }
   }
 
   .t-3 {
@@ -132,6 +162,22 @@
 
     @media (width <= 64rem) {
       font-size: 92px;
+    }
+
+    @media (width <= 22.5rem) {
+      font-size: 58px;
+    }
+  }
+
+  .t-5 {
+    font-size: var(--text-t-5);
+    line-height: var(--text-t-5--line-heigh);
+    font-weight: var(--text-t-5--font-weight);
+    letter-spacing: var(--text-t-5--letter-spacing);
+
+    @media (width <= 22.5rem) {
+      font-size: 100px;
+      line-height: 82px;
     }
   }
 
@@ -151,6 +197,14 @@
     @media (width <= 64rem) {
       background-image: var(--pointer-bg-blue-tablet);
     }
+  }
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  .swiper {
+    display: block;
   }
 }
 
@@ -244,6 +298,12 @@
   }
 }
 
+@media (width <= 22.5rem) {
+  .container {
+    max-width: 320px;
+  }
+}
+
 .t-3_with-before:before,
 .t-3_with-before:after {
   font-size: var(--text-t-3);
@@ -254,4 +314,8 @@
   @media (width <= 64rem) {
     font-size: 92px;
   }
+
+  @media (width <= 22.5rem) {
+      font-size: 58px;
+    }
 }

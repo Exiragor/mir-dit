@@ -3,7 +3,7 @@ import { Navigation } from "swiper/modules";
 // import Swiper styles
 import "swiper/css";
 
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper("#main-swiper", {
   slidesPerView: "auto",
   spaceBetween: 20,
   loop: true,
@@ -62,3 +62,62 @@ dropdowns.forEach((item) => {
     }
   });
 });
+
+
+// Конфигурация элементов, которые нужно превращать в Swiper на мобильных
+const swiperConfig = [
+  {
+    element: '.docs-swiper',         // Основной элемент (получит класс swiper)
+    wrapper: '.docs-swiper > div',  // Внутренний элемент (получит класс swiper-wrapper)
+    breakpoint: 1024,            // Брейкпоинт для этого элемента
+    swiperConfig: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+    },
+  },
+];
+
+const swipersMap = new Map();
+
+function toggleSwiperClasses() {
+  swiperConfig.forEach(config => {
+    const element = document.querySelector(config.element);
+    if (!element) return;
+
+    const wrapper = element.querySelector(config.wrapper);
+    if (!wrapper) return;
+
+    if (window.innerWidth < config.breakpoint) {
+      element.classList.add('swiper');
+      wrapper.classList.add('swiper-wrapper');
+      swipersMap.set(config.element, new Swiper(config.element, config.swiperConfig));
+    } else {
+      
+      if (swipersMap.has(config.element)) {
+        swipersMap.get(config.element).destroy();
+        swipersMap.delete(config.element);
+      }
+      element.classList.remove('swiper');
+      wrapper.classList.remove('swiper-wrapper');
+    }
+  });
+}
+
+// Функция для оптимизации обработки события resize
+function debounce(func, timeout = 100) {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => { func.apply(this, args); }, timeout);
+  };
+}
+
+// Инициализация при загрузке
+document.addEventListener('DOMContentLoaded', toggleSwiperClasses);
+
+// Обработка изменения размера окна
+window.addEventListener('resize', debounce(toggleSwiperClasses));
+
+// Дополнительный вызов для случаев, когда страница загружается уже с нужным размером
+window.addEventListener('load', toggleSwiperClasses);

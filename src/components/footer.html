@@ -1,22 +1,22 @@
-<footer class="rounded-5xl bg-primary pt-20 pb-[70px] px-2">
+<footer class="mobile-plus:rounded-5xl rounded-2.5xl bg-primary mobile-plus:pt-20 pb-[70px] px-5 py-10">
   <div class="container mx-auto flex">
     <div
-      class="grow laptop:basis-full laptop:mr-0 tablet:mr-[211px] mobile-plus:mr-[70px]"
+      class="grow laptop:basis-full laptop:mr-0 tablet:mr-[211px] mobile-plus:mr-[70px] basis-full"
     >
       <a href="/">
-        <img src="/logo.svg" class="w-[134px]" />
+        <img src="/logo.svg" class="mobile-plus:w-[134px] w-[66px]" />
       </a>
     </div>
     <div class="grow basis-full">
-      <div class="flex">
-        <div class="grow desktop:basis-full basis-[75%]">
-          <div class="text-white text-t-2 mb-5">Адрес</div>
-          <div class="text-neon text-t-2 mb-3">129090</div>
-          <div class="text-neon text-t-2 mb-3">Россия, г. Москва</div>
-          <div class="text-neon text-t-2 mb-3">ул. Щепкина</div>
-          <div class="text-neon text-t-2 mb-3">д. 28, оф. 311</div>
+      <div class="flex flex-col mobile-plus:flex-row">
+        <div class="grow desktop:basis-full basis-[75%] mb-10">
+          <div class="text-white t-2 mb-5">Адрес</div>
+          <div class="text-neon t-2 mb-3">129090</div>
+          <div class="text-neon t-2 mb-3">Россия, г. Москва</div>
+          <div class="text-neon t-2 mb-3">ул. Щепкина</div>
+          <div class="text-neon t-2 mb-3">д. 28, оф. 311</div>
           <a
-            class="text-neon text-t-2 hover:text-white"
+            class="text-neon t-2 hover:text-white"
             href="mailto:info@mir-dit.ru"
             >info@mir-dit.ru</a
           >
@@ -24,7 +24,7 @@
 
         <div class="grow basis-full">
           <div class="text-white text-t-2 mb-5">Меню</div>
-          <div class="flex justify-between">
+          <div class="grid mobile-plus:grid-cols-2 grid-cols-1">
             <div>
               <a
                 class="block text-neon text-t-2 hover:text-white mb-3"
@@ -38,7 +38,7 @@
               >
                 Аналитика
               </a>
-              <a class="block text-neon text-t-2 hover:text-white" href="#">
+              <a class="block text-neon text-t-2 hover:text-white mb-3" href="#">
                 Информационная <br />
                 безопасность
               </a>
@@ -61,11 +61,11 @@
         </div>
       </div>
 
-      <div class="text-white text-t-2 mt-10 mb-3">
+      <div class="text-white t-2 mt-10 mb-3 hidden mobile-plus:block">
         Возникли вопросы? Свяжитесь с нами
       </div>
-      <div class="flex justify-between">
-        <a class="text-h-3 text-neon" href="#">+7 (495) 797 04 16</a>
+      <div class="mobile-plus:flex justify-between hidden">
+        <a class="head-3 text-neon" href="#">+7 (495) 797 04 16</a>
         <div
           class="flex items-center justify-center w-[40px] h-[40px] rounded-full border-1 border-neon"
         >
@@ -74,6 +74,20 @@
           </a>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="mobile-plus:hidden container mx-auto">
+    <div class="text-white t-2 mt-10 mb-3">
+        Возникли вопросы? Свяжитесь с нами
+      </div>
+    <a class="head-3 text-neon" href="#">+7 (495) 797 04 16</a>
+    <div
+      class="flex items-center justify-center w-[40px] h-[40px] rounded-full border-1 border-neon mt-10 mx-auto"
+    >
+      <a href="/">
+        <img src="/tg-icon.svg" />
+      </a>
     </div>
   </div>
 </footer>
