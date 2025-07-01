@@ -112,7 +112,7 @@
       </div>
 
       <div class="mobile-plus:rounded-5xl rounded-2.5xl bg-white my-5 laptop:py-40 mobile-plus:py-30 py-20">
-        <div class="container mx-auto">
+        <div class="container mx-auto px-2">
           <div class="flex mobile-plus:mb-20 mb-10 flex-col mobile-plus:flex-row">
             <div class="grow w-full mb-2">
               <span class="t-2 text-primary">
@@ -231,9 +231,9 @@
         </div>
       </div>
 
-      <div class="mobile-plus:rounded-5xl rounded-2.5xl bg-white my-5 laptop:py-40 tablet:py-30">
+      <div class="mobile-plus:rounded-5xl rounded-2.5xl bg-white my-5 laptop:py-40 tablet:py-30 py-20">
         <div class="container mx-auto">
-          <div class="flex mb-20">
+          <div class="flex mobile-plus:mb-20 mb-5 px-2 flex-col mobile-plus:flex-row">
             <div class="grow w-full">
               <span class="t-2 text-primary"> Разработка </span>
             </div>
@@ -245,6 +245,26 @@
               </h2>
             </div>
           </div>
+
+          <div class="flex flex-col items-center">
+            <img class="hidden desktop:block" src="/pointers/1-desktop.svg" />
+            <img class="hidden desktop:block mt-5" src="/pointers/2-desktop.svg">
+
+            <img class="desktop:hidden hidden laptop:block" src="/pointers/1-laptop.svg" />
+            <img class="desktop:hidden hidden laptop:block mt-5" src="/pointers/2-laptop.svg">
+
+            <img class="laptop:hidden hidden tablet:block" src="/pointers/1-tablet.svg" />
+            <img class="laptop:hidden hidden tablet:block mt-5" src="/pointers/2-tablet.svg">
+              
+            <img class="tablet:hidden hidden mobile-plus:block" src="/pointers/1-mobile-plus.svg" />
+            <img class="tablet:hidden hidden mobile-plus:block mt-5" src="/pointers/2-mobile-plus.svg" />
+            <img class="tablet:hidden hidden mobile-plus:block mt-5" src="/pointers/3-mobile-plus.svg" />
+
+            <img class="mobile-plus:hidden" src="/pointers/1-mobile.svg" />
+            <img class="mobile-plus:hidden mt-[10px]" src="/pointers/2-mobile.svg" />
+            <img class="mobile-plus:hidden mt-[10px]" src="/pointers/3-mobile.svg" />
+          </div>
+          
 
           <!-- <div class="flex pr-15">
             <div
@@ -321,7 +341,7 @@
 
       <div class="mobile-plus:rounded-5xl rounded-2.5xl bg-white my-5 laptop:py-40 mobile-plus:py-30 py-20">
         <div class="container mx-auto">
-          <div class="flex mobile-plus:mb-20 mb-10 mobile-plus:flex-row flex-col">
+          <div class="flex mobile-plus:mb-20 mb-10 mobile-plus:flex-row flex-col pl-2">
             <div class="grow w-full mb-2">
               <span class="t-2 text-primary"> Экспертность </span>
             </div>
@@ -419,7 +439,7 @@
 
       <div class="mobile-plus:rounded-5xl rounded-2.5xl bg-white my-5 laptop:py-40 mobile-plus:py-30 py-20">
         <div class="container mx-auto">
-          <div class="t-2 text-primary mb-10 inline-block"> Цель компании </div>
+          <div class="t-2 text-primary mb-10 inline-block pl-2"> Цель компании </div>
           <div class="w-full flex flex-col items-center justify-center">
             <img
               class="laptop:w-[374px] tablet:w-[314px] w-[230px] mobile-plus:mb-15 mb-5"
@@ -454,16 +474,16 @@
         </div>
       </div>
 
-      <div class="laptop:py-40 mobile-plus:py-30 mobile-plus:pb-[55px]">
+      <div class="laptop:py-40 mobile-plus:py-30 mobile-plus:pb-[55px] py-20">
         <div class="container mx-auto">
-          <div class="max-w-[982px] head-2 mb-20">
+          <div class="max-w-[982px] head-2 mb-20 pl-2">
             <span class="text-primary"
               >Мы построили расширяемую модель бизнеса:</span
             >
             от уровня внедрения и сопровождения до контроля качества
           </div>
 
-          <div class="flex flex-wrap mb-10 cursor-pointer">
+          <div class="mobile-plus:flex flex-wrap mb-10 cursor-pointer hidden">
             <div
               class="rounded-2.5xl w-[189px] h-[57px] flex items-center justify-center bg-white text-primary hover:bg-primary-light hover:text-white"
             >
@@ -488,36 +508,100 @@
               <span class="t-2">Мониторинг</span>
             </div>
           </div>
-
-          <div
-            class="tablet:h-[165px] h-[198px] rounded-2.5xl bg-primary p-10 flex"
-          >
-            <div class="w-1/2 flex justify-between flex-col">
-              <span class="t-1 text-white">Система мониторинга</span>
-              <img
-                class="w-[50px] h-[50px] tablet:hidden"
-                src="/triangle-blue.png"
-              />
+          
+          <div class="mobile-plus:hidden flex flex justify-end gap-[0.625rem] mb-5">
+            <div
+              class="cards-swiper-arrow-left flex justify-center items-center size-[1.75rem] border rounded-full border-neon-light cursor-pointer"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.1016 6.08204L3.06594 6.08204L7.45034 1.5799C7.80074 1.2201 7.80074 0.629655 7.45034 0.269853C7.09995 -0.0899493 6.53393 -0.0899494 6.18354 0.269853L0.262794 6.34959C-0.0875995 6.70939 -0.0875996 7.29061 0.262793 7.65041L6.18354 13.7301C6.53393 14.09 7.09995 14.09 7.45034 13.7301C7.80074 13.3703 7.80074 12.7891 7.45034 12.4293L3.06594 7.92718L13.1016 7.92718C13.5957 7.92718 14 7.51203 14 7.00461C14 6.4972 13.5957 6.08204 13.1016 6.08204Z"
+                  fill="#A1EAF7"
+                />
+              </svg>
             </div>
-            <div class="w-1/2 flex items-center justify-between">
-              <div class="t-2 text-white max-w-[383px]">
-                Система мониторинга позволяет предотвращать многие аварии и
-                увидеть коллизии в системах БД. Эксперт информирует заказчика о
-                возможных проблемах и способах улучшения логики приложения с
-                точки зрения лучших практик.
-              </div>
-              <img
-                class="w-[70px] h-[70px] hidden tablet:block"
-                src="/triangle-blue.png"
-              />
+
+            <div
+              class="cards-swiper-arrow-right flex justify-center items-center size-[1.75rem] rounded-full bg-primary cursor-pointer"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.898444 7.91796L10.9341 7.91796L6.54966 12.4201C6.19926 12.7799 6.19926 13.3703 6.54965 13.7301C6.90005 14.0899 7.46607 14.0899 7.81646 13.7301L13.7372 7.65041C14.0876 7.29061 14.0876 6.70939 13.7372 6.34959L7.81646 0.269852C7.46607 -0.0899502 6.90005 -0.0899502 6.54966 0.269852C6.19926 0.629654 6.19926 1.21087 6.54966 1.57068L10.9341 6.07282L0.898444 6.07282C0.404299 6.07282 -2.96952e-07 6.48797 -3.41312e-07 6.99539C-3.85671e-07 7.5028 0.404299 7.91796 0.898444 7.91796Z"
+                  fill="white"
+                />
+              </svg>
             </div>
           </div>
+          <div class="cards-swiper">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide tablet:h-[165px] h-[198px] rounded-2.5xl bg-primary p-10 flex"
+              >
+                <div class="w-1/2 flex justify-between flex-col">
+                  <span class="t-1 text-white">Система мониторинга</span>
+                  <img
+                    class="w-[50px] h-[50px] tablet:hidden"
+                    src="/triangle-blue.png"
+                  />
+                </div>
+                <div class="w-1/2 flex items-center justify-between">
+                  <div class="t-2 text-white max-w-[383px]">
+                    Система мониторинга позволяет предотвращать многие аварии и
+                    увидеть коллизии в системах БД. Эксперт информирует заказчика о
+                    возможных проблемах и способах улучшения логики приложения с
+                    точки зрения лучших практик.
+                  </div>
+                  <img
+                    class="w-[70px] h-[70px] hidden tablet:block"
+                    src="/triangle-blue.png"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="swiper-slide tablet:h-[165px] h-[198px] rounded-2.5xl bg-primary p-10 flex"
+              >
+                <div class="w-1/2 flex justify-between flex-col">
+                  <span class="t-1 text-white">мониторинга</span>
+                  <img
+                    class="w-[50px] h-[50px] tablet:hidden"
+                    src="/triangle-blue.png"
+                  />
+                </div>
+                <div class="w-1/2 flex items-center justify-between">
+                  <div class="t-2 text-white max-w-[383px]">
+                    Система мониторинга позволяет предотвращать многие аварии и
+                    увидеть коллизии в системах БД. Эксперт информирует заказчика о
+                    возможных проблемах и способах улучшения логики приложения с
+                    точки зрения лучших практик.
+                  </div>
+                  <img
+                    class="w-[70px] h-[70px] hidden tablet:block"
+                    src="/triangle-blue.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
 
       <div class="mobile-plus:rounded-5xl rounded-2.5xl bg-white my-5 laptop:py-40 mobile-plus:py-30 py-20">
         <div class="container mx-auto">
-          <div class="flex mb-20 mobile-plus:flex-row flex-col">
+          <div class="flex mb-20 mobile-plus:flex-row flex-col pl-2">
             <div class="grow w-full mb-2">
               <span class="t-2 text-primary"> Почему мы </span>
             </div>
@@ -746,7 +830,7 @@
 
       <div class="mobile-plus:rounded-5xl rounded-2.5xl bg-white my-5 laptop:py-40 mobile-plus:py-30 py-20">
         <div class="container mx-auto">
-          <div class="flex mb-20 flex-col mobile-plus:flex-row">
+          <div class="flex mb-20 flex-col mobile-plus:flex-row pl-2">
             <div class="grow w-full mb-2">
               <span class="t-2 text-primary"> Задачи компании</span>
             </div>
@@ -885,9 +969,9 @@
         </div>
       </div>
 
-      <div class="mobile-plus:rounded-5xl rounded-2.5xl bg-white my-5 laptop:py-40 mobile-plus:py-30 py-20">
+      <div class="mobile-plus:rounded-5xl rounded-2.5xl bg-white my-5 laptop:py-40 mobile-plus:py-30 py-20 pt-10">
         <div class="container mx-auto">
-          <div class="flex mb-20 flex-col mobile-plus:flex-row">
+          <div class="flex mb-20 flex-col mobile-plus:flex-row pl-[10px] mobile-plus:pl-0">
             <div class="grow w-full mb-2">
               <span class="t-2 text-primary"> Лицензии</span>
             </div>
@@ -898,12 +982,49 @@
               </h2>
             </div>
           </div>
-          <div class="docs-swiper swiper">
-            <div class="grid grid-cols-2 gap-5 swiper-wrapper">
+
+          <div class="mobile-plus:hidden flex justify-end gap-[0.625rem] mb-5">
+            <div
+              class="docs-swiper-arrow-left flex justify-center items-center size-[1.75rem] border rounded-full border-neon-light cursor-pointer"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.1016 6.08204L3.06594 6.08204L7.45034 1.5799C7.80074 1.2201 7.80074 0.629655 7.45034 0.269853C7.09995 -0.0899493 6.53393 -0.0899494 6.18354 0.269853L0.262794 6.34959C-0.0875995 6.70939 -0.0875996 7.29061 0.262793 7.65041L6.18354 13.7301C6.53393 14.09 7.09995 14.09 7.45034 13.7301C7.80074 13.3703 7.80074 12.7891 7.45034 12.4293L3.06594 7.92718L13.1016 7.92718C13.5957 7.92718 14 7.51203 14 7.00461C14 6.4972 13.5957 6.08204 13.1016 6.08204Z"
+                  fill="#A1EAF7"
+                />
+              </svg>
+            </div>
+
+            <div
+              class="docs-swiper-arrow-right flex justify-center items-center size-[1.75rem] rounded-full bg-primary cursor-pointer"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.898444 7.91796L10.9341 7.91796L6.54966 12.4201C6.19926 12.7799 6.19926 13.3703 6.54965 13.7301C6.90005 14.0899 7.46607 14.0899 7.81646 13.7301L13.7372 7.65041C14.0876 7.29061 14.0876 6.70939 13.7372 6.34959L7.81646 0.269852C7.46607 -0.0899502 6.90005 -0.0899502 6.54966 0.269852C6.19926 0.629654 6.19926 1.21087 6.54966 1.57068L10.9341 6.07282L0.898444 6.07282C0.404299 6.07282 -2.96952e-07 6.48797 -3.41312e-07 6.99539C-3.85671e-07 7.5028 0.404299 7.91796 0.898444 7.91796Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="docs-swiper swiper h-[141px]! tablet:h-auto">
+            <div class="tablet:grid tablet:grid-cols-2 tablet:gap-5 swiper-wrapper">
               <div
                 class="swiper-slide border border-primary rounded-2.5xl px-5 flex tablet:w-full tablet:max-w-full mobile-plus:max-w-[442px] max-w-[320px] laptop:h-[117px] mobile-plus:h-[156px] max-h-[156px] pb-[25px]"
               >
-                <div class="laptop:min-w-[237px] min-w-[141px]">
+                <div class="laptop:min-w-[237px] mobile-plus:min-w-[141px]">
                   <div class="t-2 mt-[21px]">СМП</div>
                 </div>
 
@@ -918,7 +1039,7 @@
               <div
                 class="swiper-slide border border-primary rounded-2.5xl px-5 flex tablet:w-full tablet:max-w-full mobile-plus:max-w-[442px] max-w-[320px] laptop:h-[117px] max-h-[156px] pb-[25px]"
               >
-                <div class="laptop:min-w-[237px] min-w-[152px]">
+                <div class="laptop:min-w-[237px] mobile-plus:min-w-[152px]">
                   <div class="t-2 mt-[21px]">Лицензия ФСТЭК</div>
                 </div>
 
@@ -978,15 +1099,15 @@
           <div
             class="flex laptop:flex-row flex-col laptop:max-w-auto max-w-[650px] mx-auto"
           >
-            <div class="grow w-full head-2 mobile-plus:px-0 px-2">
+            <div class="grow w-full head-2 mobile-plus:px-0 pl-2">
               <div class="laptop:block inline-block">Реализуем</div>
               <div class="text-primary laptop:block inline-block">
                 все ваши идеи!
               </div>
             </div>
 
-            <div class="grow w-full mobile-plus:px-0 px-2">
-              <h3 class="head-3 mb-5">
+            <div class="grow w-full mobile-plus:px-0">
+              <h3 class="head-3 mb-5 pl-2">
                 <span class="text-primary">Оставьте контакты,</span> мы
                 перезвоним
               </h3>

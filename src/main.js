@@ -72,8 +72,29 @@ const swiperConfig = [
     breakpoint: 1024,            // Брейкпоинт для этого элемента
     swiperConfig: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 0,
       loop: true,
+      navigation: {
+        nextEl: ".docs-swiper-arrow-right",
+        prevEl: ".docs-swiper-arrow-left",
+      },
+      modules: [Navigation],
+    },
+  },
+
+  {
+    element: '.cards-swiper',         // Основной элемент (получит класс swiper)
+    wrapper: '.cards-swiper > div',  // Внутренний элемент (получит класс swiper-wrapper)
+    breakpoint: 768,            // Брейкпоинт для этого элемента
+    swiperConfig: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      navigation: {
+        nextEl: ".cards-swiper-arrow-right",
+        prevEl: ".cards-swiper-arrow-left",
+      },
+      modules: [Navigation],
     },
   },
 ];
