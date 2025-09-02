@@ -1,1123 +1,644 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%- title %></title>
     <link href="/src/style.css" rel="stylesheet" />
-  </head>
-  <body class="bg-gray-light mobile-plus:p-5 p-2 font-manrope font-light">
-    <header class="mobile-plus:rounded-5xl rounded-2.5xl bg-primary p-8 laptop:pb-40 tablet:pb-30">
-      <%- headerNav %>
-      <div
-        class="container mx-auto flex justify-between items-center tablet:mt-[88px] mt-[68px]"
-      >
-        <div>
-          <img
-            class="mix-blend-luminosity w-[254px] mobile-plus:hidden"
-            src="/ball.png"
-          />
+</head>
+<body>
+    <header class="header">
+        <%- headerNav %>
+        <div class="container header__content">
+            <div>
+                <img class="header__image header__image--mobile" src="/ball.png" alt="Ball" />
 
-          <h1 class="head-1">
-            <span class="text-white">Центр разработки</span> <br />
-            <span class="text-neon">Мир данных ИТ</span>
-          </h1>
+                <h1 class="head-1 header__title">
+                    <span>Центр разработки</span> <br />
+                    <span class="header__title-accent">Мир данных ИТ</span>
+                </h1>
 
-          <button
-            type="button"
-            class="bg-tranparent border-1 border-neon rounded-btn text-neon hover:text-white hover:border-white px-[30px] desktop:mt-25 laptop:mt-25 mobile-plus:mt-10 cursor-pointer t-2 h-[55px]"
-          >
-            Заказать консультацию
-          </button>
+                <button type="button" class="header__button t-2">
+                    Заказать консультацию
+                </button>
 
-          <div
-            class="max-w-[345px] tablet:t-1 t-2 desktop:mt-27 laptop:mt-27 tablet:mt-[114px] mobile-plus:mt-[42px]"
-          >
-            <div
-              class="text-neon desktop:min-w-[910px] laptop:min-w-[788px] tablet:min-w-[657px] inline"
-            >
-              ИТ аутсорсинг. Полный комплекс услуг по разработке ПО
+                <div class="header__features">
+                    <div class="header__feature-item">
+                        ИТ аутсорсинг. Полный комплекс услуг по разработке ПО
+                    </div>
+                    <div class="header__feature-item">
+                        Функциональное тестирование высоконагруженных систем
+                    </div>
+                    <div class="header__feature-item">
+                        Разработка, производство и ТО криптографических средств
+                    </div>
+                    <div class="header__feature-item">
+                        Шифрование информации. Обслуживание и администрирование БД
+                    </div>
+                </div>
             </div>
-            <div class="text-neon mt-1 inline">
-              Функциональное тестирование высоконагруженных систем
-            </div>
-            <div class="text-neon mt-1 inline">
-              Разработка, производство и ТО криптографических средств
-            </div>
-            <div class="text-neon mt-1 inline">
-              Шифрование информации. Обслуживание и администрирование БД
-            </div>
-          </div>
+
+            <img class="header__image header__image--desktop" src="/ball.png" alt="Ball" />
         </div>
-
-        <img
-          class="ball mix-blend-luminosity desktop:w-[560px] laptop:w-[490px] tablet:w-[374px] mobile-plus:w-[314px] tablet:pl-0 pl-10 mobile-plus:block hidden"
-          src="/ball.png"
-        />
-      </div>
     </header>
-    <main>
-      <div
-        class="mobile-plus:rounded-5xl rounded-2.5xl bg-white my-5 laptop:py-40 mobile-plus:py-30 mobile-plus:pt-[100px] py-20 mobile-plus:px-8 px-5"
-      >
-        <div
-          class="container mx-auto tablet:flex tablet:justify-between grid grid-cols-2"
-        >
-          <div class="order-1">
-            <div
-              class="font-roboto text-gradient t-3 bg-clip-text text-transparent"
-            >
-              6+
-            </div>
-            <div class="t-2 tablet:ml-3">
-              Лет на рынках России, <br />
-              Европы и СНГ
-            </div>
-          </div>
-          <div class="order-3 tablet:order-2">
-            <div
-              class="font-roboto text-gradient t-3 bg-clip-text text-transparent"
-            >
-              50+
-            </div>
-            <div class="t-2 tablet:ml-3">
-              Квалифицированных <br />
-              специалистов
-            </div>
-          </div>
-          <div class="order-2 tablet:order-3">
-            <div
-              class="font-roboto text-gradient t-3 bg-clip-text text-transparent"
-            >
-              100%
-            </div>
-            <div class="t-2 tablet:ml-8">
-              Гарантия безопасности <br />
-              данных
-            </div>
-          </div>
-          <div class="order-4">
-            <div
-              class="font-roboto text-gradient t-3 bg-clip-text text-transparent"
-            >
-              50+
-            </div>
-            <div class="t-2 tablet:ml-3">
-              Баз данных на <br />
-              обслуживании
-            </div>
+    
+   <section class="activities">
+  <div class="activities__container container">
+    <div class="activities__header">
+      <div class="activities__label">
+        <span class="activities__label-text t-2 text-primary">
+          Направления <br class="activities__label-break" />
+          деятельности
+        </span>
+      </div>
+
+      <div class="activities__title-wrapper">
+        <h2 class="activities__title head-2">
+          <span class="activities__title-primary text-primary">
+            Оказываем полный <br class="activities__title-break" />
+            комплекс услуг <br class="activities__title-break" />
+          </span>
+          <span class="activities__title-secondary">
+            по разработке и <br class="activities__title-break" />
+            модернизации ПО
+          </span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="activities__list">
+      <div class="activities__item">
+        <div class="activities__number">
+          <div class="activities__number-text font-roboto t-5">01</div>
+        </div>
+        <div class="activities__content">
+          <div class="activities__text t-1">
+            Обслуживание и <br />
+            администрирование БД
           </div>
         </div>
       </div>
 
-      <div class="mobile-plus:rounded-5xl rounded-2.5xl bg-white my-5 laptop:py-40 mobile-plus:py-30 py-20">
-        <div class="container mx-auto px-2">
-          <div class="flex mobile-plus:mb-20 mb-10 flex-col mobile-plus:flex-row">
-            <div class="grow w-full mb-2">
-              <span class="t-2 text-primary">
-                Направления <br class="hidden mobile-plus:block" />
-                деятельности
-              </span>
-            </div>
-
-            <div class="grow w-full">
-              <h2 class="head-2">
-                <span class="text-primary">
-                  Оказываем полный <br class="hidden mobile-plus:block" />
-                  комплекс услуг <br class="hidden mobile-plus:block" />
-                </span>
-                <span>
-                  по разработке и <br class="hidden mobile-plus:block" />
-                  модернизации ПО
-                </span>
-              </h2>
-            </div>
-          </div>
-
-          <div
-            class="bg-gray-light mobile-plus:rounded-2.5xl rounded-xl mobile-plus:max-h-37 flex mobile-plus:overflow-hidden"
-          >
-            <div class="grow w-full flex justify-center">
-              <div
-                class="font-roboto t-5 bg-clip-text text-transparent text-stroke-1 mobile-plus:mt-[-29px] mt-[-3px] mb-[-6px] mobile-plus:mb-0"
-              >
-                01
-              </div>
-            </div>
-            <div class="grow w-full flex items-center t-1">
-              Обслуживание и <br />
-              администрирование БД
-            </div>
-          </div>
-
-          <div
-            class="bg-gray-light mobile-plus:rounded-2.5xl rounded-xl  mobile-plus:max-h-37 flex  mobile-plus:overflow-hidden mobile-plus:mt-5 mt-2"
-          >
-            <div class="grow w-full flex justify-center">
-              <div
-                class="font-roboto t-5 bg-clip-text text-transparent text-stroke-1 mobile-plus:mt-[-29px] mt-[-3px] mb-[-6px] mobile-plus:mb-0"
-              >
-                02
-              </div>
-            </div>
-            <div class="grow w-full flex items-center t-1">
-              Комплекс услуг по <br />
-              разработке ПО
-            </div>
-          </div>
-
-          <div
-            class="bg-gray-light mobile-plus:rounded-2.5xl rounded-xl mobile-plus:max-h-37 flex mobile-plus:overflow-hidden mobile-plus:mt-5 mt-2"
-          >
-            <div class="grow w-full flex justify-center">
-              <div
-                class="font-roboto t-5 bg-clip-text text-transparent text-stroke-1 mobile-plus:mt-[-29px] mt-[-3px] mb-[-6px] mobile-plus:mb-0"
-              >
-                03
-              </div>
-            </div>
-            <div class="grow w-full flex items-center t-1">ИТ аутсорсинг</div>
-          </div>
-
-          <div
-            class="bg-gray-light mobile-plus:rounded-2.5xl rounded-xl mobile-plus:max-h-37 flex mobile-plus:overflow-hidden mobile-plus:mt-5 mt-2"
-          >
-            <div class="grow w-full flex justify-center">
-              <div
-                class="font-roboto t-5 bg-clip-text text-transparent text-stroke-1 mobile-plus:mt-[-29px] mt-[-3px] mb-[-6px] mobile-plus:mb-0"
-              >
-                04
-              </div>
-            </div>
-            <div class="grow w-full flex items-center t-1">
-              Функциональное тестирование <br />
-              высоконагруженных систем и ПО
-            </div>
-          </div>
-
-          <div
-            class="bg-gray-light mobile-plus:rounded-2.5xl rounded-xl mobile-plus:max-h-37 flex mobile-plus:overflow-hidden mobile-plus:mt-5 mt-2"
-          >
-            <div class="grow w-full flex justify-center">
-              <div
-                class="font-roboto t-5 bg-clip-text text-transparent text-stroke-1 mobile-plus:mt-[-29px] mt-[-3px] mb-[-6px] mobile-plus:mb-0"
-              >
-                05
-              </div>
-            </div>
-            <div class="grow w-full flex items-center t-1">
-              Разработка, производство и <br />
-              ТО криптографических <br />
-              средств, ИС и ТС
-            </div>
-          </div>
-
-          <div
-            class="bg-gray-light mobile-plus:rounded-2.5xl rounded-xl mobile-plus:max-h-37 flex mobile-plus:overflow-hidden mobile-plus:mt-5 mt-2"
-          >
-            <div class="grow w-full flex justify-center">
-              <div
-                class="font-roboto t-5 bg-clip-text text-transparent text-stroke-1 mobile-plus:mt-[-29px] mt-[-3px] mb-[-6px] mobile-plus:mb-0"
-              >
-                06
-              </div>
-            </div>
-            <div class="grow w-full flex items-center t-1">
-              Работы в области <br />
-              шифрования информации
-            </div>
+      <div class="activities__item">
+        <div class="activities__number">
+          <div class="activities__number-text font-roboto t-5">02</div>
+        </div>
+        <div class="activities__content">
+          <div class="activities__text t-1">
+            Комплекс услуг по <br />
+            разработке ПО
           </div>
         </div>
       </div>
 
-      <div class="mobile-plus:rounded-5xl rounded-2.5xl bg-white my-5 laptop:py-40 tablet:py-30 py-20">
-        <div class="container mx-auto">
-          <div class="flex mobile-plus:mb-20 mb-5 px-2 flex-col mobile-plus:flex-row">
-            <div class="grow w-full">
-              <span class="t-2 text-primary"> Разработка </span>
-            </div>
-
-            <div class="grow w-full">
-              <h2 class="head-2">
-                <span class="text-primary"> Услуги в области <br /> </span>
-                <span> разработки ПО </span>
-              </h2>
-            </div>
-          </div>
-
-          <div class="flex flex-col items-center">
-            <img class="hidden desktop:block" src="/pointers/1-desktop.svg" />
-            <img class="hidden desktop:block mt-5" src="/pointers/2-desktop.svg">
-
-            <img class="desktop:hidden hidden laptop:block" src="/pointers/1-laptop.svg" />
-            <img class="desktop:hidden hidden laptop:block mt-5" src="/pointers/2-laptop.svg">
-
-            <img class="laptop:hidden hidden tablet:block" src="/pointers/1-tablet.svg" />
-            <img class="laptop:hidden hidden tablet:block mt-5" src="/pointers/2-tablet.svg">
-              
-            <img class="tablet:hidden hidden mobile-plus:block" src="/pointers/1-mobile-plus.svg" />
-            <img class="tablet:hidden hidden mobile-plus:block mt-5" src="/pointers/2-mobile-plus.svg" />
-            <img class="tablet:hidden hidden mobile-plus:block mt-5" src="/pointers/3-mobile-plus.svg" />
-
-            <img class="mobile-plus:hidden" src="/pointers/1-mobile.svg" />
-            <img class="mobile-plus:hidden mt-[10px]" src="/pointers/2-mobile.svg" />
-            <img class="mobile-plus:hidden mt-[10px]" src="/pointers/3-mobile.svg" />
-          </div>
-          
-
-          <!-- <div class="flex pr-15">
-            <div
-              class="pointer-blue bg-no-repeat bg-[length:100%_100%] relative grow desktop:constant-w-[475] laptop:constant-w-[395] tablet:constant-w-[337] h-[221px] flex items-center z-2"
-            >
-              <span class="t-1 text-white desktop:ml-[102px] tablet:ml-[40px] desktop:max-w-[158px] laptop:max-w-[306px]">
-                Разработка&nbsp;ТЗ, 
-                подготовка
-                документации
-              </span>
-            </div>
-
-            <div
-              class="pointer-white bg-no-repeat bg-[length:100%_100%] relative grow desktop:constant-w-[564] laptop:constant-w-[483] tablet:constant-w-[400] h-[220px] flex items-center z-1 desktop:ml-[-100px] laptop:ml-[-100px]"
-            >
-              <span class="t-1 desktop:ml-[244px] laptop:ml-[174px]"> Разработка ПО </span>
-            </div>
-
-            <div
-              class="pointer-gray bg-no-repeat bg-[length:100%_100%] relative grow desktop:constant-w-[543] tablet:constant-w-[493] h-[221px] flex items-center z-0 desktop:ml-[-100px] laptop:ml-[-100px]"
-            >
-              <span class="t-1 desktop:ml-[227px] laptop:ml-[177px]">
-                Внедрение <br />
-                созданного ПО
-              </span>
-            </div>
-          </div> -->
-
-          <!-- <div class="flex pr-15 mt-5">
-            <div
-              class="pointer-gray bg-no-repeat bg-[length:100%_100%] relative grow min-w-[543px] h-[221px] flex items-center z-0 scale-x-[-1]"
-            >
-              <span class="t-1 scale-x-[-1] max-w-[259px] desktop:ml-[183px] laptop:ml-[200px]">
-                Комплексное тестирование на всех этапах разработки ПО
-              </span>
-            </div>
-
-            <div
-              class="pointer-white bg-no-repeat bg-[length:100%_100%] relative grow min-w-[564px] h-[220px] flex items-center z-1 desktop:ml-[-100px] laptop:ml-[-200px] scale-x-[-1]"
-            >
-              <span class="t-1 ml-[162px] scale-x-[-1] max-w-[308px]"> Обучение пользователей ПО в компании заказчика </span>
-            </div>
-
-            <div
-              class="pointer-blue bg-no-repeat bg-[length:100%_100%] relative grow desktop:constant-w-[475] h-[221px] flex items-center z-2 desktop:ml-[-100px] laptop:ml-[-150px] scale-x-[-1]"
-            >
-              <span class="t-1 text-white ml-[107px] scale-x-[-1] max-w-[263px]">
-                Поддержка и развитие готового решения
-              </span>
-            </div>
-          </div> -->
+      <div class="activities__item">
+        <div class="activities__number">
+          <div class="activities__number-text font-roboto t-5">03</div>
+        </div>
+        <div class="activities__content">
+          <div class="activities__text t-1">ИТ аутсорсинг</div>
         </div>
       </div>
 
-      <div
-        class="mobile-plus:rounded-5xl rounded-2.5xl bg-primary bg-(image:--bg-img-2) bg-cover my-5 laptop:py-40 mobile-plus:py-30 mobile-plus:pb-[95px] py-20 mobile:pb-[115px]"
-      >
-        <div
-          class="container mx-auto flex justify-between laptop:flex-row flex-col text-center"
-        >
-          <h2
-            class="head-2 max-w-[478px] tablet:max-w-[680px] mx-auto mb-10 laptop:max-w-[600px] laptop:mr-14 laptop:constant-w-[565] mobile-plus:constant-w-[478] laptop:text-left"
-          >
-            <span class="text-white">
-              Оставьте данные, <br class="hidden laptop:block"
-            /></span>
-            <span class="text-neon">
-              мы проконсультируем вас по вопросам сотрудничества
-            </span>
-          </h2>
-          <div class="mx-auto min-w-[300px]"><%- form %></div>
+      <div class="activities__item">
+        <div class="activities__number">
+          <div class="activities__number-text font-roboto t-5">04</div>
         </div>
-      </div>
-
-      <div class="mobile-plus:rounded-5xl rounded-2.5xl bg-white my-5 laptop:py-40 mobile-plus:py-30 py-20">
-        <div class="container mx-auto">
-          <div class="flex mobile-plus:mb-20 mb-10 mobile-plus:flex-row flex-col pl-2">
-            <div class="grow w-full mb-2">
-              <span class="t-2 text-primary"> Экспертность </span>
-            </div>
-            <div class="grow w-full">
-              <h2 class="head-2">
-                <span class="text-primary"> Обеспечиваем <br /> </span>
-                <span> безопасность БД </span>
-              </h2>
-            </div>
-          </div>
-
-          <div class="grid mobile-plus:grid-cols-2 grid-cols-1 gap-5 laptop:grid-cols-3">
-            <div
-              class="bg-primary rounded-3.5xl flex justify-center items-center pt-12 pb-20 tablet:h-[379px] mobile-plus:h-[304px] h-[200px]"
-            >
-              <img src="/27-2.png" class="mobile-plus:w-[246px] w-[140px] mix-blend-luminosity" />
-            </div>
-            <div
-              class="relative rounded-2.5xl border border-neon p-5 flex tablet:h-[379px] mobile-plus:h-[304px] h-[210px]"
-            >
-              <div class="absolute bg-white top-[-10px] px-2 t-2 text-neon z-2">
-                01
-              </div>
-              <div class="flex flex-col justify-between tablet:p-5 h-full">
-                <div class="t-1 text-primary">
-                  Сильная команда профессионалов
-                </div>
-                <div class="t-2 mt-auto">
-                  Предоставим профессиональных архитекторов, аналитиков,
-                  разработчиков, тестировщиков, администраторов БД, специалистов
-                  сопровождения, экспертов.
-                </div>
-              </div>
-            </div>
-            <div
-              class="relative rounded-2.5xl border border-neon p-5 flex tablet:h-[379px] mobile-plus:h-[304px] h-[230px]"
-            >
-              <div class="absolute bg-white top-[-10px] px-2 t-2 text-neon z-2">
-                02
-              </div>
-              <div
-                class="flex flex-col justify-between tablet:py-5 tablet:pl-5 pr-3 h-full"
-              >
-                <div class="t-1 text-primary">
-                  Круглосуточный мониторинг, проектирование и дизайн баз данных
-                </div>
-                <div class="t-2 mt-auto">
-                  Используем собственную систему мониторинга, усиленную лучшим в
-                  классе решением Zabbix. Усовершенствованный дизайн,
-                  архитектура и планирование обеспечат максимальную
-                  производительность и эффективность ваших БД.
-                </div>
-              </div>
-            </div>
-            <div
-              class="relative rounded-2.5xl border border-neon p-5 flex tablet:h-[379px] mobile-plus:h-[304px] h-[210px]"
-            >
-              <div class="absolute bg-white top-[-10px] px-2 t-2 text-neon z-2">
-                03
-              </div>
-              <div class="flex flex-col justify-between tablet:p-5 h-full">
-                <div class="t-1 text-primary">
-                  Оптимизация производительности и доступности БД, аудит,
-                  апгрейды, миграция
-                </div>
-                <div class="t-2 mt-auto">
-                  Проводим аудит мощностей, производительности и безопасности.
-                  Команда высококвалифицированных администраторов оптимизирует
-                  БД.
-                </div>
-              </div>
-            </div>
-            <div
-              class="bg-primary rounded-3.5xl flex justify-center items-center py-16 tablet:h-[379px] mobile-plus:h-[304px] h-[210px]"
-            >
-              <img src="/27-3.png" class="w-[246px] mix-blend-luminosity" />
-            </div>
-            <div
-              class="relative rounded-2.5xl border border-neon p-5 flex tablet:h-[379px] mobile-plus:h-[304px] h-[210px]"
-            >
-              <div class="absolute bg-white top-[-10px] px-2 t-2 text-neon z-2">
-                04
-              </div>
-              <div class="flex flex-col justify-between tablet:p-5 h-full">
-                <div class="t-1 text-primary">Круглосуточная поддержка</div>
-                <div class="t-2 mt-auto">
-                  Служба поддержки пользователей работает круглосуточно. Вы
-                  можете выбрать вид связи с нашей командой.
-                </div>
-              </div>
-            </div>
+        <div class="activities__content">
+          <div class="activities__text t-1">
+            Функциональное тестирование <br />
+            высоконагруженных систем и ПО
           </div>
         </div>
       </div>
 
-      <div class="mobile-plus:rounded-5xl rounded-2.5xl bg-white my-5 laptop:py-40 mobile-plus:py-30 py-20">
-        <div class="container mx-auto">
-          <div class="t-2 text-primary mb-10 inline-block pl-2"> Цель компании </div>
-          <div class="w-full flex flex-col items-center justify-center">
-            <img
-              class="laptop:w-[374px] tablet:w-[314px] w-[230px] mobile-plus:mb-15 mb-5"
-              src="/photo.png"
-            />
-
-            <div
-              class="relative t-1 text-primary t-3_with-before before:absolute mobile-plus:before:top-[-36%] mobile-plus:before:left-[-9%] before:top-[-19%] before:left-[-3%]  before:font-roboto before:content-['“'] after:content-['“'] after:absolute laptop:after:bottom-[-36%] mobile-plus:after:bottom-[-26%] after:bottom-[-20%] mobile-plus:after:right-[7%] after:right-[9%] after:font-roboto after:t-3 after:-scale-100 laptop:max-w-[671px] max-w-[438px] px-[10px] mobile-plus:px-0"
-            >
-              Основная цель нашей компании — Выявление «узких мест» и
-              всесторонняя оптимизация, приводящая к продуктивному использованию
-              ресурсов, высокой доступности и повышению качества обслуживания
-              пользователей.
-            </div>
-            <div class="laptop:max-w-[414px] max-w-[314px] px-[10px] mobile-plus:px-0">
-              <div class="t-2 my-5">
-                Разработка, усовершенствование и адаптирование программных
-                продуктов различного назначения, для широкого круга предметных
-                областей в соответствии с требованиями, задачами и целями
-                заказчика.
-              </div>
-              <div class="flex justify-between">
-                <span class="t-2 text-primary"
-                  >Елена Витальена Константинова</span
-                >
-                <span class="t-2 text-end"
-                  >Генеральный директор ООО&nbsp;МИР&nbsp;ДАННЫХ&nbsp;ИТ</span
-                >
-              </div>
-            </div>
+      <div class="activities__item">
+        <div class="activities__number">
+          <div class="activities__number-text font-roboto t-5">05</div>
+        </div>
+        <div class="activities__content">
+          <div class="activities__text t-1">
+            Разработка, производство и <br />
+            ТО криптографических <br />
+            средств, ИС и ТС
           </div>
         </div>
       </div>
 
-      <div class="laptop:py-40 mobile-plus:py-30 mobile-plus:pb-[55px] py-20">
-        <div class="container mx-auto">
-          <div class="max-w-[982px] head-2 mb-20 pl-2">
-            <span class="text-primary"
-              >Мы построили расширяемую модель бизнеса:</span
-            >
-            от уровня внедрения и сопровождения до контроля качества
-          </div>
-
-          <div class="mobile-plus:flex flex-wrap mb-10 cursor-pointer hidden">
-            <div
-              class="rounded-2.5xl w-[189px] h-[57px] flex items-center justify-center bg-white text-primary hover:bg-primary-light hover:text-white"
-            >
-              <span class="t-2">Сопровождение</span>
-            </div>
-
-            <div
-              class="rounded-2.5xl w-[189px] min-w-[189px] h-[57px] flex items-center justify-center bg-white ml-5 text-primary hover:bg-primary-light hover:text-white mr-[25%] tablet:mr-0"
-            >
-              <span class="t-2">Поддержка</span>
-            </div>
-
-            <div
-              class="rounded-2.5xl w-[189px] h-[57px] flex items-center justify-center bg-white tablet:ml-5 text-primary hover:bg-primary-light hover:text-white mt-2 tablet:mt-0"
-            >
-              <span class="t-2">Контроль</span>
-            </div>
-
-            <div
-              class="rounded-2.5xl w-[189px] h-[57px] flex items-center justify-center bg-primary ml-5 text-white hover:bg-primary-light hover:text-white mt-2 tablet:mt-0"
-            >
-              <span class="t-2">Мониторинг</span>
-            </div>
-          </div>
-          
-          <div class="mobile-plus:hidden flex flex justify-end gap-[0.625rem] mb-5">
-            <div
-              class="cards-swiper-arrow-left flex justify-center items-center size-[1.75rem] border rounded-full border-neon-light cursor-pointer"
-            >
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13.1016 6.08204L3.06594 6.08204L7.45034 1.5799C7.80074 1.2201 7.80074 0.629655 7.45034 0.269853C7.09995 -0.0899493 6.53393 -0.0899494 6.18354 0.269853L0.262794 6.34959C-0.0875995 6.70939 -0.0875996 7.29061 0.262793 7.65041L6.18354 13.7301C6.53393 14.09 7.09995 14.09 7.45034 13.7301C7.80074 13.3703 7.80074 12.7891 7.45034 12.4293L3.06594 7.92718L13.1016 7.92718C13.5957 7.92718 14 7.51203 14 7.00461C14 6.4972 13.5957 6.08204 13.1016 6.08204Z"
-                  fill="#A1EAF7"
-                />
-              </svg>
-            </div>
-
-            <div
-              class="cards-swiper-arrow-right flex justify-center items-center size-[1.75rem] rounded-full bg-primary cursor-pointer"
-            >
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.898444 7.91796L10.9341 7.91796L6.54966 12.4201C6.19926 12.7799 6.19926 13.3703 6.54965 13.7301C6.90005 14.0899 7.46607 14.0899 7.81646 13.7301L13.7372 7.65041C14.0876 7.29061 14.0876 6.70939 13.7372 6.34959L7.81646 0.269852C7.46607 -0.0899502 6.90005 -0.0899502 6.54966 0.269852C6.19926 0.629654 6.19926 1.21087 6.54966 1.57068L10.9341 6.07282L0.898444 6.07282C0.404299 6.07282 -2.96952e-07 6.48797 -3.41312e-07 6.99539C-3.85671e-07 7.5028 0.404299 7.91796 0.898444 7.91796Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-          </div>
-          <div class="cards-swiper">
-            <div class="swiper-wrapper">
-              <div
-                class="swiper-slide tablet:h-[165px] h-[198px] rounded-2.5xl bg-primary p-10 flex"
-              >
-                <div class="w-1/2 flex justify-between flex-col">
-                  <span class="t-1 text-white">Система мониторинга</span>
-                  <img
-                    class="w-[50px] h-[50px] tablet:hidden"
-                    src="/triangle-blue.png"
-                  />
-                </div>
-                <div class="w-1/2 flex items-center justify-between">
-                  <div class="t-2 text-white max-w-[383px]">
-                    Система мониторинга позволяет предотвращать многие аварии и
-                    увидеть коллизии в системах БД. Эксперт информирует заказчика о
-                    возможных проблемах и способах улучшения логики приложения с
-                    точки зрения лучших практик.
-                  </div>
-                  <img
-                    class="w-[70px] h-[70px] hidden tablet:block"
-                    src="/triangle-blue.png"
-                  />
-                </div>
-              </div>
-
-              <div
-                class="swiper-slide tablet:h-[165px] h-[198px] rounded-2.5xl bg-primary p-10 flex"
-              >
-                <div class="w-1/2 flex justify-between flex-col">
-                  <span class="t-1 text-white">мониторинга</span>
-                  <img
-                    class="w-[50px] h-[50px] tablet:hidden"
-                    src="/triangle-blue.png"
-                  />
-                </div>
-                <div class="w-1/2 flex items-center justify-between">
-                  <div class="t-2 text-white max-w-[383px]">
-                    Система мониторинга позволяет предотвращать многие аварии и
-                    увидеть коллизии в системах БД. Эксперт информирует заказчика о
-                    возможных проблемах и способах улучшения логики приложения с
-                    точки зрения лучших практик.
-                  </div>
-                  <img
-                    class="w-[70px] h-[70px] hidden tablet:block"
-                    src="/triangle-blue.png"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          
+      <div class="activities__item">
+        <div class="activities__number">
+          <div class="activities__number-text font-roboto t-5">06</div>
         </div>
-      </div>
-
-      <div class="mobile-plus:rounded-5xl rounded-2.5xl bg-white my-5 laptop:py-40 mobile-plus:py-30 py-20">
-        <div class="container mx-auto">
-          <div class="flex mb-20 mobile-plus:flex-row flex-col pl-2">
-            <div class="grow w-full mb-2">
-              <span class="t-2 text-primary"> Почему мы </span>
-            </div>
-
-            <div class="grow w-full">
-              <h2 class="head-2 mobile-plus:max-w-[530px] max-w-[217px]">
-                <span class="text-primary">Почему Вам выгодно </span> с нами
-                работать?
-              </h2>
-            </div>
-          </div>
-
-          <div class="flex gap-5 laptop:h-[98px] mobile-plus:h-[137px] mobile-plus:flex-row flex-col">
-            <div
-              class="rounded-2.5xl laptop:min-w-[124px] min-w-[107px] border border-primary flex items-center justify-center min-h-[40px]"
-            >
-              <div class="text-primary head-3">01</div>
-            </div>
-
-            <div
-              class="rounded-2.5xl grow w-full laptop:px-[54px] mobile-plus:px-8 p-5 bg-gray-light flex mobile-plus:items-center"
-            >
-              <div class="laptop:t-1 t-2 text-primary tablet:w-full mobile-plus:w-[75%] w-full">
-                <div
-                  class="laptop:max-w-[264px] tablet:max-w-[217px] mobile-plus:max-w-[111px] w-full"
-                >
-                  Помогаем воплотить в жизнь все ваши идеи
-                </div>
-              </div>
-
-              <div class="t-2 w-full laptop:pr-[250px]">
-                <div class="mobile-plus:max-w-[351px] w-full">
-                  Мы уже внедрили ряд уникальных разработок в бизнес-процессы
-                  наших клиентов.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex gap-5 laptop:h-[98px] mobile-plus:h-[137px] mt-5 mobile-plus:flex-row flex-col">
-            <div
-              class="rounded-2.5xl laptop:min-w-[124px] min-w-[107px] border border-primary flex items-center justify-center min-h-[40px]"
-            >
-              <div class="text-primary head-3">02</div>
-            </div>
-
-            <div
-              class="rounded-2.5xl grow w-full laptop:px-[54px] mobile-plus:px-8 p-5 bg-gray-light flex mobile-plus:items-center"
-            >
-              <div class="laptop:t-1 t-2 text-primary tablet:w-full mobile-plus:w-[75%] w-full">
-                <div class="tablet:max-w-[206px] mobile-plus:max-w-[115px] w-full">
-                  Замена штатного сотрудника
-                </div>
-              </div>
-
-              <div class="t-2 w-full laptop:pr-[250px]">
-                <div class="mobile-plus:max-w-[568px] w-full">
-                  Вам не придется нанимать специалиста по БД Oracle Database,
-                  Microsoft SQL Server, MySQL, PostgreSQL. Сертифицированные
-                  специалисты возьмут на себя всё обслуживание ваших БД.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex gap-5 laptop:h-[98px] mobile-plus:h-[137px] mt-5 mobile-plus:flex-row flex-col">
-            <div
-              class="rounded-2.5xl laptop:min-w-[124px] min-w-[107px] border border-primary flex items-center justify-center min-h-[40px]"
-            >
-              <div class="text-primary head-3">03</div>
-            </div>
-
-            <div
-              class="rounded-2.5xl grow w-full laptop:px-[54px] mobile-plus:px-8 p-5 bg-gray-light flex mobile-plus:items-center"
-            >
-              <div class="laptop:t-1 t-2 text-primary tablet:w-full w-[75%]">
-                <div
-                  class="laptop:max-w-[342px] tablet:max-w-[241px]  mobile-plus:max-w-[111px] w-full"
-                >
-                  Базы данных всегда находятся в вашем доступе
-                </div>
-              </div>
-
-              <div class="t-2 w-full laptop:pr-[250px]">
-                <div class="mobile-plus:max-w-[570px] w-full">
-                  Оптимизируем ваши Базы Данных Oracle Database, Microsoft SQL
-                  Server, MySQL, PostgreSQL до идеального состояния и обеспечим
-                  бесперебойную работу. Ваши базы данных надежны и всегда
-                  доступны.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex gap-5 laptop:h-[98px] mobile-plus:h-[137px] mt-5 mobile-plus:flex-row flex-col">
-            <div
-              class="rounded-2.5xl laptop:min-w-[124px] min-w-[107px] border border-primary flex items-center justify-center min-h-[40px]"
-            >
-              <div class="text-primary head-3">04</div>
-            </div>
-
-            <div
-              class="rounded-2.5xl grow w-full laptop:px-[54px] mobile-plus:px-8 p-5 bg-gray-light flex mobile-plus:items-center"
-            >
-              <div class="laptop:t-1 t-2 text-primary tablet:w-full w-[75%]">
-                <div
-                  class="laptop:max-w-[342px] tablet:max-w-[200px] mobile-plus:max-w-[105px] w-full"
-                >
-                  Решаем задачи любой сложности
-                </div>
-              </div>
-
-              <div class="t-2 w-full laptop:pr-[250px]">
-                <div class="mobile-plus:max-w-[257px] w-full">
-                  Работаем с любыми проектами: от простых до сложных.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex gap-5 laptop:h-[98px] mobile-plus:h-[137px] mt-5 mobile-plus:flex-row flex-col">
-            <div
-              class="rounded-2.5xl laptop:min-w-[124px] min-w-[107px] border border-primary flex items-center justify-center min-h-[40px]"
-            >
-              <div class="text-primary head-3">05</div>
-            </div>
-
-            <div
-              class="rounded-2.5xl grow w-full laptop:px-[54px] mobile-plus:px-8 p-5 bg-gray-light flex mobile-plus:items-center"
-            >
-              <div class="laptop:t-1 t-2 text-primary tablet:w-full w-[75%]">
-                <div
-                  class="laptop:max-w-[342px] tablet:max-w-[241px] mobile-plus:max-w-[135px] w-full"
-                >
-                  Подбираем подходящий вариант сотрудничества
-                </div>
-              </div>
-
-              <div class="t-2 w-full laptop:pr-[250px]">
-                <div class="mobile-plus:max-w-[200px] w-full">
-                  Аутсорсинг, аутстаффинг, классический подход.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex gap-5 laptop:h-[98px] mobile-plus:h-[137px] mt-5 mobile-plus:flex-row flex-col">
-            <div
-              class="rounded-2.5xl laptop:min-w-[124px] min-w-[107px] border border-primary flex items-center justify-center min-h-[40px]"
-            >
-              <div class="text-primary head-3">06</div>
-            </div>
-
-            <div
-              class="rounded-2.5xl grow w-full laptop:px-[54px] mobile-plus:px-8 p-5 bg-gray-light flex mobile-plus:items-center"
-            >
-              <div class="laptop:t-1 t-2 text-primary tablet:w-full w-[75%]">
-                <div class="tablet:max-w-[217px] mobile-plus:max-w-[110px] w-full">
-                  Тарифные планы для всех случаев
-                </div>
-              </div>
-
-              <div class="t-2 w-full laptop:pr-[250px]">
-                <div class="mobile-plus:max-w-[508px] w-full">
-                  Работаем с любым объёмом. Стоимость работ по каждому проекту
-                  рассчитывается индивидуально.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex gap-5 laptop:h-[98px] mobile-plus:h-[137px] mt-5 mobile-plus:flex-row flex-col">
-            <div
-              class="rounded-2.5xl laptop:min-w-[124px] min-w-[107px] border border-primary flex items-center justify-center min-h-[40px]"
-            >
-              <div class="text-primary head-3">07</div>
-            </div>
-
-            <div
-              class="rounded-2.5xl grow w-full laptop:px-[54px] mobile-plus:px-8 p-5 bg-gray-light flex items-center"
-            >
-              <div class="laptop:t-1 t-2 text-primary tablet:w-full w-[75%]">
-                <div
-                  class="laptop:max-w-[280px] tablet:max-w-[253px] mobile-plus:max-w-[119px] w-full"
-                >
-                  Опыт успешной работы в России и странах СНГ
-                </div>
-              </div>
-
-              <div class="t-2 w-full laptop:pr-[250px]">
-                <div class="mobile-plus:max-w-[449px] w-full">
-                  Мы работаем над проектами независимо от местоположения
-                  заказчика.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex gap-5 laptop:h-[98px] mobile-plus:h-[137px] mt-5 mobile-plus:flex-row flex-col">
-            <div
-              class="rounded-2.5xl laptop:min-w-[124px] min-w-[107px] border border-primary flex items-center justify-center min-h-[40px]"
-            >
-              <div class="text-primary head-3">08</div>
-            </div>
-
-            <div
-              class="rounded-2.5xl grow w-full laptop:px-[54px] mobile-plus:px-8 p-5 bg-gray-light flex items-center"
-            >
-              <div class="laptop:t-1 t-2 text-primary tablet:w-full w-[75%]">
-                <div
-                  class="laptop:max-w-[275px] tablet:max-w-[189px] mobile-plus:max-w-[119px] w-full"
-                >
-                  Гарантия безопасности данных
-                </div>
-              </div>
-
-              <div class="t-2 w-full laptop:pr-[250px]">
-                <div class="mobile-plus:max-w-[315px] w-full">
-                  Обеспечим безопасность и целостность ваших Баз Данных.
-                </div>
-              </div>
-            </div>
+        <div class="activities__content">
+          <div class="activities__text t-1">
+            Работы в области <br />
+            шифрования информации
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
 
-      <div class="mobile-plus:rounded-5xl rounded-2.5xl bg-white my-5 laptop:py-40 mobile-plus:py-30 py-20">
-        <div class="container mx-auto">
-          <div class="flex mb-20 flex-col mobile-plus:flex-row pl-2">
-            <div class="grow w-full mb-2">
-              <span class="t-2 text-primary"> Задачи компании</span>
-            </div>
+<section class="development">
+  <div class="development__container container">
+    <div class="development__header">
+      <div class="development__label">
+        <span class="development__label-text t-2 text-primary">Разработка</span>
+      </div>
 
-            <div class="grow w-full">
-              <h2 class="head-2 max-w-[605px]">
-                <span class="text-primary">Мы гарантируем обеспечить </span>
-                заказчику:
-              </h2>
-            </div>
-          </div>
+      <div class="development__title-wrapper">
+        <h2 class="development__title head-2">
+          <span class="development__title-primary text-primary">
+            Услуги в области <br />
+          </span>
+          <span class="development__title-secondary">
+            разработки ПО
+          </span>
+        </h2>
+      </div>
+    </div>
 
-          <div class="flex justify-end gap-[0.625rem] mb-5">
-            <div
-              id="swiper-arrow-left"
-              class="flex justify-center items-center size-[1.75rem] border rounded-full border-neon-light cursor-pointer"
-            >
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13.1016 6.08204L3.06594 6.08204L7.45034 1.5799C7.80074 1.2201 7.80074 0.629655 7.45034 0.269853C7.09995 -0.0899493 6.53393 -0.0899494 6.18354 0.269853L0.262794 6.34959C-0.0875995 6.70939 -0.0875996 7.29061 0.262793 7.65041L6.18354 13.7301C6.53393 14.09 7.09995 14.09 7.45034 13.7301C7.80074 13.3703 7.80074 12.7891 7.45034 12.4293L3.06594 7.92718L13.1016 7.92718C13.5957 7.92718 14 7.51203 14 7.00461C14 6.4972 13.5957 6.08204 13.1016 6.08204Z"
-                  fill="#A1EAF7"
-                />
-              </svg>
-            </div>
+    <div class="development__visual">
+      <img class="development__image development__image--desktop" src="/pointers/1-desktop.svg" alt="Разработка ПО" />
+      <img class="development__image development__image--laptop" src="/pointers/1-laptop.svg" alt="Разработка ПО" />
+      <img class="development__image development__image--tablet" src="/pointers/1-tablet.svg" alt="Разработка ПО" />
+      <img class="development__image development__image--mobile-plus" src="/pointers/1-mobile-plus.svg" alt="Разработка ПО" />
+      <img class="development__image development__image--mobile" src="/pointers/1-mobile.svg" alt="Разработка ПО" />
+    </div>
+  </div>
+</section>
 
-            <div
-              id="swiper-arrow-right"
-              class="flex justify-center items-center size-[1.75rem] rounded-full bg-primary cursor-pointer"
-            >
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.898444 7.91796L10.9341 7.91796L6.54966 12.4201C6.19926 12.7799 6.19926 13.3703 6.54965 13.7301C6.90005 14.0899 7.46607 14.0899 7.81646 13.7301L13.7372 7.65041C14.0876 7.29061 14.0876 6.70939 13.7372 6.34959L7.81646 0.269852C7.46607 -0.0899502 6.90005 -0.0899502 6.54966 0.269852C6.19926 0.629654 6.19926 1.21087 6.54966 1.57068L10.9341 6.07282L0.898444 6.07282C0.404299 6.07282 -2.96952e-07 6.48797 -3.41312e-07 6.99539C-3.85671e-07 7.5028 0.404299 7.91796 0.898444 7.91796Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-          </div>
-          <div id="main-swiper" class="swiper">
-            <div class="swiper-wrapper">
-              <div
-                class="swiper-slide bg-gray-light rounded-3.5xl desktop:max-w-[335px] tablet:max-w-[275px] pt-5 pb-17 px-6"
-              >
-                <div class="flex justify-between flex-col h-full">
-                  <div class="t-1 text-primary">Разработка и тестирование</div>
-                  <div class="t-2">
-                    Технологические и эксплуатационные решения, учитывающие
-                    уникальность каждого бизнеса.
-                  </div>
-                </div>
-              </div>
-              <div
-                class="swiper-slide bg-(image:--slider-bg-1) rounded-3.5xl text-white desktop:max-w-[335px] tablet:max-w-[275px] pt-5 pb-17 px-6"
-              >
-                <div class="flex justify-between flex-col h-full">
-                  <div class="t-1">Удалённое администрирование</div>
-                  <div class="t-2">
-                    Баз данных Oracle Database, Microsoft SQL Server, MySQL,
-                    PostgreSQL.
-                  </div>
-                </div>
-              </div>
-              <div
-                class="swiper-slide bg-(image:--slider-bg-2) rounded-3.5xl text-white desktop:max-w-[335px] tablet:max-w-[275px] pt-5 pb-17 px-6"
-              >
-                <div class="flex justify-between flex-col h-full">
-                  <div class="t-1">Доступность данных</div>
-                  <div class="t-2">
-                    Обеспечение постоянного доступа к данным во избежание
-                    остановки бизнеса.
-                  </div>
-                </div>
-              </div>
-              <div
-                class="swiper-slide bg-primary rounded-3.5xl text-white desktop:max-w-[335px] tablet:max-w-[275px] pt-5 pb-17 px-6"
-              >
-                <div class="flex justify-between flex-col h-full">
-                  <div class="t-1">Защита данных</div>
-                  <div class="t-2">
-                    Предотвращение потерь данных, подрывающих жизнеспособность
-                    бизнеса.
-                  </div>
-                </div>
-              </div>
-              <div
-                class="swiper-slide bg-gray-light rounded-3.5xl desktop:max-w-[335px] tablet:max-w-[275px] pt-5 pb-17 px-6"
-              >
-                <div class="flex justify-between flex-col h-full">
-                  <div class="t-1 text-primary">Минимизация рисков</div>
-                  <div class="t-2">
-                    Долгосрочное, стабильное обеспечение требуемых уровней
-                    обслуживания с учетом развития бизнеса без неожиданных
-                    больших затрат и разочарований.
-                  </div>
-                </div>
-              </div>
-              <div
-                class="swiper-slide bg-(image:--slider-bg-2) rounded-3.5xl text-white desktop:max-w-[335px] tablet:max-w-[275px] pt-5 pb-17 px-6"
-              >
-                <div class="flex justify-between flex-col h-full">
-                  <div class="t-1">Снижение расходов</div>
-                  <div class="t-2">
-                    Уменьшение затрат на развертывание, управление и поддержку
-                    для экономии корпоративных ресурсов.
-                  </div>
-                </div>
-              </div>
-              <div
-                class="swiper-slide bg-gray-light rounded-3.5xl desktop:max-w-[335px] tablet:max-w-[275px] pt-5 pb-17 px-6"
-              >
-                <div class="flex justify-between flex-col h-full">
-                  <div class="t-1 text-primary">Производительность</div>
-                  <div class="t-2">
-                    Достаточно короткое время отклика для эффективных
-                    бизнес-операций.
-                  </div>
-                </div>
-              </div>
-            </div>
+<section class="form-section">
+  <div class="form-section__container container">
+    <div class="form-section__content">
+      <h2 class="form-section__title head-2">
+        <span class="form-section__title-primary text-white">
+          Оставьте данные, <br class="form-section__title-break" />
+        </span>
+        <span class="form-section__title-secondary text-neon">
+          мы проконсультируем вас по вопросам сотрудничества
+        </span>
+      </h2>
+      
+      <div class="form-section__form-wrapper">
+        <%- form %>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
+<section class="expertise">
+  <div class="expertise__container container">
+    <div class="expertise__header">
+      <div class="expertise__label">
+        <span class="expertise__label-text t-2 text-primary">Экспертность</span>
+      </div>
+      <div class="expertise__title-wrapper">
+        <h2 class="expertise__title head-2">
+          <span class="expertise__title-primary text-primary">Обеспечиваем <br /></span>
+          <span class="expertise__title-secondary">безопасность БД</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="expertise__grid">
+      <div class="expertise__card expertise__card--image">
+        <img src="/27-2.png" alt="Экспертность" class="expertise__image" />
+      </div>
+
+      <div class="expertise__card expertise__card--text">
+        <div class="expertise__card-number">01</div>
+        <div class="expertise__card-content">
+          <h3 class="expertise__card-title t-1 text-primary">Сильная команда профессионалов</h3>
+          <p class="expertise__card-description t-2">
+            Предоставим профессиональных архитекторов, аналитиков, разработчиков, тестировщиков, администраторов БД, специалистов сопровождения, экспертов.
+          </p>
         </div>
       </div>
 
-      <div class="mobile-plus:rounded-5xl rounded-2.5xl bg-white my-5 laptop:py-40 mobile-plus:py-30 py-20 pt-10">
-        <div class="container mx-auto">
-          <div class="flex mb-20 flex-col mobile-plus:flex-row pl-[10px] mobile-plus:pl-0">
-            <div class="grow w-full mb-2">
-              <span class="t-2 text-primary"> Лицензии</span>
-            </div>
-
-            <div class="grow w-full">
-              <h2 class="head-2 max-w-[572px]">
-                <span class="text-primary">Мы имеем </span> лицензии
-              </h2>
-            </div>
-          </div>
-
-          <div class="mobile-plus:hidden flex justify-end gap-[0.625rem] mb-5">
-            <div
-              class="docs-swiper-arrow-left flex justify-center items-center size-[1.75rem] border rounded-full border-neon-light cursor-pointer"
-            >
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13.1016 6.08204L3.06594 6.08204L7.45034 1.5799C7.80074 1.2201 7.80074 0.629655 7.45034 0.269853C7.09995 -0.0899493 6.53393 -0.0899494 6.18354 0.269853L0.262794 6.34959C-0.0875995 6.70939 -0.0875996 7.29061 0.262793 7.65041L6.18354 13.7301C6.53393 14.09 7.09995 14.09 7.45034 13.7301C7.80074 13.3703 7.80074 12.7891 7.45034 12.4293L3.06594 7.92718L13.1016 7.92718C13.5957 7.92718 14 7.51203 14 7.00461C14 6.4972 13.5957 6.08204 13.1016 6.08204Z"
-                  fill="#A1EAF7"
-                />
-              </svg>
-            </div>
-
-            <div
-              class="docs-swiper-arrow-right flex justify-center items-center size-[1.75rem] rounded-full bg-primary cursor-pointer"
-            >
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.898444 7.91796L10.9341 7.91796L6.54966 12.4201C6.19926 12.7799 6.19926 13.3703 6.54965 13.7301C6.90005 14.0899 7.46607 14.0899 7.81646 13.7301L13.7372 7.65041C14.0876 7.29061 14.0876 6.70939 13.7372 6.34959L7.81646 0.269852C7.46607 -0.0899502 6.90005 -0.0899502 6.54966 0.269852C6.19926 0.629654 6.19926 1.21087 6.54966 1.57068L10.9341 6.07282L0.898444 6.07282C0.404299 6.07282 -2.96952e-07 6.48797 -3.41312e-07 6.99539C-3.85671e-07 7.5028 0.404299 7.91796 0.898444 7.91796Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-          </div>
-
-          <div class="docs-swiper swiper h-[141px]! tablet:h-auto">
-            <div class="tablet:grid tablet:grid-cols-2 tablet:gap-5 swiper-wrapper">
-              <div
-                class="swiper-slide border border-primary rounded-2.5xl px-5 flex tablet:w-full tablet:max-w-full mobile-plus:max-w-[442px] max-w-[320px] laptop:h-[117px] mobile-plus:h-[156px] max-h-[156px] pb-[25px]"
-              >
-                <div class="laptop:min-w-[237px] mobile-plus:min-w-[141px]">
-                  <div class="t-2 mt-[21px]">СМП</div>
-                </div>
-
-                <div class="t-2 text-primary mt-5">
-                  Субъект малого предпринимательства <br />
-                  Заключаем NDA <br />
-                  Применяем УСН доходы <br />
-                  Используем ЭДО: «Контур.Диадок», «Такском»
-                </div>
-              </div>
-
-              <div
-                class="swiper-slide border border-primary rounded-2.5xl px-5 flex tablet:w-full tablet:max-w-full mobile-plus:max-w-[442px] max-w-[320px] laptop:h-[117px] max-h-[156px] pb-[25px]"
-              >
-                <div class="laptop:min-w-[237px] mobile-plus:min-w-[152px]">
-                  <div class="t-2 mt-[21px]">Лицензия ФСТЭК</div>
-                </div>
-
-                <div class="t-2 text-primary mt-5">
-                  № Л024-00107-00/00582622 <br />
-                  №3642 от 11 сентября 2019 г.
-                </div>
-              </div>
-
-              <div
-                class="swiper-slide border border-primary rounded-2.5xl px-5 flex tablet:w-full tablet:max-w-full mobile-plus:max-w-[442px] max-w-[320px] laptop:h-[117px] max-h-[156px] pb-[25px]"
-              >
-                <div class="laptop:min-w-[237px] min-w-[141px]">
-                  <div class="t-2 mt-[21px]">Лицензия ФСБ</div>
-                </div>
-
-                <div class="t-2 text-primary mt-5">
-                  №ЛСЗ0016578 17477Н <br />
-                  от 1 октября 2019 г.
-                </div>
-              </div>
-
-              <div
-                class="swiper-slide border border-primary rounded-2.5xl px-5 flex tablet:w-full tablet:max-w-full mobile-plus:max-w-[442px] max-w-[320px] laptop:h-[117px] max-h-[156px] pb-[25px]"
-              >
-                <div class="laptop:min-w-[237px] min-w-[152px]">
-                  <div class="t-2 mt-[21px] max-w-[157px]">
-                    Лицензия на осуществление образовательной деятельности
-                  </div>
-                </div>
-
-                <div class="t-2 text-primary mt-5">№ 041374 от 19.04.2021</div>
-              </div>
-
-              <div
-                class="swiper-slide border border-primary rounded-2.5xl px-5 flex tablet:w-full tablet:max-w-full mobile-plus:max-w-[442px] max-w-[320px] laptop:h-[117px] max-h-[156px] pb-[25px]"
-              >
-                <div class="laptop:min-w-[237px] min-w-[141px]">
-                  <div class="t-2 mt-[21px] laptop:max-w-[168px] max-w-[141px]">
-                    Оператор персональных данных Роскомнадзора
-                  </div>
-                </div>
-
-                <div class="t-2 text-primary mt-5">
-                  № 77-21-018783, <br />
-                  Приказ № 16 от 25.01.2021
-                </div>
-              </div>
-          </div>
-          </div>
-          
+      <div class="expertise__card expertise__card--text">
+        <div class="expertise__card-number">02</div>
+        <div class="expertise__card-content">
+          <h3 class="expertise__card-title t-1 text-primary">
+            Круглосуточный мониторинг, проектирование и дизайн баз данных
+          </h3>
+          <p class="expertise__card-description t-2">
+            Используем собственную систему мониторинга, усиленную лучшим в классе решением Zabbix. Усовершенствованный дизайн, архитектура и планирование обеспечат максимальную производительность и эффективность ваших БД.
+          </p>
         </div>
       </div>
 
-      <div class="laptop:py-40 mobile-plus:py-30 py-20">
-        <div class="container mx-auto">
-          <div
-            class="flex laptop:flex-row flex-col laptop:max-w-auto max-w-[650px] mx-auto"
-          >
-            <div class="grow w-full head-2 mobile-plus:px-0 pl-2">
-              <div class="laptop:block inline-block">Реализуем</div>
-              <div class="text-primary laptop:block inline-block">
-                все ваши идеи!
-              </div>
-            </div>
-
-            <div class="grow w-full mobile-plus:px-0">
-              <h3 class="head-3 mb-5 pl-2">
-                <span class="text-primary">Оставьте контакты,</span> мы
-                перезвоним
-              </h3>
-
-              <%- formBig %>
-            </div>
-          </div>
+      <div class="expertise__card expertise__card--text">
+        <div class="expertise__card-number">03</div>
+        <div class="expertise__card-content">
+          <h3 class="expertise__card-title t-1 text-primary">
+            Оптимизация производительности и доступности БД, аудит, апгрейды, миграция
+          </h3>
+          <p class="expertise__card-description t-2">
+            Проводим аудит мощностей, производительности и безопасности. Команда высококвалифицированных администраторов оптимизирует БД.
+          </p>
         </div>
       </div>
-    </main>
-    <%- footer %>
-  </body>
+
+      <div class="expertise__card expertise__card--image">
+        <img src="/27-3.png" alt="Экспертность" class="expertise__image" />
+      </div>
+
+      <div class="expertise__card expertise__card--text">
+        <div class="expertise__card-number">04</div>
+        <div class="expertise__card-content">
+          <h3 class="expertise__card-title t-1 text-primary">Круглосуточная поддержка</h3>
+          <p class="expertise__card-description t-2">
+            Служба поддержка пользователей работает круглосуточно. Вы можете выбрать вид связи с нашей командой.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mission">
+  <div class="mission__container container">
+    <div class="mission__label t-2 text-primary">Цель компании</div>
+    
+    <div class="mission__content">
+      <img src="/photo.png" alt="Фото" class="mission__image" />
+      
+      <div class="mission__quote">
+        <blockquote class="mission__quote-text t-1 text-primary">
+          Основная цель нашей компании — Выявление «узких мест» и всесторонняя оптимизация, приводящая к продуктивному использованию ресурсов, высокой доступности и повышению качества обслуживания пользователей.
+        </blockquote>
+      </div>
+      
+      <div class="mission__description">
+        <p class="mission__description-text t-2">
+          Разработка, усовершенствование и адаптирование программных продуктов различного назначения, для широкого круга предметных областей в соответствии с требованиями, задачами и целями заказчика.
+        </p>
+        
+        <div class="mission__author">
+          <span class="mission__author-name t-2 text-primary">Елена Витальена Константинова</span>
+          <span class="mission__author-position t-2">Генеральный директор ООО&nbsp;МИР&nbsp;ДАННЫХ&nbsp;ИТ</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why-us">
+  <div class="why-us__container container">
+    <div class="why-us__header">
+      <div class="why-us__label">
+        <span class="why-us__label-text t-2 text-primary">Почему мы</span>
+      </div>
+      <div class="why-us__title-wrapper">
+        <h2 class="why-us__title head-2">
+          <span class="why-us__title-primary text-primary">Почему Вам выгодно </span>
+          с нами работать?
+        </h2>
+      </div>
+    </div>
+
+    <div class="why-us__list">
+      <div class="why-us__item">
+        <div class="why-us__number">
+          <div class="why-us__number-text head-3">01</div>
+        </div>
+        <div class="why-us__content">
+          <h3 class="why-us__content-title t-1 text-primary">Помогаем воплотить в жизнь все ваши идеи</h3>
+          <p class="why-us__content-description t-2">
+            Мы уже внедрили ряд уникальных разработок в бизнес-процессы наших клиентов.
+          </p>
+        </div>
+      </div>
+
+      <div class="why-us__item">
+        <div class="why-us__number">
+          <div class="why-us__number-text head-3">02</div>
+        </div>
+        <div class="why-us__content">
+          <h3 class="why-us__content-title t-1 text-primary">Замена штатного сотрудника</h3>
+          <p class="why-us__content-description t-2">
+            Вам не придется нанимать специалиста по БД Oracle Database, Microsoft SQL Server, MySQL, PostgreSQL. Сертифицированные специалисты возьмут на себя всё обслуживание ваших БД.
+          </p>
+        </div>
+      </div>
+
+      <div class="why-us__item">
+        <div class="why-us__number">
+          <div class="why-us__number-text head-3">03</div>
+        </div>
+        <div class="why-us__content">
+          <h3 class="why-us__content-title t-1 text-primary">Базы данных всегда находятся в вашем доступе</h3>
+          <p class="why-us__content-description t-2">
+            Оптимизируем ваши Базы Данных Oracle Database, Microsoft SQL Server, MySQL, PostgreSQL до идеального состояния и обеспечим бесперебойную работу. Ваши базы данных надежны и всегда доступны.
+          </p>
+        </div>
+      </div>
+
+      <div class="why-us__item">
+        <div class="why-us__number">
+          <div class="why-us__number-text head-3">04</div>
+        </div>
+        <div class="why-us__content">
+          <h3 class="why-us__content-title t-1 text-primary">Решаем задачи любой сложности</h3>
+          <p class="why-us__content-description t-2">
+            Работаем с любыми проектами: от простых до сложных.
+          </p>
+        </div>
+      </div>
+
+      <div class="why-us__item">
+        <div class="why-us__number">
+          <div class="why-us__number-text head-3">05</div>
+        </div>
+        <div class="why-us__content">
+          <h3 class="why-us__content-title t-1 text-primary">Подбираем подходящий вариант сотрудничества</h3>
+          <p class="why-us__content-description t-2">
+            Аутсорсинг, аутстаффинг, классический подход.
+          </p>
+        </div>
+      </div>
+
+      <div class="why-us__item">
+        <div class="why-us__number">
+          <div class="why-us__number-text head-3">06</div>
+        </div>
+        <div class="why-us__content">
+          <h3 class="why-us__content-title t-1 text-primary">Тарифные планы для всех случаев</h3>
+          <p class="why-us__content-description t-2">
+            Работаем с любым объёмом. Стоимость работ по каждому проекту рассчитывается индивидуально.
+          </p>
+        </div>
+      </div>
+
+      <div class="why-us__item">
+        <div class="why-us__number">
+          <div class="why-us__number-text head-3">07</div>
+        </div>
+        <div class="why-us__content">
+          <h3 class="why-us__content-title t-1 text-primary">Опыт успешной работы в России и странах СНГ</h3>
+          <p class="why-us__content-description t-2">
+            Мы работаем над проектами независимо от местоположения заказчика.
+          </p>
+        </div>
+      </div>
+
+      <div class="why-us__item">
+        <div class="why-us__number">
+          <div class="why-us__number-text head-3">08</div>
+        </div>
+        <div class="why-us__content">
+          <h3 class="why-us__content-title t-1 text-primary">Гарантия безопасности данных</h3>
+          <p class="why-us__content-description t-2">
+            Обеспечим безопасность и целостность ваших Баз Данных.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="business-model">
+  <div class="business-model__container container">
+    <h2 class="business-model__title head-2">
+      <span class="business-model__title-accent text-primary">
+        Мы построили расширяемую модель бизнеса:
+      </span>
+      от уровня внедрения и сопровождения до контроля качества
+    </h2>
+
+    <div class="business-model__tabs">
+      <div class="business-model__tab">Сопровождение</div>
+      <div class="business-model__tab">Поддержка</div>
+      <div class="business-model__tab">Контроль</div>
+      <div class="business-model__tab business-model__tab--active">Мониторинг</div>
+    </div>
+
+    <div class="business-model__mobile-controls">
+      <div class="business-model__arrow business-model__arrow--prev">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.1016 6.08204L3.06594 6.08204L7.45034 1.5799C7.80074 1.2201 7.80074 0.629655 7.45034 0.269853C7.09995 -0.0899493 6.53393 -0.0899494 6.18354 0.269853L0.262794 6.34959C-0.0875995 6.70939 -0.0875996 7.29061 0.262793 7.65041L6.18354 13.7301C6.53393 14.09 7.09995 14.09 7.45034 13.7301C7.80074 13.3703 7.80074 12.7891 7.45034 12.4293L3.06594 7.92718L13.1016 7.92718C13.5957 7.92718 14 7.51203 14 7.00461C14 6.4972 13.5957 6.08204 13.1016 6.08204Z" fill="#A1EAF7"/>
+        </svg>
+      </div>
+      <div class="business-model__arrow business-model__arrow--next">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.898444 7.91796L10.9341 7.91796L6.54966 12.4201C6.19926 12.7799 6.19926 13.3703 6.54965 13.7301C6.90005 14.0899 7.46607 14.0899 7.81646 13.7301L13.7372 7.65041C14.0876 7.29061 14.0876 6.70939 13.7372 6.34959L7.81646 0.269852C7.46607 -0.0899502 6.90005 -0.0899502 6.54966 0.269852C6.19926 0.629654 6.19926 1.21087 6.54966 1.57068L10.9341 6.07282L0.898444 6.07282C0.404299 6.07282 -2.96952e-07 6.48797 -3.41312e-07 6.99539C-3.85671e-07 7.5028 0.404299 7.91796 0.898444 7.91796Z" fill="white"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="business-model__slider">
+      <div class="business-model__slide">
+        <div class="business-model__slide-content">
+          <h3 class="business-model__slide-title t-1">Система мониторинга</h3>
+          <p class="business-model__slide-text t-2">
+            Система мониторинга позволяет предотвращать многие аварии и увидеть коллизии в системах БД. Эксперт информирует заказчика о возможных проблемах и способах улучшения логики приложения с точки зрения лучших практик.
+          </p>
+          <img src="/triangle-blue.png" alt="" class="business-model__slide-icon" />
+        </div>
+      </div>
+
+      <div class="business-model__slide">
+        <div class="business-model__slide-content">
+          <h3 class="business-model__slide-title t-1">мониторинга</h3>
+          <p class="business-model__slide-text t-2">
+            Система мониторинга позволяет предотвращать многие аварии и увидеть коллизии в системах БД. Эксперт информирует заказчика о возможных проблемах и способах улучшения логики приложения с точки зрения лучших практик.
+          </p>
+          <img src="/triangle-blue.png" alt="" class="business-model__slide-icon" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tasks">
+  <div class="tasks__container container">
+    <div class="tasks__header">
+      <div class="tasks__label">
+        <span class="tasks__label-text t-2 text-primary">Задачи компании</span>
+      </div>
+      <div class="tasks__title-wrapper">
+        <h2 class="tasks__title head-2">
+          <span class="tasks__title-accent text-primary">Мы гарантируем обеспечить </span>
+          заказчику:
+        </h2>
+      </div>
+    </div>
+
+    <div class="tasks__controls">
+      <div class="tasks__arrow tasks__arrow--prev">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.1016 6.08204L3.06594 6.08204L7.45034 1.5799C7.80074 1.2201 7.80074 0.629655 7.45034 0.269853C7.09995 -0.0899493 6.53393 -0.0899494 6.18354 0.269853L0.262794 6.34959C-0.0875995 6.70939 -0.0875996 7.29061 0.262793 7.65041L6.18354 13.7301C6.53393 14.09 7.09995 14.09 7.45034 13.7301C7.80074 13.3703 7.80074 12.7891 7.45034 12.4293L3.06594 7.92718L13.1016 7.92718C13.5957 7.92718 14 7.51203 14 7.00461C14 6.4972 13.5957 6.08204 13.1016 6.08204Z" fill="#A1EAF7"/>
+        </svg>
+      </div>
+      <div class="tasks__arrow tasks__arrow--next">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.898444 7.91796L10.9341 7.91796L6.54966 12.4201C6.19926 12.7799 6.19926 13.3703 6.54965 13.7301C6.90005 14.0899 7.46607 14.0899 7.81646 13.7301L13.7372 7.65041C14.0876 7.29061 14.0876 6.70939 13.7372 6.34959L7.81646 0.269852C7.46607 -0.0899502 6.90005 -0.0899502 6.54966 0.269852C6.19926 0.629654 6.19926 1.21087 6.54966 1.57068L10.9341 6.07282L0.898444 6.07282C0.404299 6.07282 -2.96952e-07 6.48797 -3.41312e-07 6.99539C-3.85671e-07 7.5028 0.404299 7.91796 0.898444 7.91796Z" fill="white"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="tasks__slider">
+      <div class="tasks__slide">
+        <div class="tasks__slide-content">
+          <h3 class="tasks__slide-title t-1 text-primary">Разработка и тестирование</h3>
+          <p class="tasks__slide-text t-2">
+            Технологические и эксплуатационные решения, учитывающие уникальность каждого бизнеса.
+          </p>
+        </div>
+      </div>
+      <div class="tasks__slide">
+        <div class="tasks__slide-content">
+          <h3 class="tasks__slide-title t-1">Удалённое администрирование</h3>
+          <p class="tasks__slide-text t-2">
+            Баз данных Oracle Database, Microsoft SQL Server, MySQL, PostgreSQL.
+          </p>
+        </div>
+      </div>
+      <div class="tasks__slide">
+        <div class="tasks__slide-content">
+          <h3 class="tasks__slide-title t-1">Доступность данных</h3>
+          <p class="tasks__slide-text t-2">
+            Обеспечение постоянного доступа к данным во избежание остановки бизнеса.
+          </p>
+        </div>
+      </div>
+      <div class="tasks__slide">
+        <div class="tasks__slide-content">
+          <h3 class="tasks__slide-title t-1">Защита данных</h3>
+          <p class="tasks__slide-text t-2">
+            Предотвращение потерь данных, подрывающих жизнеспособность бизнеса.
+          </p>
+        </div>
+      </div>
+      <div class="tasks__slide">
+        <div class="tasks__slide-content">
+          <h3 class="tasks__slide-title t-1 text-primary">Минимизация рисков</h3>
+          <p class="tasks__slide-text t-2">
+            Долгосрочное, стабильное обеспечение требуемых уровней обслуживания с учетом развития бизнеса без неожиданных больших затрат и разочарований.
+          </p>
+        </div>
+      </div>
+      <div class="tasks__slide">
+        <div class="tasks__slide-content">
+          <h3 class="tasks__slide-title t-1">Снижение расходов</h3>
+          <p class="tasks__slide-text t-2">
+            Уменьшение затрат на развертывание, управление и поддержку для экономии корпоративных ресурсов.
+          </p>
+        </div>
+      </div>
+      <div class="tasks__slide">
+        <div class="tasks__slide-content">
+          <h3 class="tasks__slide-title t-1 text-primary">Производительность</h3>
+          <p class="tasks__slide-text t-2">
+            Достаточно короткое время отклика для эффективных бизнес-операций.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="licenses">
+  <div class="licenses__container container">
+    <div class="licenses__header">
+      <div class="licenses__label">
+        <span class="licenses__label-text t-2 text-primary">Лицензии</span>
+      </div>
+      <div class="licenses__title-wrapper">
+        <h2 class="licenses__title head-2">
+          <span class="licenses__title-accent text-primary">Мы имеем </span>
+          лицензии
+        </h2>
+      </div>
+    </div>
+
+    <div class="licenses__mobile-controls">
+      <div class="licenses__arrow licenses__arrow--prev">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.1016 6.08204L3.06594 6.08204L7.45034 1.5799C7.80074 1.2201 7.80074 0.629655 7.45034 0.269853C7.09995 -0.0899493 6.53393 -0.0899494 6.18354 0.269853L0.262794 6.34959C-0.0875995 6.70939 -0.0875996 7.29061 0.262793 7.65041L6.18354 13.7301C6.53393 14.09 7.09995 14.09 7.45034 13.7301C7.80074 13.3703 7.80074 12.7891 7.45034 12.4293L3.06594 7.92718L13.1016 7.92718C13.5957 7.92718 14 7.51203 14 7.00461C14 6.4972 13.5957 6.08204 13.1016 6.08204Z" fill="#A1EAF7"/>
+        </svg>
+      </div>
+      <div class="licenses__arrow licenses__arrow--next">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.898444 7.91796L10.9341 7.91796L6.54966 12.4201C6.19926 12.7799 6.19926 13.3703 6.54965 13.7301C6.90005 14.0899 7.46607 14.0899 7.81646 13.7301L13.7372 7.65041C14.0876 7.29061 14.0876 6.70939 13.7372 6.34959L7.81646 0.269852C7.46607 -0.0899502 6.90005 -0.0899502 6.54966 0.269852C6.19926 0.629654 6.19926 1.21087 6.54966 1.57068L10.9341 6.07282L0.898444 6.07282C0.404299 6.07282 -2.96952e-07 6.48797 -3.41312e-07 6.99539C-3.85671e-07 7.5028 0.404299 7.91796 0.898444 7.91796Z" fill="white"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="licenses__slider">
+      <div class="licenses__slide">
+        <div class="licenses__slide-content">
+          <h3 class="licenses__slide-title t-2">СМП</h3>
+          <p class="licenses__slide-text t-2 text-primary">
+            Субъект малого предпринимательства <br />
+            Заключаем NDA <br />
+            Применяем УСН доходы <br />
+            Используем ЭДО: «Контур.Диадок», «Такском»
+          </p>
+        </div>
+      </div>
+
+      <div class="licenses__slide">
+        <div class="licenses__slide-content">
+          <h3 class="licenses__slide-title t-2">Лицензия ФСТЭК</h3>
+          <p class="licenses__slide-text t-2 text-primary">
+            № Л024-00107-00/00582622 <br />
+            №3642 от 11 сентября 2019 г.
+          </p>
+        </div>
+      </div>
+
+      <div class="licenses__slide">
+        <div class="licenses__slide-content">
+          <h3 class="licenses__slide-title t-2">Лицензия ФСБ</h3>
+          <p class="licenses__slide-text t-2 text-primary">
+            №ЛСЗ0016578 17477Н <br />
+            от 1 октября 2019 г.
+          </p>
+        </div>
+      </div>
+
+      <div class="licenses__slide">
+        <div class="licenses__slide-content">
+          <h3 class="licenses__slide-title t-2">Лицензия на осуществление образовательной деятельности</h3>
+          <p class="licenses__slide-text t-2 text-primary">№ 041374 от 19.04.2021</p>
+        </div>
+      </div>
+
+      <div class="licenses__slide">
+        <div class="licenses__slide-content">
+          <h3 class="licenses__slide-title t-2">Оператор персональных данных Роскомнадзора</h3>
+          <p class="licenses__slide-text t-2 text-primary">
+            № 77-21-018783, <br />
+            Приказ № 16 от 25.01.2021
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="realization">
+  <div class="realization__container container">
+    <div class="realization__content">
+      <div class="realization__text">
+        <h2 class="realization__title head-2">
+          <span class="realization__title-text">Реализуем</span>
+          <span class="realization__title-accent text-primary">все ваши идеи!</span>
+        </h2>
+      </div>
+      
+      <div class="realization__form">
+        <h3 class="realization__form-title head-3">
+          <span class="realization__form-accent text-primary">Оставьте контакты,</span> мы перезвоним
+        </h3>
+        <%- formBig %>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
 </html>

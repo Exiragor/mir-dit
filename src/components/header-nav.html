@@ -1,223 +1,64 @@
-<nav>
-  <div class="container mx-auto px-4">
-    <div class="flex justify-between">
-      <div class="flex items-center justify-between w-full">
-        <!-- Логотип -->
-        <div>
-          <a href="/">
-            <img src="/logo.svg" class="w-[48px] mobile-plus:w-[80px]" />
+<nav class="header-nav">
+  <div class="header-nav__container container">
+    <div class="header-nav__inner">
+      <!-- Логотип -->
+      <div class="header-nav__logo">
+        <a href="/">
+          <img src="/logo.svg" alt="Логотип" class="header-nav__logo-img" />
+        </a>
+      </div>
+      
+      <!-- Основные пункты меню -->
+      <div class="header-nav__menu">
+        <div class="header-nav__item header-nav__item--dropdown">
+          <button class="header-nav__dropdown-toggle">
+            <span class="header-nav__dropdown-text">Направления работы</span>
+            <svg class="header-nav__dropdown-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="header-nav__dropdown-menu">
+            <a href="/analytic.html" class="header-nav__dropdown-link">Аналитика и тестирование</a>
+            <a href="/admin.html" class="header-nav__dropdown-link">Администрирование</a>
+            <a href="/oracle.html" class="header-nav__dropdown-link">Oracle</a>
+            <a href="/security.html" class="header-nav__dropdown-link">Информационная безопасность</a>
+          </div>
+        </div>
+        
+        <a href="/about.html" class="header-nav__link">О компании</a>
+        <a href="/contacts.html" class="header-nav__link">Контакты</a>
+      </div>
+      
+      <!-- Контакты -->
+      <div class="header-nav__contacts">
+        <div class="header-nav__social">
+          <a href="/" class="header-nav__social-link">
+            <img src="/tg-icon.svg" alt="Telegram" class="header-nav__social-icon" />
           </a>
         </div>
-        <!-- Основные пункты меню -->
-        <div
-          class="hidden md:flex tablet:items-center ml-auto desktop:mr-[108px] tablet:mr-[100px] tablet:ml-[100px] mobile-plus:ml-9 mobile-plus:mr-3"
-        >
-          <div class="relative group">
-            <button
-              class="py-4 px-2 text-white hover:text-gray-light transition duration-300 tablet:flex tablet:items-center text-left"
-            >
-              <span class="t-2 tablet:text-t-2-tablet">Направления работы</span>
-              <svg
-                class="w-4 h-4 ml-1 inline"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </button>
-            <div
-              class="absolute hidden group-hover:block bg-gray-light rounded-md mt-0 w-48 z-10"
-            >
-              <a
-                href="/analytic.html"
-                class="block t-2 px-4 py-2 text-black hover:text-primary"
-                >Аналитика и тестирование</a
-              >
-              <a
-                href="/admin.html"
-                class="block t-2 px-4 py-2 text-black hover:text-primary"
-                >Администрирование</a
-              >
-              <a
-                href="/oracle.html"
-                class="block t-2 px-4 py-2 text-black hover:text-primary"
-                >Oracle</a
-              >
-              <a
-                href="/security.html"
-                class="block t-2 px-4 py-2 text-black hover:text-primary"
-              >
-                Информационная безопасность
-              </a>
-            </div>
-          </div>
-          <a
-            href="/about.html"
-            class="t-2 text-white py-4 px-2 desktop:ml-25 laptop:ml-10 basis-[50%]"
-            >О компании</a
-          >
-          <a
-            href="/contacts.html"
-            class="t-2 text-white py-4 px-2 desktop:ml-25 laptop:ml-10"
-            >Контакты</a
-          >
-        </div>
-        <div class="links flex items-center xl:ml-[108px]">
-          <div
-            class="flex items-center justify-center w-[40px] h-[40px] rounded-full border-1 border-neon modile-plus:block hidden"
-          >
-            <a href="/">
-              <img src="/tg-icon.svg" />
-            </a>
-          </div>
-          <div
-            class="t-1 font-semibold text-neon tablet:ml-5 mobile-plus:ml-[10px] min-w-[170px] text-center"
-          >
-            <a href="tel:+74957970416">+7 (495) 797 04 16</a>
-          </div>
+        <div class="header-nav__phone">
+          <a href="tel:+74957970416" class="header-nav__phone-link">+7 (495) 797 04 16</a>
         </div>
       </div>
+      
       <!-- Мобильное меню кнопка -->
-      <div class="md:hidden flex items-center">
-        <button class="outline-none mobile-menu-button">
-          <svg
-            class="w-6 h-6 text-gray-500 hover:text-green-500"
-            x-show="!showMenu"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path d="M4 6h16M4 12h16M4 18h16"></path>
+      <div class="header-nav__mobile-toggle">
+        <button class="header-nav__mobile-button">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
       </div>
     </div>
   </div>
-
+  
   <!-- Мобильное меню -->
-  <div class="hidden mobile-menu">
-    <ul>
-      <li class="active">
-        <a
-          href="#"
-          class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold"
-          >Главная</a
-        >
+  <div class="header-nav__mobile-menu">
+    <ul class="header-nav__mobile-list">
+      <li class="header-nav__mobile-item header-nav__mobile-item--active">
+        <a href="#" class="header-nav__mobile-link">Главная</a>
       </li>
-      <li>
-        <a
-          href="#"
-          class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300 flex justify-between items-center"
-        >
-          Услуги
-          <svg
-            class="w-4 h-4"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5l7 7-7 7"
-            ></path>
-          </svg>
-        </a>
-        <ul class="hidden">
-          <li>
-            <a
-              href="#"
-              class="block text-sm px-4 py-2 hover:bg-green-500 transition duration-300"
-              >Веб-разработка</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="block text-sm px-4 py-2 hover:bg-green-500 transition duration-300"
-              >Дизайн</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="block text-sm px-4 py-2 hover:bg-green-500 transition duration-300"
-              >SEO</a
-            >
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a
-          href="#"
-          class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
-          >О нас</a
-        >
-      </li>
-      <li>
-        <a
-          href="#"
-          class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300 flex justify-between items-center"
-        >
-          Продукты
-          <svg
-            class="w-4 h-4"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5l7 7-7 7"
-            ></path>
-          </svg>
-        </a>
-        <ul class="hidden">
-          <li>
-            <a
-              href="#"
-              class="block text-sm px-4 py-2 hover:bg-green-500 transition duration-300"
-              >Продукт 1</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="block text-sm px-4 py-2 hover:bg-green-500 transition duration-300"
-              >Продукт 2</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="block text-sm px-4 py-2 hover:bg-green-500 transition duration-300"
-              >Продукт 3</a
-            >
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a
-          href="#"
-          class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
-          >Контакты</a
-        >
-      </li>
+      <!-- остальные пункты мобильного меню -->
     </ul>
   </div>
 </nav>
