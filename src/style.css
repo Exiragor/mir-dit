@@ -914,6 +914,10 @@ body {
   display: none;
 }
 
+.development__image + .development__image {
+  margin-top: 20px;
+}
+
 .development__image--desktop {
   display: block;
 }
