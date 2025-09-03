@@ -1,12 +1,10 @@
 import { defineConfig } from "vite";
-import tailwindcss from "@tailwindcss/vite";
 import { createHtmlPlugin } from "vite-plugin-html";
 import { ViteEjsPlugin } from "vite-plugin-ejs";
 import fs from "fs";
 
 export default defineConfig({
   plugins: [
-    tailwindcss(),
     ViteEjsPlugin(),
     createHtmlPlugin({
       minify: true,

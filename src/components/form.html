@@ -1,35 +1,32 @@
-<form
-  class="w-full desktop:max-w-[692px] laptop:max-w-[573px] tablet:max-w-[650px] mobile-plus:max-w-[478px]"
-  action="/"
-  method="POST"
->
-  <div class="form-group">
+<form class="form form--small" action="/" method="POST">
+  <div class="form__group">
     <input
-      class="bg-white rounded-btn mobile-plus:h-[55px] h-[45px] w-full p-5 t-2 text-gray-4 focus:outline-2 focus:outline-offset-2 focus:outline-neon mb-[10px]"
+      class="form__input"
       type="text"
       id="name"
       name="name"
       placeholder="Ваше имя"
+      required
     />
 
     <input
-      class="bg-white rounded-btn mobile-plus:h-[55px] h-[45px] w-full p-5 t-2 text-gray-4 focus:outline-2 focus:outline-offset-2 focus:outline-neon"
-      type="text"
+      class="form__input"
+      type="tel"
       id="phone"
       name="phone"
       placeholder="Телефон"
+      required
     />
   </div>
 
-  <button
-    type="submit"
-    class="w-full mobile-plus:h-[55px] h-[45px] cursor-pointer rounded-btn t-2 text-neon border-1 border-neon mt-[10px] hover:border-white hover:text-white"
-  >
+  <button type="submit" class="form__button">
     Связаться
   </button>
 
-  <div class="text-t-4 text-white mt-3 text-center">
-    Нажимая “Отправить”, Вы соглашаетесь
-    <a class="text-gray-3" href="#">с обработкой персональных данных.</a>
+  <div class="form__notice">
+    Нажимая "Отправить", Вы соглашаетесь
+    <a class="form__notice-link" href="#">
+      с обработкой персональных данных.
+    </a>
   </div>
 </form>
