@@ -468,73 +468,75 @@
     </div>
 
     <div class="tasks__controls">
-      <div class="tasks__arrow tasks__arrow--prev">
+      <div class="tasks__arrow tasks__arrow--prev" id="swiper-arrow-left">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.1016 6.08204L3.06594 6.08204L7.45034 1.5799C7.80074 1.2201 7.80074 0.629655 7.45034 0.269853C7.09995 -0.0899493 6.53393 -0.0899494 6.18354 0.269853L0.262794 6.34959C-0.0875995 6.70939 -0.0875996 7.29061 0.262793 7.65041L6.18354 13.7301C6.53393 14.09 7.09995 14.09 7.45034 13.7301C7.80074 13.3703 7.80074 12.7891 7.45034 12.4293L3.06594 7.92718L13.1016 7.92718C13.5957 7.92718 14 7.51203 14 7.00461C14 6.4972 13.5957 6.08204 13.1016 6.08204Z" fill="#A1EAF7"/>
         </svg>
       </div>
-      <div class="tasks__arrow tasks__arrow--next">
+      <div class="tasks__arrow tasks__arrow--next" id="swiper-arrow-right">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0.898444 7.91796L10.9341 7.91796L6.54966 12.4201C6.19926 12.7799 6.19926 13.3703 6.54965 13.7301C6.90005 14.0899 7.46607 14.0899 7.81646 13.7301L13.7372 7.65041C14.0876 7.29061 14.0876 6.70939 13.7372 6.34959L7.81646 0.269852C7.46607 -0.0899502 6.90005 -0.0899502 6.54966 0.269852C6.19926 0.629654 6.19926 1.21087 6.54966 1.57068L10.9341 6.07282L0.898444 6.07282C0.404299 6.07282 -2.96952e-07 6.48797 -3.41312e-07 6.99539C-3.85671e-07 7.5028 0.404299 7.91796 0.898444 7.91796Z" fill="white"/>
         </svg>
       </div>
     </div>
 
-    <div class="tasks__slider">
-      <div class="tasks__slide">
-        <div class="tasks__slide-content">
-          <h3 class="tasks__slide-title t-1 text-primary">Разработка и тестирование</h3>
-          <p class="tasks__slide-text t-2">
-            Технологические и эксплуатационные решения, учитывающие уникальность каждого бизнеса.
-          </p>
+    <div class="tasks__slider swiper" id="main-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide tasks__slide">
+          <div class="tasks__slide-content">
+            <h3 class="tasks__slide-title t-1 text-primary">Разработка и тестирование</h3>
+            <p class="tasks__slide-text t-2">
+              Технологические и эксплуатационные решения, учитывающие уникальность каждого бизнеса.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="tasks__slide">
-        <div class="tasks__slide-content">
-          <h3 class="tasks__slide-title t-1">Удалённое администрирование</h3>
-          <p class="tasks__slide-text t-2">
-            Баз данных Oracle Database, Microsoft SQL Server, MySQL, PostgreSQL.
-          </p>
+        <div class="swiper-slide tasks__slide">
+          <div class="tasks__slide-content">
+            <h3 class="tasks__slide-title t-1">Удалённое администрирование</h3>
+            <p class="tasks__slide-text t-2">
+              Баз данных Oracle Database, Microsoft SQL Server, MySQL, PostgreSQL.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="tasks__slide">
-        <div class="tasks__slide-content">
-          <h3 class="tasks__slide-title t-1">Доступность данных</h3>
-          <p class="tasks__slide-text t-2">
-            Обеспечение постоянного доступа к данным во избежание остановки бизнеса.
-          </p>
+        <div class="swiper-slide tasks__slide">
+          <div class="tasks__slide-content">
+            <h3 class="tasks__slide-title t-1">Доступность данных</h3>
+            <p class="tasks__slide-text t-2">
+              Обеспечение постоянного доступа к данным во избежание остановки бизнеса.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="tasks__slide">
-        <div class="tasks__slide-content">
-          <h3 class="tasks__slide-title t-1">Защита данных</h3>
-          <p class="tasks__slide-text t-2">
-            Предотвращение потерь данных, подрывающих жизнеспособность бизнеса.
-          </p>
+        <div class="swiper-slide tasks__slide">
+          <div class="tasks__slide-content">
+            <h3 class="tasks__slide-title t-1">Защита данных</h3>
+            <p class="tasks__slide-text t-2">
+              Предотвращение потерь данных, подрывающих жизнеспособность бизнеса.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="tasks__slide">
-        <div class="tasks__slide-content">
-          <h3 class="tasks__slide-title t-1 text-primary">Минимизация рисков</h3>
-          <p class="tasks__slide-text t-2">
-            Долгосрочное, стабильное обеспечение требуемых уровней обслуживания с учетом развития бизнеса без неожиданных больших затрат и разочарований.
-          </p>
+        <div class="swiper-slide tasks__slide">
+          <div class="tasks__slide-content">
+            <h3 class="tasks__slide-title t-1 text-primary">Минимизация рисков</h3>
+            <p class="tasks__slide-text t-2">
+              Долгосрочное, стабильное обеспечение требуемых уровней обслуживания с учетом развития бизнеса без неожиданных больших затрат и разочарований.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="tasks__slide">
-        <div class="tasks__slide-content">
-          <h3 class="tasks__slide-title t-1">Снижение расходов</h3>
-          <p class="tasks__slide-text t-2">
-            Уменьшение затрат на развертывание, управление и поддержку для экономии корпоративных ресурсов.
-          </p>
+        <div class="swiper-slide tasks__slide">
+          <div class="tasks__slide-content">
+            <h3 class="tasks__slide-title t-1">Снижение расходов</h3>
+            <p class="tasks__slide-text t-2">
+              Уменьшение затрат на развертывание, управление и поддержку для экономии корпоративных ресурсов.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="tasks__slide">
-        <div class="tasks__slide-content">
-          <h3 class="tasks__slide-title t-1 text-primary">Производительность</h3>
-          <p class="tasks__slide-text t-2">
-            Достаточно короткое время отклика для эффективных бизнес-операций.
-          </p>
+        <div class="swiper-slide tasks__slide">
+          <div class="tasks__slide-content">
+            <h3 class="tasks__slide-title t-1 text-primary">Производительность</h3>
+            <p class="tasks__slide-text t-2">
+              Достаточно короткое время отклика для эффективных бизнес-операций.
+            </p>
+          </div>
         </div>
       </div>
     </div>

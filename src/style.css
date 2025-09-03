@@ -29,6 +29,9 @@
   --breakpoint-tablet: 1024px;
   --breakpoint-laptop: 1600px;
   --breakpoint-desktop: 1920px;
+
+  --slider-bg-1: url("/slider/1.svg");
+  --slider-bg-2: url("/slider/2.svg");
 }
 
 /* Базовые стили */
@@ -2580,4 +2583,9 @@ body {
 
 .footer__contacts--mobile .footer__social {
   margin: 0 auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 276px;
 }
