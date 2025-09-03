@@ -35,7 +35,7 @@ const swiper = new Swiper("#main-swiper", {
 const btn = document.querySelector(".mobile-menu-button");
 const menu = document.querySelector(".mobile-menu");
 
-btn.addEventListener("click", () => {
+btn?.addEventListener("click", () => {
   menu.classList.toggle("hidden");
 });
 
@@ -67,32 +67,32 @@ dropdowns.forEach((item) => {
 // Конфигурация элементов, которые нужно превращать в Swiper на мобильных
 const swiperConfig = [
   {
-    element: '.docs-swiper',         // Основной элемент (получит класс swiper)
-    wrapper: '.docs-swiper > div',  // Внутренний элемент (получит класс swiper-wrapper)
+    element: '.licenses__slider',         // Основной элемент (получит класс swiper)
+    wrapper: '.licenses__slider > div',  // Внутренний элемент (получит класс swiper-wrapper)
     breakpoint: 1024,            // Брейкпоинт для этого элемента
     swiperConfig: {
       slidesPerView: 1,
       spaceBetween: 0,
       loop: true,
       navigation: {
-        nextEl: ".docs-swiper-arrow-right",
-        prevEl: ".docs-swiper-arrow-left",
+        nextEl: ".licenses__arrow--next",
+        prevEl: ".licenses__arrow--prev",
       },
       modules: [Navigation],
     },
   },
 
   {
-    element: '.cards-swiper',         // Основной элемент (получит класс swiper)
-    wrapper: '.cards-swiper > div',  // Внутренний элемент (получит класс swiper-wrapper)
+    element: '.business-model__slider',         // Основной элемент (получит класс swiper)
+    wrapper: '.business-model__slider > div',  // Внутренний элемент (получит класс swiper-wrapper)
     breakpoint: 768,            // Брейкпоинт для этого элемента
     swiperConfig: {
       slidesPerView: 1,
       spaceBetween: 0,
       loop: true,
       navigation: {
-        nextEl: ".cards-swiper-arrow-right",
-        prevEl: ".cards-swiper-arrow-left",
+        nextEl: ".business-model__arrow--next",
+        prevEl: ".business-model__arrow--prev",
       },
       modules: [Navigation],
     },

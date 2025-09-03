@@ -2085,7 +2085,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .licenses__slider {
+  .licenses__slider-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
