@@ -55,8 +55,11 @@ body {
 /* Общие классы для секций */
 .section {
   border-radius: var(--radius-2_5xl);
-  margin: 1.25rem 0;
   padding: 5rem 0;
+}
+
+.section + .section {
+  margin-top: 1.25rem;
 }
 
 .section--white {
@@ -260,11 +263,19 @@ body {
 .header {
   border-radius: var(--radius-2_5xl);
   background-color: var(--color-primary);
-  padding: 2rem;
+  padding: 1.25rem;
+}
+
+.header__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
   .header {
+    padding: 2rem;
     border-radius: var(--radius-5xl);
   }
 }
@@ -285,8 +296,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 4.25rem;
+  margin-top: 2.5rem;
 }
+
+@media (min-width: 768px) {
+  .header__content {
+    margin-top: 4.25rem;
+  }
+}
+
 
 @media (min-width: 1024px) {
   .header__content {
@@ -296,19 +314,23 @@ body {
 
 .header__title {
   color: var(--color-white);
+  text-align: center;
+  margin: 2.5rem 0;
 }
 
 .header__title-accent {
   color: var(--color-neon);
 }
 
-.header__button {
-  composes: btn btn--outline;
-}
-
 .header__features {
   max-width: 345px;
-  margin-top: 6.75rem;
+  margin-top: 4.375rem;
+}
+
+@media (min-width: 768px) {
+  .header__features {
+    margin-top: 6.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -455,7 +477,12 @@ body {
 /* Блок навигации */
 .header-nav {
   background-color: var(--color-primary);
-  padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .header-nav {
+    padding: 2rem 0;
+  }
 }
 
 .header-nav__container {
