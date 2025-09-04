@@ -111,9 +111,15 @@ body {
 }
 
 .t-2 {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 120%;
   font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .t-2 {
+    font-size: 14px;
+  }
 }
 
 .t-3 {
@@ -399,7 +405,6 @@ body {
 
 /* Блок stats */
 .stats {
-  composes: section section--white;
   padding: 5rem 1.25rem;
 }
 
@@ -418,7 +423,8 @@ body {
 .stats__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  column-gap: 1rem;
+  row-gap: 4rem;
 }
 
 @media (min-width: 1024px) {
@@ -456,19 +462,13 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 120px;
-  line-height: 100%;
-  font-weight: 400;
-  letter-spacing: -0.05em;
 }
 
 .stats__text {
-  font-size: 14px;
-  line-height: 120%;
-  margin-left: 0.75rem;
+  margin-left: 0.25rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .stats__text {
     margin-left: 0.75rem;
   }
@@ -729,10 +729,6 @@ body {
 }
 
 /* Блок activities */
-.activities {
-  composes: section section--white;
-}
-
 .activities__container {
   padding: 0 0.5rem;
 }
@@ -804,7 +800,7 @@ body {
   display: flex;
   align-items: center;
   overflow: hidden;
-  min-height: 3.5rem;
+  min-height: 4.688rem;
 }
 
 @media (min-width: 768px) {
@@ -837,7 +833,13 @@ body {
 
 .activities__content {
   flex: 1;
-  padding: 1rem;
+  padding: 0.625rem;
+}
+
+@media (min-width: 768px) {
+  .activities__content {
+    padding: 1rem;
+  }
 }
 
 /* Блок development */
