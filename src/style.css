@@ -168,6 +168,10 @@ body {
   .head-1 {
     font-size: 32px;
   }
+
+  .head-3 {
+    font-size: 17px;
+  }
   
   .head-2 {
     font-size: 22px;
@@ -843,9 +847,6 @@ body {
 }
 
 /* Блок development */
-.development {
-  composes: section section--white;
-}
 
 .development__header {
   display: flex;
@@ -992,6 +993,7 @@ body {
 .form-section__form-wrapper {
   min-width: 300px;
   margin: 0 auto;
+  padding: 0 0.25rem;
 }
 
 @media (min-width: 1600px) {
@@ -1075,12 +1077,7 @@ body {
 }
 
 .form__button {
-  composes: btn btn--primary btn--full;
   margin-top: 0.625rem;
-}
-
-.form--small .form__button {
-  composes: btn btn--outline btn--full;
 }
 
 .form__notice {
@@ -1101,10 +1098,6 @@ body {
 }
 
 /* Блок expertise */
-.expertise {
-  composes: section section--white;
-}
-
 .expertise__header {
   display: flex;
   flex-direction: column;
@@ -1139,6 +1132,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.25rem;
+  padding: 0 0.25rem;
 }
 
 @media (min-width: 768px) {
@@ -1211,7 +1205,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 1.25rem;
 }
 
 @media (min-width: 1024px) {
@@ -1221,7 +1214,8 @@ body {
 }
 
 .expertise__card-title {
-  margin-bottom: 1rem;
+  margin: 0;
+  max-width: 228px;
 }
 
 .expertise__card-description {
@@ -1229,10 +1223,6 @@ body {
 }
 
 /* Блок mission */
-.mission {
-  composes: section section--white;
-}
-
 .mission__label {
   margin-bottom: 2.5rem;
   padding: 0 0.5rem;
@@ -1272,7 +1262,7 @@ body {
 .mission__quote {
   position: relative;
   max-width: 438px;
-  padding: 0 10px;
+  padding: 0 20px;
   margin-bottom: 1.25rem;
 }
 
@@ -1285,13 +1275,15 @@ body {
 
 .mission__quote-text {
   position: relative;
+  text-align: left;
+  font-weight: 500;
 }
 
 .mission__quote-text::before {
   content: '"';
   position: absolute;
   font-family: var(--font-roboto);
-  font-size: 120px;
+  font-size: 58px;
   line-height: 100%;
   font-weight: 400;
   letter-spacing: -0.05em;
@@ -1303,7 +1295,7 @@ body {
   content: '"';
   position: absolute;
   font-family: var(--font-roboto);
-  font-size: 120px;
+  font-size: 58px;
   line-height: 100%;
   font-weight: 400;
   letter-spacing: -0.05em;
@@ -1314,7 +1306,7 @@ body {
 
 @media (max-width: 1600px) {
   .mission__quote-text::before {
-    top: -26%;
+    top: -19%;
     left: -3%;
   }
   
@@ -1326,19 +1318,20 @@ body {
 
 @media (max-width: 360px) {
   .mission__quote-text::before {
-    top: -19%;
-    left: -3%;
+    top: -11%;
+    left: -7%;
   }
   
   .mission__quote-text::after {
-    bottom: -20%;
-    right: 9%;
+    bottom: -43%;
+    right: 5%;
   }
 }
 
 .mission__description {
   max-width: 314px;
-  padding: 0 10px;
+  padding: 0 20px;
+  text-align: left;
 }
 
 @media (min-width: 1600px) {
@@ -1349,12 +1342,13 @@ body {
 }
 
 .mission__description-text {
-  margin: 1.25rem 0;
+  margin: 0;
 }
 
 .mission__author {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .mission__author-position {
@@ -1362,9 +1356,6 @@ body {
 }
 
 /* Блок why-us */
-.why-us {
-  composes: section section--white;
-}
 
 .why-us__header {
   display: flex;
@@ -1949,7 +1940,6 @@ body {
 
 .realization__text {
   flex: 1;
-  margin-bottom: 2rem;
   padding: 0 0.5rem;
 }
 
@@ -1962,6 +1952,7 @@ body {
 
 .realization__title {
   display: inline-block;
+  margin: 0;
 }
 
 @media (min-width: 1600px) {
@@ -1976,6 +1967,7 @@ body {
 }
 
 .realization__form-title {
+  margin-top: 10px;
   margin-bottom: 1.25rem;
 }
 
@@ -2059,15 +2051,12 @@ body {
 }
 
 .form__button {
-  composes: btn btn--primary btn--full;
   margin-top: 0.625rem;
 }
 
-.form--small .form__button {
-  composes: btn btn--outline btn--full;
-}
-
 .form__notice {
+  display: flex;
+  flex-direction: column;
   font-size: 9px;
   font-weight: 700;
   text-align: center;
