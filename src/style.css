@@ -107,7 +107,7 @@ body {
 .t-1 {
   font-size: 23px;
   line-height: 100%;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .t-2 {
@@ -772,6 +772,10 @@ body {
   }
 }
 
+.activities__title {
+  margin-top: 0;
+}
+
 .activities__title-wrapper {
   flex: 1;
 }
@@ -824,8 +828,9 @@ body {
   background-clip: text;
   -webkit-text-stroke: 1px var(--color-primary);
   color: transparent;
-  margin-top: -0.75rem;
-  margin-bottom: -1.5rem;
+  margin-top: 0;
+  margin-bottom: -4px;
+   font-family: Arial, sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -851,7 +856,6 @@ body {
 .development__header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2.5rem;
   padding: 0 0.5rem;
 }
 
@@ -1101,7 +1105,6 @@ body {
 .expertise__header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2.5rem;
   padding: 0 0.5rem;
 }
 
@@ -1387,15 +1390,19 @@ body {
   flex: 1;
 }
 
+.why-us__title {
+  margin: 0;
+}
+
 .why-us__list {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 10px;
 }
 
 .why-us__item {
   display: flex;
-  gap: 1.25rem;
+  gap: 10px;
   flex-direction: column;
 }
 
@@ -1434,7 +1441,6 @@ body {
   border-radius: var(--radius-2_5xl);
   padding: 1.25rem;
   display: flex;
-  flex-direction: column;
 }
 
 @media (min-width: 768px) {
@@ -1454,6 +1460,11 @@ body {
 .why-us__content-title {
   width: 100%;
   margin-bottom: 0.5rem;
+}
+
+.why-us__content-title h3 {
+  max-width: 120px;
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
@@ -1774,7 +1785,6 @@ body {
 
 /* Блок licenses */
 .licenses {
-  composes: section section--white;
   padding: 5rem 0 2.5rem;
 }
 
@@ -1787,7 +1797,6 @@ body {
 .licenses__header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 5rem;
   padding: 0 10px;
 }
 
@@ -1795,6 +1804,7 @@ body {
   .licenses__header {
     flex-direction: row;
     padding: 0;
+    margin-bottom: 5rem;
   }
 }
 
