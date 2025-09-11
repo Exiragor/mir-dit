@@ -3,34 +3,6 @@ import { Navigation } from "swiper/modules";
 // import Swiper styles
 import "swiper/css";
 
-const swiper = new Swiper("#main-swiper", {
-  slidesPerView: "auto",
-  spaceBetween: 20,
-  loop: true,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: "#swiper-arrow-right",
-    prevEl: "#swiper-arrow-left",
-  },
-  modules: [Navigation],
-
-  breakpoints: {
-    // when window width is >= 320px
-    768: {
-      slidesPerView: 2,
-    },
-    // when window width is >= 480px
-    1024: {
-      slidesPerView: 3,
-    },
-    // when window width is >= 640px
-    1600: {
-      slidesPerView: "auto",
-    },
-  },
-});
-
 // Мобильное меню toggle
 const btn = document.querySelector(".mobile-menu-button");
 const menu = document.querySelector(".mobile-menu");
@@ -64,12 +36,44 @@ dropdowns.forEach((item) => {
 });
 
 
-// Конфигурация элементов, которые нужно превращать в Swiper на мобильных
+// Конфигурация элементов, которые нужно превращать в Swiper
 const swiperConfig = [
   {
-    element: '.licenses__slider',         // Основной элемент (получит класс swiper)
-    wrapper: '.licenses__slider > div',  // Внутренний элемент (получит класс swiper-wrapper)
-    breakpoint: 1024,            // Брейкпоинт для этого элемента
+    element: '#main-swiper',         // Основной элемент
+    wrapper: '#main-swiper > div',   // Внутренний элемент
+    breakpoint: {
+      min: 361,  // Минимальная ширина (работает от 361px)
+      max: Infinity  // Максимальная ширина (до бесконечности)
+    },
+    swiperConfig: {
+      slidesPerView: "auto",
+      spaceBetween: 20,
+      loop: true,
+      navigation: {
+        nextEl: "#swiper-arrow-right",
+        prevEl: "#swiper-arrow-left",
+      },
+      modules: [Navigation],
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+        1600: {
+          slidesPerView: "auto",
+        },
+      },
+    },
+  },
+  {
+    element: '.licenses__slider',
+    wrapper: '.licenses__slider > div',
+    breakpoint: {
+      min: 0,      // Работает от 0px
+      max: 1023    // До 1023px
+    },
     swiperConfig: {
       slidesPerView: 1,
       spaceBetween: 0,
@@ -81,11 +85,13 @@ const swiperConfig = [
       modules: [Navigation],
     },
   },
-
   {
-    element: '.business-model__slider',         // Основной элемент (получит класс swiper)
-    wrapper: '.business-model__slider > div',  // Внутренний элемент (получит класс swiper-wrapper)
-    breakpoint: 768,            // Брейкпоинт для этого элемента
+    element: '.business-model__slider',
+    wrapper: '.business-model__slider > div',
+    breakpoint: {
+      min: 0,      // Работает от 0px
+      max: 767     // До 767px
+    },
     swiperConfig: {
       slidesPerView: 1,
       spaceBetween: 0,
@@ -109,18 +115,34 @@ function toggleSwiperClasses() {
     const wrapper = element.querySelector(config.wrapper);
     if (!wrapper) return;
 
-    if (window.innerWidth < config.breakpoint) {
-      element.classList.add('swiper');
-      wrapper.classList.add('swiper-wrapper');
-      swipersMap.set(config.element, new Swiper(config.element, config.swiperConfig));
+    const windowWidth = window.innerWidth;
+    const shouldBeSwiper = windowWidth >= config.breakpoint.min && windowWidth <= config.breakpoint.max;
+
+    if (shouldBeSwiper) {
+      // Если нужно активировать Swiper
+      if (!swipersMap.has(config.element)) {
+        element.classList.add('swiper');
+        wrapper.classList.add('swiper-wrapper');
+        // Добавляем классы к слайдам
+        const slides = wrapper.children;
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].classList.add('swiper-slide');
+        }
+        swipersMap.set(config.element, new Swiper(config.element, config.swiperConfig));
+      }
     } else {
-      
+      element.classList.remove('swiper');
+        wrapper.classList.remove('swiper-wrapper');
+        // Убираем классы со слайдов
+        const slides = wrapper.children;
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].classList.remove('swiper-slide');
+        }
+      // Если нужно деактивировать Swiper
       if (swipersMap.has(config.element)) {
         swipersMap.get(config.element).destroy();
         swipersMap.delete(config.element);
       }
-      element.classList.remove('swiper');
-      wrapper.classList.remove('swiper-wrapper');
     }
   });
 }
