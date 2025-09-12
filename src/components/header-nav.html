@@ -43,12 +43,33 @@
       
       <!-- Мобильное меню кнопка -->
       <div class="header-nav__mobile-toggle">
-        <button class="header-nav__mobile-button btn btn--outline">
-          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
+        <button class="burger-menu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
       </div>
+
+      <nav class="mobile-nav" id="mobileNav">
+        <div class="nav-content">
+            <button class="close-btn" id="closeMenu">✕</button>
+            
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link">Направления работы:</a></li>
+                <li><a href="#about" class="nav-link nav-link--white">Аналитика и тестирование</a></li>
+                <li><a href="#services" class="nav-link nav-link--white">Администрирование</a></li>
+                <li><a href="#portfolio" class="nav-link nav-link--white">Oracle</a></li>
+                <li><a href="#contacts" class="nav-link nav-link--white">Информационная безопасность</a></li>
+                <li><a href="#contacts" class="nav-link">О компании</a></li>
+                <li><a href="#contacts" class="nav-link">Контакты</a></li>
+            </ul>
+            
+            <div class="nav-footer">
+                <p class="t-1 text-neon">+7 (999) 123-45-67</p>
+                <img src="/tg_40x40.svg" alt="" />
+            </div>
+        </div>
+    </nav>
     </div>
   </div>
 </nav>

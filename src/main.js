@@ -164,3 +164,64 @@ window.addEventListener('resize', debounce(toggleSwiperClasses));
 
 // Дополнительный вызов для случаев, когда страница загружается уже с нужным размером
 window.addEventListener('load', toggleSwiperClasses);
+
+class MobileMenu {
+    constructor() {
+        this.burgerMenu = document.getElementById('burgerMenu');
+        this.mobileNav = document.getElementById('mobileNav');
+        this.closeMenu = document.getElementById('closeMenu');
+        this.navLinks = document.querySelectorAll('.nav-link');
+        
+        this.init();
+    }
+    
+    init() {
+        // Открытие меню
+        this.burgerMenu.addEventListener('click', () => {
+            this.open();
+        });
+        
+        // Закрытие меню
+        this.closeMenu.addEventListener('click', () => {
+            this.close();
+        });
+        
+        // Закрытие при клике на ссылку
+        this.navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                this.close();
+            });
+        });
+        
+        // Закрытие при нажатии Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.mobileNav.classList.contains('active')) {
+                this.close();
+            }
+        });
+    }
+    
+    toggleMenu(isOpen) {
+        if (isOpen) {
+            this.mobileNav.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        } else {
+            this.mobileNav.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    }
+    
+    // Метод для программного открытия/закрытия
+    open() {
+        this.toggleMenu(true);
+    }
+    
+    close() {
+        this.toggleMenu(false);
+    }
+}
+
+// Инициализация меню при загрузке страницы
+document.addEventListener('DOMContentLoaded', () => {
+    new MobileMenu();
+});
