@@ -89,6 +89,7 @@ body {
   line-height: 100%;
   font-weight: 500;
   letter-spacing: -0.05em;
+  margin: 0;
 }
 
 .head-2 {
@@ -96,12 +97,14 @@ body {
   line-height: 100%;
   font-weight: 500;
   letter-spacing: -0.05em;
+  margin: 0;
 }
 
 .head-3 {
   font-size: 36px;
   line-height: 95%;
   font-weight: 500;
+  margin: 0;
 }
 
 .t-1 {
@@ -928,7 +931,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .development__image--mobile-plus {
     display: none;
   }
@@ -945,6 +948,12 @@ body {
   background-position: center;
 }
 
+@media (min-width: 768px) {
+  .form-section {
+    background-image: url("/form-tablet-bg.png");
+  }
+}
+
 .form-section__container {
   display: flex;
   flex-direction: column;
@@ -959,6 +968,8 @@ body {
 
 .form-section__content {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 1600px) {
@@ -971,7 +982,7 @@ body {
 }
 
 .form-section__title {
-  max-width: 680px;
+  max-width: 478px;
   margin: 0 auto 2.5rem;
 }
 
@@ -1125,6 +1136,10 @@ body {
   }
 }
 
+.expertise__title {
+  margin: 0;
+}
+
 .expertise__title-wrapper {
   flex: 1;
 }
@@ -1231,7 +1246,7 @@ body {
 
 @media (min-width: 768px) {
   .mission__label {
-    margin-bottom: 5rem;
+    margin-bottom: -1rem;
   }
 }
 
@@ -1264,6 +1279,12 @@ body {
   position: relative;
   max-width: 438px;
   margin-bottom: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .mission__quote {
+    max-width: 491px;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -1333,6 +1354,13 @@ body {
   max-width: 314px;
   padding: 0 20px;
   text-align: left;
+}
+
+@media (min-width: 768px) {
+  .mission__description {
+    max-width: 377px;
+    padding: 0;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -2108,6 +2136,14 @@ body {
   color: var(--color-white);
 }
 
+@media (min-width: 768px) {
+  .form__notice {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+  }
+}
+
 .form--small .form__notice {
   color: var(--color-white);
 }
@@ -2560,4 +2596,21 @@ blockquote::after {
     bottom: -20px; /* Смещение снизу */
     right: 0; /* Смещение справа */
     transform: scale(-1);
+}
+
+@media (min-width: 768px) {
+  blockquote::before,
+  blockquote::after {
+      font-size: 92px;
+  }
+
+  blockquote::before {
+    top: -27px; /* Смещение сверху */
+    left: -17px; /* Смещение слева */
+  }
+
+  blockquote::after {
+    bottom: -27px; /* Смещение снизу */
+    right: -17px; /* Смещение справа */
+  }
 }
