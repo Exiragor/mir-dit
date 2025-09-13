@@ -1264,7 +1264,6 @@ body {
 .mission__quote {
   position: relative;
   max-width: 438px;
-  padding: 0 20px;
   margin-bottom: 1.25rem;
 }
 
@@ -1279,9 +1278,10 @@ body {
   position: relative;
   text-align: left;
   font-weight: 500;
+  margin: 0;
 }
 
-.mission__quote-text::before {
+/* .mission__quote-text::before {
   content: '"';
   position: absolute;
   font-family: var(--font-roboto);
@@ -1304,7 +1304,7 @@ body {
   bottom: -36%;
   right: 7%;
   transform: scaleX(-1);
-}
+} */
 
 @media (max-width: 1600px) {
   .mission__quote-text::before {
@@ -2521,4 +2521,54 @@ body {
     .mobile-nav {
         display: none;
     }
+}
+
+/* blockquote {
+    position: relative;
+    text-indent: -1em;
+    padding-left: 1em;
+}
+
+blockquote::before {
+    content: "“";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 58px;
+}
+
+blockquote::after {
+    content: "“";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 58px;
+} */
+
+blockquote {
+    position: relative;
+    padding: 0 20px; /* Увеличенные отступы для размещения кавычек */
+    margin: 0;
+}
+
+blockquote::before,
+blockquote::after {
+    position: absolute;
+    content: '“'; /* Можно использовать \00AB и \00BB для угловых кавычек */
+    color: var(--color-primary);
+    font-size: 58px; /* Фиксированный размер */
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    letter-spacing: -5px;
+}
+
+blockquote::before {
+    top: -20px; /* Смещение сверху */
+    left: 0; /* Смещение слева */
+}
+
+blockquote::after {
+    bottom: -20px; /* Смещение снизу */
+    right: 0; /* Смещение справа */
+    transform: scale(-1);
 }
