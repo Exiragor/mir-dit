@@ -48,7 +48,7 @@ body {
 
 @media (min-width: 768px) {
   body {
-    padding: 1.25rem;
+    padding: 10px;
   }
 }
 
@@ -161,9 +161,17 @@ body {
   .head-2 {
     font-size: 36px;
   }
+
+  .head-3 {
+    font-size: 24px;
+  }
   
   .t-1 {
     font-size: 20px;
+  }
+
+  .t-3 {
+    font-size: 92px;
   }
 }
 
@@ -237,6 +245,7 @@ body {
   font-weight: 300;
   text-decoration: none;
   border: 1px solid transparent;
+  width: fit-content;
   height: 45px;
   padding: 0 1.875rem;
 }
@@ -291,6 +300,10 @@ body {
     padding: 2rem;
     border-radius: var(--radius-5xl);
   }
+
+  .header__main {
+    align-items: start;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -331,6 +344,13 @@ body {
   margin: 2.5rem 0;
 }
 
+@media (min-width: 768px) {
+  .header__title {
+    text-align: start;
+    margin: 0 0 42px;
+  }
+}
+
 .header__title-accent {
   color: var(--color-neon);
 }
@@ -342,7 +362,7 @@ body {
 
 @media (min-width: 768px) {
   .header__features {
-    margin-top: 6.75rem;
+    margin-top: 42px;
   }
 }
 
@@ -388,6 +408,7 @@ body {
     display: block;
     width: 314px;
     padding-left: 2.5rem;
+    margin-left: -100px;
   }
 }
 
@@ -486,12 +507,6 @@ body {
   background-color: var(--color-primary);
 }
 
-@media (min-width: 768px) {
-  .header-nav {
-    padding: 2rem 0;
-  }
-}
-
 .header-nav__container {
   max-width: 1405px;
   margin: 0 auto;
@@ -501,6 +516,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+..header-nav__logo {
+  margin-right: 10px;
 }
 
 .header-nav__logo-img {
@@ -524,12 +543,13 @@ body {
   .header-nav__menu {
     display: flex;
     margin: 0 auto;
+    gap: 1.25rem;
+    padding: 0 1rem;
   }
 }
 
 .header-nav__item {
   position: relative;
-  margin-right: 2.5rem;
 }
 
 .header-nav__item--dropdown:hover .header-nav__dropdown-menu {
@@ -542,7 +562,6 @@ body {
   background: none;
   border: none;
   color: var(--color-white);
-  padding: 1rem 0.5rem;
   font-size: 14px;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -585,7 +604,6 @@ body {
 
 .header-nav__link {
   color: var(--color-white);
-  padding: 1rem 0.5rem;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s ease;
@@ -599,6 +617,8 @@ body {
 .header-nav__contacts {
   display: flex;
   align-items: center;
+  min-width: fit-content;
+  margin-left: 10px;
 }
 
 .header-nav__social {
@@ -624,7 +644,7 @@ body {
 }
 
 .header-nav__phone {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
   color: var(--color-neon);
   min-width: 170px;
@@ -717,23 +737,6 @@ body {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .header-nav__menu {
-    margin-right: 6.25rem; /* 100px */
-    margin-left: 6.25rem; /* 100px */
-  }
-  
-  .header-nav__link {
-    margin-left: 2.5rem; /* 40px */
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .header-nav__contacts {
-    margin-left: 6.75rem; /* 108px */
-  }
-}
-
 /* Блок activities */
 .activities__container {
   padding: 0 0.5rem;
@@ -748,7 +751,7 @@ body {
 @media (min-width: 768px) {
   .activities__header {
     flex-direction: row;
-    margin-bottom: 5rem;
+    margin-bottom: 3.75rem;
   }
 }
 
@@ -760,7 +763,6 @@ body {
 @media (min-width: 768px) {
   .activities__label {
     margin-bottom: 0;
-    margin-right: 2rem;
   }
 }
 
@@ -838,7 +840,7 @@ body {
 @media (min-width: 768px) {
   .activities__number-text {
     margin-top: -1.75rem;
-    margin-bottom: -3.5rem;
+    margin-bottom: -4rem;
   }
 }
 
@@ -882,6 +884,10 @@ body {
 
 .development__title-wrapper {
   flex: 1;
+}
+
+.development__title {
+  margin-bottom: 1.25rem;
 }
 
 .development__visual {
@@ -1137,7 +1143,7 @@ body {
 }
 
 .expertise__title {
-  margin: 0;
+  margin: 0 0 40px;
 }
 
 .expertise__title-wrapper {
@@ -1542,7 +1548,7 @@ body {
 
 .business-model__title {
   max-width: 982px;
-  margin-bottom: 5rem;
+  margin-bottom: 1.25rem;
   padding: 0 0.5rem;
 }
 
@@ -1730,6 +1736,10 @@ body {
     margin-bottom: 0;
     margin-right: 2rem;
   }
+
+  .tasks__title {
+    max-width: none;
+  }
 }
 
 .tasks__controls {
@@ -1817,6 +1827,18 @@ body {
 
 .tasks__slide-title {
  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .tasks__slide--2 {
+    background-image: url("/slider/task-slide-2.png");
+    background-size: cover;
+  }
+
+  .tasks__slide--5 {
+    background-image: url("/slider/task-slide-5.png");
+    background-size: cover;
+  }
 }
 
 .tasks__slide-content {
@@ -2040,7 +2062,7 @@ body {
 
 .realization__form-title {
   margin-top: 10px;
-  margin-bottom: 1.25rem;
+  margin-bottom: 40px;
 }
 
 /* Базовые стили формы */
