@@ -75,8 +75,8 @@ const swiperConfig = [
       max: 1023    // До 1023px
     },
     swiperConfig: {
-      slidesPerView: 1,
-      spaceBetween: 0,
+      slidesPerView: "auto",
+      spaceBetween: 20,
       loop: true,
       navigation: {
         nextEl: ".licenses__arrow--next",
@@ -224,4 +224,39 @@ class MobileMenu {
 // Инициализация меню при загрузке страницы
 document.addEventListener('DOMContentLoaded', () => {
     new MobileMenu();
+});
+
+// Активайия табов
+document.addEventListener('DOMContentLoaded', function() {
+  // Получаем все элементы вкладок и слайдов
+  const tabs = document.querySelectorAll('.business-model__tab');
+  const slides = document.querySelectorAll('.business-model__slide');
+  
+  // Функция для активации вкладки и слайда
+  function activateTab(tabIndex) {
+      // Убираем активный класс со всех вкладок
+      tabs.forEach(tab => {
+          tab.classList.remove('business-model__tab--active');
+      });
+      
+      // Добавляем активный класс выбранной вкладке
+      tabs[tabIndex].classList.add('business-model__tab--active');
+      
+      // Убираем активный класс со всех слайдов
+      slides.forEach(slide => {
+          slide.classList.remove('business-model__slide--active');
+      });
+      
+      // Добавляем активный класс выбранному слайду
+      slides[tabIndex].classList.add('business-model__slide--active');
+  }
+  
+  // Добавляем обработчики кликов на вкладки
+  tabs.forEach((tab, tabIndex) => {
+      tab.addEventListener('click', function() {
+          activateTab(tabIndex);
+      });
+  });
+
+  activateTab(3);
 });
