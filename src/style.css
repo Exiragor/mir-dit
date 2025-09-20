@@ -2267,7 +2267,7 @@ business-model__tabs
     border-radius: var(--radius-5xl);
     padding-top: 5rem;
     padding-bottom: 4.375rem;
-    background-image: none;
+    background-image: url("/form-mobile-plus-bg.png");
   }
 }
 
@@ -2288,14 +2288,14 @@ business-model__tabs
 
 .footer__col--logo {
   margin-bottom: 2.5rem;
-  flex: 1
+  flex: 1;
 }
 
 @media (min-width: 768px) {
   .footer__col--logo {
     margin-bottom: 0;
     margin-right: 4.375rem;
-    flex: 1;
+    flex: 0;
   }
 }
 
@@ -2317,7 +2317,7 @@ business-model__tabs
 
 @media (min-width: 768px) {
   .footer__logo {
-    width: 134px;
+    width: 108px;
   }
 }
 
@@ -2344,7 +2344,8 @@ business-model__tabs
 @media (min-width: 768px) {
   .footer__address {
     margin-bottom: 0;
-    margin-right: 4.375rem;
+    margin-right: 3.875rem;
+    flex: none;
   }
 }
 
@@ -2391,6 +2392,7 @@ business-model__tabs
 @media (min-width: 768px) {
   .footer__menu-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
   }
 }
 
@@ -2417,12 +2419,18 @@ business-model__tabs
 @media (min-width: 768px) {
   .footer__contacts--desktop {
     display: block;
-    margin-top: 2.5rem;
+    margin-top: 3.25rem;
   }
 }
 
 .footer__question {
   margin-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .footer__question {
+    margin-bottom: 0;
+  }
 }
 
 .footer__contacts-row {
