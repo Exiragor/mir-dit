@@ -175,7 +175,7 @@ body {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 600px) {
   .head-1 {
     font-size: 32px;
   }
@@ -320,7 +320,7 @@ body {
 
 .header__content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 2.5rem;
 }
@@ -328,6 +328,7 @@ body {
 @media (min-width: 768px) {
   .header__content {
     margin-top: 4.25rem;
+    justify-content: space-between;
   }
 }
 
@@ -1552,6 +1553,10 @@ body {
   .why-us__list {
     gap: 20px;
   }
+
+  .why-us__item {
+    gap: 20px;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -2014,7 +2019,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-size: contain;
+  background-size: cover;
 }
 
 .tasks__slide--gray {
@@ -2598,13 +2603,13 @@ body {
 @media (min-width: 1024px) {
   .footer__menu-grid {
     display: flex;
-    justify-content: space-between;
+    gap: 7.5rem;
   }
 }
 
 @media (min-width: 1920px) {
   .footer__menu-grid {
-    gap: 4.875rem;
+    gap: 7rem;
   }
 }
 
