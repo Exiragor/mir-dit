@@ -260,3 +260,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
   activateTab(3);
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('.dropdown');
+    const isTouchable = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    
+    dropdowns.forEach(function(dropdown) {
+        const menu = dropdown.querySelector('.dropdown-menu');
+        if (isTouchable) {
+          dropdown.addEventListener('click', function(e) {
+            e.stopPropagation();
+            menu.classList.toggle('show');
+        });
+        
+        // Скрываем меню при клике вне его
+        document.addEventListener('click', function() {
+            menu.classList.remove('show');
+        });
+        }
+    });
+});
