@@ -8,41 +8,239 @@
     <link href="/src/style.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-light p-5 font-manrope font-light">
-    <header class="rounded-5xl bg-primary p-8 pb-40">
-      <%- headerNav %>
-      <div
-        class="container mx-auto flex justify-between items-center mt-[88px]"
-      >
-        <div>
-          <h1 class="text-h-1">
-            <span class="text-white">Центр разработки</span> <br />
-            <span class="text-neon">Мир данных ИТ</span>
-          </h1>
+    <header class="header section section--primary analytics-header">
+        <%- headerNav %>
+        <div class="container header__content">
+            <div class="header__main">
+                <img class="header__image header__image--mobile analytics-header__image" src="/analytics-header-img.png" alt="Ball" />
 
-          <button
-            type="button"
-            class="bg-tranparent border-1 border-neon rounded-btn text-neon hover:text-white hover:border-white px-[30px] py-5 mt-25 cursor-pointer"
-          >
-            Заказать консультацию
-          </button>
+                <h1 class="head-1 header__title text-white">
+                    Аналитика и&#160;тестирование
+                </h1>
 
-          <div class="text-neon text-t-1 mt-27 desktop:min-w-[910px] laptop:min-w-[788px]">
-            ИТ аутсорсинг. Полный комплекс услуг по разработке ПО
+                <button type="button" class="header__button btn btn--outline t-2">
+                    Заказать аудит базы данных
+                </button>
+            </div>
+
+            <img class="header__image header__image--desktop analytics-header__image" src="/analytics-header-img.png" alt="Ball" />
+        </div>
+    </header>
+
+    <section class="expertise section section--white">
+      <div class="expertise__container container">
+        <div class="expertise__header">
+          <div class="expertise__label">
+            <span class="expertise__label-text t-2 text-primary">Аналитика</span>
           </div>
-          <div class="text-neon text-t-1 mt-1">
-            Функциональное тестирование высоконагруженных систем
-          </div>
-          <div class="text-neon text-t-1 mt-1">
-            Разработка, производство и ТО криптографических средств
-          </div>
-          <div class="text-neon text-t-1 mt-1">
-            Шифрование информации. Обслуживание и администрирование БД
+          <div class="expertise__title-wrapper analytics__title">
+            <h2 class="expertise__title head-2">
+              <span class="expertise__title-primary">Решаем задачи</span>
+              <span class="expertise__title-secondary text-primary">по бизнес и&#160;системному анализу</span>
+            </h2>
           </div>
         </div>
 
-        <img class="mix-blend-luminosity desktop:w-[560px] laptop:w-[490px]" src="/ball.png" />
+        <div class="expertise__grid">
+          <div class="expertise__card expertise__card--text">
+            <div class="expertise__card-number">01</div>
+            <div class="expertise__card-content">
+              <h3 class="expertise__card-title t-1 text-primary">Выделенная команда аналитиков</h3>
+              <p class="expertise__card-description t-2">
+                Предоставляем как команду под ключ,так и отдельных специалистов. Работаем удалённо и на площадке заказчика.
+              </p>
+            </div>
+          </div>
+
+          <div class="expertise__card expertise__card--text">
+            <div class="expertise__card-number">02</div>
+            <div class="expertise__card-content">
+              <h3 class="expertise__card-title t-1 text-primary">
+                Бизнес-анализ
+              </h3>
+              <p class="expertise__card-description t-2">
+                Изучаем законодательство и нормативные акты, описываем и разрабатываем процессы взаимодействия с информационной системой,бизнес-требования, пользовательские требования к интерфейсам и объектам информационной системы.
+              </p>
+            </div>
+          </div>
+
+          <div class="expertise__card expertise__card--text">
+            <div class="expertise__card-number">03</div>
+            <div class="expertise__card-content">
+              <h3 class="expertise__card-title t-1 text-primary">
+                Концептуальное-проектирование
+              </h3>
+              <p class="expertise__card-description t-2">
+                Моделируем контекст и границы информационной системы, создаём концепцию системы или сервиса.
+              </p>
+            </div>
+          </div>
+
+          <div class="expertise__card expertise__card--text">
+            <div class="expertise__card-number">04</div>
+            <div class="expertise__card-content">
+              <h3 class="expertise__card-title t-1 text-primary">Системный анализ</h3>
+              <p class="expertise__card-description t-2">
+                Разрабатываем функциональные и не функциональные требования, моделируем систему, группируем требования по компонентам системы, разрабатываем ТЗ, спецификации и постановки задач в формате заданной регламентом проекта.
+              </p>
+            </div>
+          </div>
+
+          <div class="expertise__card expertise__card--text">
+            <div class="expertise__card-number">05</div>
+            <div class="expertise__card-content">
+              <h3 class="expertise__card-title t-1 text-primary">Проектирование решения</h3>
+              <p class="expertise__card-description t-2">
+                Разрабатываем функциональную архитектуру, проектируем взаимодействия между компонентами информационной системы, взаимодействия с внешними и смежными системами, сценарии взаимодействия  пользователей/ систем/ компонентов с информационной системой, выполняем функциональное, информационное и процессное моделирование.
+              </p>
+            </div>
+          </div>
+
+          <div class="expertise__card expertise__card--text">
+            <div class="expertise__card-number">06</div>
+            <div class="expertise__card-content">
+              <h3 class="expertise__card-title t-1 text-primary">Управление требованиями</h3>
+              <p class="expertise__card-description t-2">
+                Полный пакет услуг по сбору, анализу, приоритезации, управлению изменениями требований на всех этапах проекта.
+              </p>
+            </div>
+          </div>
+
+          <div class="expertise__card expertise__card--text">
+            <div class="expertise__card-number">07</div>
+            <div class="expertise__card-content">
+              <h3 class="expertise__card-title t-1 text-primary">Сопровождение, авторская приёмка</h3>
+              <p class="expertise__card-description t-2">
+                Осуществляем авторскую приёмку реализованных функций информационной системы.
+              </p>
+            </div>
+          </div>
+
+          <div class="expertise__card expertise__card--text">
+            <div class="expertise__card-number">08</div>
+            <div class="expertise__card-content">
+              <h3 class="expertise__card-title t-1 text-primary">Презентация решений</h3>
+              <p class="expertise__card-description t-2">
+                Презентуем разработанные концепции, решения, функционал системы. Участвуем в приёмно-сдаточных испытаниях системы.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
+    </section>
+
+     <section class="expertise section section--white">
+      <div class="expertise__container container">
+        <div class="expertise__header">
+          <div class="expertise__label">
+            <span class="expertise__label-text t-2 text-primary">Тестирование</span>
+          </div>
+          <div class="expertise__title-wrapper">
+            <h2 class="expertise__title head-2">
+              <span class="expertise__title-primary">Решаем задачи <br class="qa__title-br" /></span>
+              <span class="expertise__title-secondary text-primary">по ручному,&#160;а так же автоматизированному тестированию</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="expertise__grid">
+          <div class="expertise__card expertise__card--text">
+            <div class="expertise__card-number">01</div>
+            <div class="expertise__card-content">
+              <h3 class="expertise__card-title t-1 text-primary">Выделенная QA команда</h3>
+              <p class="expertise__card-description t-2">
+                Предоставляем как команду под ключ,так и отдельных специалистов. Работаем удалённо и на площадке заказчика.
+              </p>
+            </div>
+          </div>
+
+          <div class="expertise__card expertise__card--text">
+            <div class="expertise__card-number">02</div>
+            <div class="expertise__card-content">
+              <h3 class="expertise__card-title t-1 text-primary">
+                Тестирование полного цикла
+              </h3>
+              <p class="expertise__card-description t-2">
+                Начиная с тестирования требований, до внедрения и эксплуатации программного продукта.
+              </p>
+            </div>
+          </div>
+
+          <div class="expertise__card expertise__card--text">
+            <div class="expertise__card-number">03</div>
+            <div class="expertise__card-content">
+              <h3 class="expertise__card-title t-1 text-primary">
+                Тестирование мобильных версий и приложений
+              </h3>
+              <p class="expertise__card-description t-2">
+                Моделируем контекст и границы информационной системы, создаём концепцию системы или сервиса.
+              </p>
+            </div>
+          </div>
+
+          <div class="expertise__card expertise__card--text">
+            <div class="expertise__card-number">04</div>
+            <div class="expertise__card-content">
+              <h3 class="expertise__card-title t-1 text-primary">Эксплуатационное тестирование</h3>
+              <p class="expertise__card-description t-2">
+                Полный пакет услуг по работе с обращениями пользователей, усиление команды тестирования в smoke-тестировании, интеграционном и сквозном тестировании.
+            </div>
+          </div>
+
+          <div class="expertise__card expertise__card--text">
+            <div class="expertise__card-number">05</div>
+            <div class="expertise__card-content">
+              <h3 class="expertise__card-title t-1 text-primary">Нагрузочное и автоматизированное  тестирование</h3>
+              <p class="expertise__card-description t-2">
+                Оптимизируем ручные проверки, ускоряем процесс выпуска в промышленную эксплуатацию, разрабатываем методику тестирования, проверяем нагрузку системы, производим сбор метрик и анализ статистики.
+              </p>
+            </div>
+          </div>
+
+          <div class="expertise__card expertise__card--text">
+            <div class="expertise__card-number">06</div>
+            <div class="expertise__card-content">
+              <h3 class="expertise__card-title t-1 text-primary">Консалтинг тестирования</h3>
+              <p class="expertise__card-description t-2">
+                Проводим аудит ваших процессов, разрабатываем рекомендации по оптимизации и налаживанию процесса управления качеством.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="presentation-block section section--primary">
+      <h2 class="head-2 text-white presentation-block__title">
+        Узнайте подробнее о наших услугах в сфере аналитики и тестирования
+      </h2>
+
+      <button type="button" class="presentation-block__button btn btn--outline t-2">
+          Скачать презентацию
+      </button>
+    </section>
+
+    <section class="realization">
+      <div class="realization__container container">
+        <div class="realization__content">
+          <div class="realization__text">
+            <h2 class="realization__title head-2">
+              <span class="realization__title-text">Реализуем</span>
+              <span class="realization__title-accent text-primary">все ваши идеи!</span>
+            </h2>
+          </div>
+          
+          <div class="realization__form">
+            <h3 class="realization__form-title head-3">
+              <span class="realization__form-accent text-primary">Оставьте контакты,</span> мы перезвоним
+            </h3>
+            <%- formBig %>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <%- footer %>
   </body>
 </html>
