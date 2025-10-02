@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
@@ -8,41 +8,211 @@
     <link href="/src/style.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-light p-5 font-manrope font-light">
-    <header class="rounded-5xl bg-primary p-8 pb-40">
-      <%- headerNav %>
-      <div
-        class="container mx-auto flex justify-between items-center mt-[88px]"
-      >
-        <div>
-          <h1 class="text-h-1">
-            <span class="text-white">Центр разработки</span> <br />
-            <span class="text-neon">Мир данных ИТ</span>
-          </h1>
+    <header class="header section section--primary analytics-header">
+        <%- headerNav %>
+        <div class="container header__content">
+            <div class="header__main">
+                <img class="header__image header__image--mobile oracle-header__image" src="/rings-mobile.png" alt="Ring" />
 
-          <button
-            type="button"
-            class="bg-tranparent border-1 border-neon rounded-btn text-neon hover:text-white hover:border-white px-[30px] py-5 mt-25 cursor-pointer"
-          >
-            Заказать консультацию
-          </button>
+                <h1 class="head-1 header__title text-white oracle-header__title">
+                    Анализ и диагностика
+причин неудовлет-ворённости производительности систем на базе ПО Oracle
+                </h1>
 
-          <div class="text-neon text-t-1 mt-27 desktop:min-w-[910px] laptop:min-w-[788px]">
-            ИТ аутсорсинг. Полный комплекс услуг по разработке ПО
-          </div>
-          <div class="text-neon text-t-1 mt-1">
-            Функциональное тестирование высоконагруженных систем
-          </div>
-          <div class="text-neon text-t-1 mt-1">
-            Разработка, производство и ТО криптографических средств
-          </div>
-          <div class="text-neon text-t-1 mt-1">
-            Шифрование информации. Обслуживание и администрирование БД
+                <button type="button" class="header__button oracle-header__button btn btn--outline t-2">
+                    Заказать аудит базы данных
+                </button>
+            </div>
+
+            <img class="header__image header__image--desktop oracle-header__image" src="/rings-mobile.png" alt="Ring" />
+        </div>
+    </header>
+
+    <section class="why-us section section--white">
+  <div class="why-us__container container">
+    <div class="why-us__header">
+      <div class="why-us__label">
+        <span class="why-us__label-text t-2 text-primary">Виды услуг</span>
+      </div>
+      <div class="why-us__title-wrapper">
+        <h2 class="why-us__title head-2 oracle-why-us__title">
+          <span class="why-us__title-primary text-primary">Выполняем </span>
+          работы по настройке производительности
+        </h2>
+        <div class="head-3 why-us__sub-title text-primary">
+          От диагностики и рекомендаций до&#160;внедрения исправлений
+        </div>
+      </div>
+    </div>
+
+    <div class="why-us__list">
+      <div class="why-us__item">
+        <div class="why-us__number">
+          <div class="why-us__number-text head-3 text-primary">01</div>
+        </div>
+        <div class="why-us__content">
+          <div class="t-2 text-primary">
+            Консультационная помощь и выполнение работ на стороне клиента по установке и конфигурированию операционных систем и программного обеспечения Oracle для его оптимально-производительной работы.
           </div>
         </div>
-
-        <img class="mix-blend-luminosity desktop:w-[560px] laptop:w-[490px]" src="/ball.png" />
       </div>
-    </header>
+
+      <div class="why-us__item">
+        <div class="why-us__number">
+          <div class="why-us__number-text head-3 text-primary">02</div>
+        </div>
+        <div class="why-us__content">
+          <div class="t-2 text-primary">
+            Инсталляция высокодоступных и надежных решений на базе технологии Real Application Clusters, Oracle Data Guard, GoldenGate.
+          </div>
+        </div>
+      </div>
+
+      <div class="why-us__item">
+        <div class="why-us__number">
+          <div class="why-us__number-text head-3 text-primary">03</div>
+        </div>
+        <div class="why-us__content">
+          <div class="t-2 text-primary">
+            Настройка оптимальных процедур резервного копирования и восстановления баз данных Oracle либо предоставление рекомендаций по его настройке.
+          </div>
+        </div>
+      </div>
+
+      <div class="why-us__item">
+        <div class="why-us__number">
+          <div class="why-us__number-text head-3 text-primary">04</div>
+        </div>
+        <div class="why-us__content">
+          <div class="t-2 text-primary">
+            Межплатформенная миграция баз данных Oracle, настройки совместимости приложений, помощь с апргрейдом версий.
+          </div>
+        </div>
+      </div>
+
+      <div class="why-us__item">
+        <div class="why-us__number">
+          <div class="why-us__number-text head-3 text-primary">05</div>
+        </div>
+        <div class="why-us__content">
+          <div class="t-2 text-primary">
+            Установка и рекомендации по настройке систем управления и мониторинга на базе Grid Control и Oracle Enterprise Manager.
+          </div>
+        </div>
+      </div>
+
+      <div class="why-us__item">
+        <div class="why-us__number">
+          <div class="why-us__number-text head-3 text-primary">06</div>
+        </div>
+        <div class="why-us__content">
+          <div class="t-2 text-primary">
+            Помощь с восстановлением баз данных Oracle после аварийных ситуаций, помощь с извлечением данных.
+          </div>
+        </div>
+      </div>
+
+      <div class="why-us__item">
+        <div class="why-us__number">
+          <div class="why-us__number-text head-3 text-primary">07</div>
+        </div>
+        <div class="why-us__content">
+          <div class="t-2 text-primary">
+            Настройка и консультации по гетерогенным сервисам Oracle GoldenGate.
+          </div>
+        </div>
+      </div>
+
+      <div class="why-us__item">
+        <div class="why-us__number">
+          <div class="why-us__number-text head-3 text-primary">08</div>
+        </div>
+        <div class="why-us__content">
+          <div class="t-2 text-primary">
+            Настройка и консультации по ПО Oracle TimesTen.
+          </div>
+        </div>
+      </div>
+
+      <div class="why-us__item">
+        <div class="why-us__number">
+          <div class="why-us__number-text head-3 text-primary">09</div>
+        </div>
+        <div class="why-us__content">
+          <div class="t-2 text-primary">
+            Выполнение работ по администрированию баз данных Oracle,  на площадке Клиента, либо удаленно, в течении предусмотренного контрактом времени.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--primary">
+  <div class="container">
+    <div class="expertise__header text-white diagnostic__header">
+      <div class="expertise__label">
+        <span class="expertise__label-text t-2">Бесплатная услуга</span>
+      </div>
+      <div class="expertise__title-wrapper">
+        <h2 class="expertise__title head-2">
+          <span class="expertise__title-primary">Диагностика системы</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="diagnostic__block">
+      <div class="diagnostic__number t-3">
+        1
+      </div>
+
+      <div class="diagnostic__text t-1">
+        Выезжаем на площадку клиента
+      </div>
+    </div>
+
+    <div class="diagnostic__block">
+      <div class="diagnostic__number t-3">
+        2
+      </div>
+
+      <div class="diagnostic__text t-1">
+        Выясняем проблемные моменты в системе
+      </div>
+    </div>
+
+    <div class="diagnostic__block">
+      <div class="diagnostic__number t-3">
+        3
+      </div>
+
+      <div class="diagnostic__text t-1">
+        Делаем обследование и выносим заключение
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="realization">
+      <div class="realization__container container">
+        <div class="realization__content">
+          <div class="realization__text">
+            <h2 class="realization__title head-2">
+              <span class="realization__title-text">Реализуем</span>
+              <span class="realization__title-accent text-primary">все ваши идеи!</span>
+            </h2>
+          </div>
+          
+          <div class="realization__form">
+            <h3 class="realization__form-title head-3">
+              <span class="realization__form-accent text-primary">Оставьте контакты,</span> мы перезвоним
+            </h3>
+            <%- formBig %>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <%- footer %>
   </body>
 </html>

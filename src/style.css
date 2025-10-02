@@ -18,6 +18,7 @@
 
   /* Градиенты */
   --main-gradient: linear-gradient(180deg, #274a64 27.33%, #a1eaf7 79.33%);
+  --second-gradient: linear-gradient(180deg, #274a64 0%, #96D7E3 100%);
 
   /* Шрифты */
   --font-manrope: "Manrope", sans-serif;
@@ -3032,9 +3033,11 @@ blockquote::after {
   margin-top: 40px;
 }
 
-.analytics__title {
-  margin-right: -40px;
-  margin-left: -40px;
+@media (min-width: 768px) {
+  .analytics__title {
+    margin-right: -40px;
+    margin-left: -40px;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -3052,4 +3055,50 @@ blockquote::after {
   .qa__title-br {
     display: block;
   }
+}
+
+.oracle-header__image {
+  width: 105px;
+}
+
+.oracle-header__title {
+  text-align: start;
+  hyphens: auto;
+}
+
+.oracle-header__button {
+  width: 100%;
+}
+
+.why-us__sub-title {
+  margin-top: 10px;
+}
+
+.oracle-why-us__title {
+  max-width: 213px;
+}
+
+.diagnostic__block {
+  border: 1px solid var(--color-neon);
+  border-radius: 20px;
+  color: var(--color-neon);
+  padding: 20px;
+  text-align: center;
+}
+
+.diagnostic__block + .diagnostic__block {
+  margin-top: 10px;
+}
+
+.diagnostic__number {
+  font-family: var(--font-roboto);
+  background: var(--second-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.diagnostic__text {
+  max-width: 162px;
+  margin: 0 auto;
 }
