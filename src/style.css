@@ -946,6 +946,13 @@ body {
   }
 }
 
+@media (min-width: 1600px) {
+  .oracle-activities__item:hover {
+    background: url("/activity-hover-laptop.png");
+    background-size: cover;
+  }
+}
+
 /* Блок development */
 
 .development__header {
@@ -3126,6 +3133,28 @@ blockquote::after {
     }
 }
 
+@media (min-width: 1600px) {
+    .oracle-header__image {
+      width: 493px;
+      margin-left: -100px;
+    }
+
+    .oracle-header__title {
+      display: none;
+      hyphens: none;
+    }
+
+    .oracle-header__title--laptop {
+      display: block;
+    }
+}
+
+@media (min-width: 1920px) {
+  .oracle-header__image {
+    margin-left: 100px;
+  }
+}
+
 .why-us__sub-title {
   margin-top: 10px;
 }
@@ -3148,6 +3177,19 @@ blockquote::after {
   gap: 10px;
 }
 
+.diagnostic__number {
+  font-family: var(--font-roboto);
+  background: var(--second-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.diagnostic__text {
+  max-width: 162px;
+  margin: 0 auto;
+}
+
 @media (min-width: 768px) {
   .diagnostic__blocks {
     flex-direction: row;
@@ -3168,19 +3210,30 @@ blockquote::after {
   .diagnostic__block {
     padding: 80px 32px;
   }
+
+  .diagnostic__text {
+    max-width: none;
+  }
 }
 
-.diagnostic__number {
-  font-family: var(--font-roboto);
-  background: var(--second-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+@media (min-width: 1600px) {
+  .diagnostic__blocks {
+    gap: 20px;
+  }
+
+  .diagnostic__block {
+    padding: 80px 48px;
+  }
 }
 
-.diagnostic__text {
-  max-width: 162px;
-  margin: 0 auto;
+@media (min-width: 1920px) {
+  .diagnostic__blocks {
+    gap: 24px;
+  }
+
+  .diagnostic__block {
+    padding: 80px 88px;
+  }
 }
 
 .rate-title {
@@ -3264,8 +3317,40 @@ blockquote::after {
   }
 
   .rate-title {
-    max-width: 650px;
+    padding: 0 100px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .rate {
+    padding: 60px 40px;
+  }
+
+  .rate-list {
+    gap: 15px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .rate {
+    padding: 80px;
+  }
+
+  .rate__description {
+    margin-top: 40px;
+  }
+
+  .rate__description > p {
+    margin: 20px 0 0;
+  }
+
+  .rate-list {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .rate {
+    padding: 80px 140px;
   }
 }
