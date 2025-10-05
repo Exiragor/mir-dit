@@ -939,6 +939,13 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .oracle-activities__item:hover {
+    background: url("/activity-hover-tablet.png");
+    background-size: cover;
+  }
+}
+
 /* Блок development */
 
 .development__header {
@@ -3112,6 +3119,13 @@ blockquote::after {
   }
 }
 
+@media (min-width: 1024px) {
+    .oracle-header__image {
+      width: 192px;
+      margin-left: -20px;
+    }
+}
+
 .why-us__sub-title {
   margin-top: 10px;
 }
@@ -3142,6 +3156,17 @@ blockquote::after {
   .diagnostic__block {
     border-radius: 30px;
     padding: 32px;
+    flex: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .diagnostic__blocks {
+    gap: 15px;
+  }
+
+  .diagnostic__block {
+    padding: 80px 32px;
   }
 }
 
@@ -3230,5 +3255,17 @@ blockquote::after {
 
   .rate-list {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .why-us__spacer {
+    margin-left: 42%;
+  }
+
+  .rate-title {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
