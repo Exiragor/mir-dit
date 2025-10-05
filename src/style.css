@@ -870,10 +870,10 @@ body {
   min-height: 4.688rem;
 }
 
-@media (min-width: 768px) {
-  .activities__item {
-    min-height: 5.5rem;
-  }
+.oracle-activities__item {
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid var(--color-neon);
 }
 
 .activities__number {
@@ -892,11 +892,12 @@ body {
    font-family: Arial, sans-serif;
 }
 
-@media (min-width: 768px) {
-  .activities__number-text {
-    margin-top: -1.75rem;
-    margin-bottom: -4rem;
-  }
+.oracle-activities__item .activities__number-text {
+  -webkit-text-stroke: 1px var(--color-neon);
+}
+
+.oracle-activities__item .activities__text {
+  color: var(--color-primary);
 }
 
 .activities__content {
@@ -905,6 +906,34 @@ body {
 }
 
 @media (min-width: 768px) {
+  .activities__number-text {
+    margin-top: -1.75rem;
+    margin-bottom: -4rem;
+  }
+
+  .activities__item {
+    min-height: 5.5rem;
+  }
+
+  .oracle-activities__item {
+    border-radius: 20px;
+    color: var(--color-white);
+  }
+
+  .oracle-activities__item:hover {
+    background: url("/activity-hover-mobile.png");
+    background-size: cover;
+    border: none;
+  }
+
+  .oracle-activities__item:hover .activities__number-text {
+    -webkit-text-stroke: 1px var(--color-white);
+  }
+
+  .oracle-activities__item:hover .activities__text {
+    color: var(--color-white);
+  }
+
   .activities__content {
     padding: 1rem;
   }
@@ -3070,6 +3099,19 @@ blockquote::after {
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .oracle-header__button {
+    width: fit-content;
+  }
+
+  .oracle-header__image {
+    width: 145px;
+    padding-left: 0;
+    margin-left: -70px;
+    align-self: end;
+  }
+}
+
 .why-us__sub-title {
   margin-top: 10px;
 }
@@ -3086,8 +3128,21 @@ blockquote::after {
   text-align: center;
 }
 
-.diagnostic__block + .diagnostic__block {
-  margin-top: 10px;
+.diagnostic__blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .diagnostic__blocks {
+    flex-direction: row;
+  }
+
+  .diagnostic__block {
+    border-radius: 30px;
+    padding: 32px;
+  }
 }
 
 .diagnostic__number {
@@ -3101,4 +3156,79 @@ blockquote::after {
 .diagnostic__text {
   max-width: 162px;
   margin: 0 auto;
+}
+
+.rate-title {
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.rate-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rate {
+  border: 1px solid var(--color-neon);
+  border-radius: 20px;
+  color: var(--color-white);
+  padding: 40px 20px;
+}
+
+.rate-name {
+  text-align: center;
+}
+
+.rate__time {
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.rate__description {
+  margin: 20px 0;
+}
+
+.rate__description--last {
+  margin-bottom: 0;
+}
+
+.rate__description > p {
+  margin: 10px 0 0;
+}
+
+.rate__cert-list {
+  display: flex;
+  gap: 10px;
+}
+
+.rate__cert {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-neon);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+@media (min-width: 768px) {
+  .services.why-us__list {
+    gap: 20px;
+  }
+
+  .services.why-us__list .why-us__item {
+    height: 99px;
+    gap: 20px;
+  }
+
+  .services.why-us__list .why-us__number {
+    min-width: 124px;
+  }
+
+  .rate-list {
+    flex-direction: row;
+  }
 }
