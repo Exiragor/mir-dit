@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
@@ -8,41 +8,56 @@
     <link href="/src/style.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-light p-5 font-manrope font-light">
-    <header class="rounded-5xl bg-primary p-8 pb-40">
+    <header class="header section section--primary">
       <%- headerNav %>
-      <div
-        class="container mx-auto flex justify-between items-center mt-[88px]"
-      >
-        <div>
-          <h1 class="text-h-1">
-            <span class="text-white">Центр разработки</span> <br />
-            <span class="text-neon">Мир данных ИТ</span>
-          </h1>
 
-          <button
-            type="button"
-            class="bg-tranparent border-1 border-neon rounded-btn text-neon hover:text-white hover:border-white px-[30px] py-5 mt-25 cursor-pointer"
-          >
-            Заказать консультацию
-          </button>
+      
 
-          <div class="text-neon text-t-1 mt-27 desktop:min-w-[910px] laptop:min-w-[788px]">
-            ИТ аутсорсинг. Полный комплекс услуг по разработке ПО
+      <div class="contacts-header__wrapper">
+        <img class="contacts-header__img header__image" src="/star-4.png" alt="star" />
+
+        <h1 class="head-1 contacts-header__title">
+          Контакты
+        </h1>
+
+        <div class="contacts-header__addresses">
+          <div class="contacts-header__address">
+            <div class="t-1 address__name">Главный офис</div>
+            <div class="t-2">
+              г. Москва, ул. Щепкина, д. 28, офис 311 <br />(м. Проспект Мира)
+            </div>
           </div>
-          <div class="text-neon text-t-1 mt-1">
-            Функциональное тестирование высоконагруженных систем
-          </div>
-          <div class="text-neon text-t-1 mt-1">
-            Разработка, производство и ТО криптографических средств
-          </div>
-          <div class="text-neon text-t-1 mt-1">
-            Шифрование информации. Обслуживание и администрирование БД
+
+          <div class="contacts-header__address">
+            <div class="t-1 address__name">Центр И...Б...</div>
+            <div class="t-2">
+              г. Москва, ул. Полярная, д. 31В, стр. 1, офис 203 <br /> (м. Медведково)
+            </div>
           </div>
         </div>
-
-        <img class="mix-blend-luminosity desktop:w-[560px] laptop:w-[490px]" src="/ball.png" />
       </div>
     </header>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7eb2c16c74e1bf48889fd26e0b2cdc2eec503bf9cd200dc491030be4466aaa00&amp;source=constructor" width="100%" height="600" frameborder="0"></iframe>
+
+    <section class="realization">
+      <div class="realization__container container">
+        <div class="realization__content">
+          <div class="realization__text">
+            <h2 class="realization__title head-2">
+              <span class="realization__title-text">Реализуем</span>
+              <span class="realization__title-accent text-primary">все ваши идеи!</span>
+            </h2>
+          </div>
+          
+          <div class="realization__form">
+            <h3 class="realization__form-title head-3">
+              <span class="realization__form-accent text-primary">Оставьте контакты,</span> мы перезвоним
+            </h3>
+            <%- formBig %>
+          </div>
+        </div>
+      </div>
+    </section>
     <%- footer %>
   </body>
 </html>

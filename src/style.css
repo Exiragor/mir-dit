@@ -3354,3 +3354,38 @@ blockquote::after {
     padding: 80px 140px;
   }
 }
+
+.contacts-header__img {
+  width: 148px;
+  margin-top: 20px;
+}
+
+.contacts-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-header__title {
+  color: var(--color-white);
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.contacts-header__address {
+  color: var(--color-white);
+  max-width: 173px;
+}
+
+.address__name {
+  color: var(--color-neon);
+  margin-bottom: 10px;
+}
+
+.contacts-header__addresses {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 90px;
+}

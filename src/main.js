@@ -234,6 +234,10 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Функция для активации вкладки и слайда
   function activateTab(tabIndex) {
+      if (!tabs[tabIndex]) {
+        return;
+      }
+
       // Убираем активный класс со всех вкладок
       tabs.forEach(tab => {
           tab.classList.remove('business-model__tab--active');
