@@ -550,10 +550,6 @@ body {
   align-items: center;
 }
 
-.header-nav__logo {
-  margin-right: 10px;
-}
-
 .header-nav__logo-img {
   width: 48px;
   height: auto;
@@ -789,6 +785,54 @@ body {
   
   .header-nav__link {
     margin-left: 2.5rem; /* 40px */
+  }
+}
+
+/* Обновляем стили для кнопки с выпадающим меню */
+.header-nav__dropdown-toggle {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  white-space: nowrap; /* Запрещаем перенос самой кнопки */
+  gap: 10px; /* Отступ между текстом и стрелкой */
+}
+
+.header-nav__dropdown-text {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap; /* Разрешаем перенос содержимого */  
+  white-space: normal; /* Разрешаем перенос текста */
+  text-align: left;
+}
+
+.header-nav__dropdown-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0; /* Запрещаем сжатие иконки */
+  margin-left: 0; /* Убираем старый отступ, т.к. теперь используем gap */
+}
+
+/* Альтернативный вариант - если нужен перенос только при очень маленьком пространстве */
+@media (max-width: 1024px) {
+  .header-nav__dropdown-text {
+    white-space: normal;
+  }
+  
+  .header-nav__menu {
+    gap: 0.5rem; /* Уменьшаем отступы между пунктами меню */
+  }
+}
+
+/* Для очень узких экранов */
+@media (max-width: 868px) {
+  .header-nav__dropdown-text {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -2664,7 +2708,7 @@ body {
 @media (min-width: 768px) {
   .footer__menu-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.75rem;
+    gap: 5rem;
   }
 }
 
