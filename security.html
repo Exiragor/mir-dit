@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
@@ -8,41 +8,110 @@
     <link href="/src/style.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-light p-5 font-manrope font-light">
-    <header class="rounded-5xl bg-primary p-8 pb-40">
-      <%- headerNav %>
-      <div
-        class="container mx-auto flex justify-between items-center mt-[88px]"
-      >
-        <div>
-          <h1 class="text-h-1">
-            <span class="text-white">Центр разработки</span> <br />
-            <span class="text-neon">Мир данных ИТ</span>
-          </h1>
+    <header class="header section section--primary analytics-header">
+        <%- headerNav %>
+        <div class="container header__content">
+            <div class="header__main">
+                <img class="header__image header__image--mobile analytics-header__image" src="/disks.png" alt="Ball" />
 
-          <button
-            type="button"
-            class="bg-tranparent border-1 border-neon rounded-btn text-neon hover:text-white hover:border-white px-[30px] py-5 mt-25 cursor-pointer"
-          >
-            Заказать консультацию
-          </button>
+                <h1 class="head-1 header__title text-white security-header__title">
+                    Оценка защищённости ресурсов
+                </h1>
 
-          <div class="text-neon text-t-1 mt-27 desktop:min-w-[910px] laptop:min-w-[788px]">
-            ИТ аутсорсинг. Полный комплекс услуг по разработке ПО
+                <button type="button" class="header__button security-header__button btn btn--outline t-2">
+                    Заказать аудит базы данных
+                </button>
+            </div>
+
+            <img class="header__image header__image--desktop analytics-header__image" src="/disks.png" alt="Ball" />
+        </div>
+    </header>
+
+    <section class="expertise section section--white">
+      <div class="expertise__container container">
+        <div class="expertise__header">
+          <div class="expertise__label">
+            <span class="expertise__label-text t-2 text-primary">Услуги</span>
           </div>
-          <div class="text-neon text-t-1 mt-1">
-            Функциональное тестирование высоконагруженных систем
-          </div>
-          <div class="text-neon text-t-1 mt-1">
-            Разработка, производство и ТО криптографических средств
-          </div>
-          <div class="text-neon text-t-1 mt-1">
-            Шифрование информации. Обслуживание и администрирование БД
+          <div class="expertise__title-wrapper analytics__title">
+            <h2 class="expertise__title head-2 text-primary">
+              Мы проводим мероприятия по оценке защищенности ресурсов при разработке ПО
+            </h2>
           </div>
         </div>
 
-        <img class="mix-blend-luminosity desktop:w-[560px] laptop:w-[490px]" src="/ball.png" />
+        <div class="expertise__grid">
+          <div class="expertise__card expertise__card--text security__card">
+            <div class="expertise__card-number">01</div>
+            <div class="expertise__card-content">
+              <h3 class="expertise__card-title t-1 text-primary">Аудит инфраструктуры</h3>
+              <p class="expertise__card-description t-2">
+                Необходим для разработки программного обеспечения
+              </p>
+            </div>
+          </div>
+
+          <div class="expertise__card expertise__card--text security__card">
+            <div class="expertise__card-number">02</div>
+            <div class="expertise__card-content">
+              <h3 class="expertise__card-title t-1 text-primary">
+                Определение потенциальных векторов угроз
+              </h3>
+              <p class="expertise__card-description t-2">
+                Могут привести к появлению вредоносного кода в инфраструктуре заказчика или утечки конфиденциальной информации
+            </div>
+          </div>
+
+          <div class="expertise__card expertise__card--text security__card">
+            <div class="expertise__card-number">03</div>
+            <div class="expertise__card-content">
+              <h3 class="expertise__card-title t-1 text-primary">
+                Разработка рекомендаций для нейтрализации рисков заражения
+              </h3>
+              <p class="expertise__card-description t-2">
+                Разработка рекомендаций для нейтрализации рисков заражения вредоносным программным обеспечением и/или утечки информации
+              </p>
+            </div>
+          </div>
+
+          <div class="expertise__card expertise__card--text security__card">
+            <div class="expertise__card-number">04</div>
+            <div class="expertise__card-content">
+              <h3 class="expertise__card-title t-1 text-primary">Проведение тестирования на проникновение инфраструктуры</h3>
+              <p class="expertise__card-description t-2">
+                Сетевого периметра,
+                Сетевыхустройств и протоколов
+                Беспроводных сетей операционных систем
+                Систем управления базамиданных средств виртуализации
+                Средств контейнеризации
+              </p>
+            </div>
+          </div>
+
+        </div>
       </div>
-    </header>
+    </section>
+
+     <section class="realization">
+      <div class="realization__container container">
+        <div class="realization__content">
+          <div class="realization__text">
+            <h2 class="realization__title head-2">
+              <span class="realization__title-text">Реализуем</span>
+              <span class="realization__title-accent text-primary">все ваши идеи!</span>
+            </h2>
+          </div>
+          
+          <div class="realization__form">
+            <h3 class="realization__form-title head-3">
+              <span class="realization__form-accent text-primary">Оставьте контакты,</span> мы перезвоним
+            </h3>
+            <%- formBig %>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <%- footer %>
   </body>
 </html>

@@ -3528,3 +3528,15 @@ blockquote::after {
     max-width: 1405px;
   }
 }
+
+.security-header__button {
+  width: 100%;
+}
+
+.security-header__title {
+  text-align: start;
+}
+
+.security__card {
+  min-height: 172px;
+}
