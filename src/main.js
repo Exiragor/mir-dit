@@ -234,8 +234,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Функция для активации вкладки и слайда
   function activateTab(tabIndex) {
-      if (!tabs[tabIndex]) {
-        return;
+      if (!tabs[tabIndex] || !slides[tabIndex]) {
+        return null;
       }
 
       // Убираем активный класс со всех вкладок
@@ -262,7 +262,10 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 
-  activateTab(3);
+  if (activateTab(3) === null) {
+    activateTab(0);
+  }
+  
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -282,5 +285,28 @@ document.addEventListener('DOMContentLoaded', function() {
             menu.classList.remove('show');
         });
         }
+    });
+});
+
+// toggle open class
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.opener');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+          console.log('click');
+            const targetSelectors = this.getAttribute('data-target');
+            button.classList.toggle('_opened');
+            
+            // Разделяем селекторы по запятой и обрабатываем каждый
+            targetSelectors.split(',').forEach(selector => {
+                const trimmedSelector = selector.trim();
+                const elements = document.querySelectorAll(trimmedSelector);
+                
+                elements.forEach(element => {
+                    element.classList.toggle('_open');
+                });
+            });
+        });
     });
 });

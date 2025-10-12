@@ -8,11 +8,11 @@
     <link href="/src/style.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-light p-5 font-manrope font-light">
-    <header class="header section section--primary analytics-header">
+    <header class="header section section--primary sec-header">
         <%- headerNav %>
         <div class="container header__content">
             <div class="header__main">
-                <img class="header__image header__image--mobile analytics-header__image" src="/disks.png" alt="Ball" />
+                <img class="header__image header__image--mobile sec-header__image" src="/disks.png" alt="Ball" />
 
                 <h1 class="head-1 header__title text-white security-header__title">
                     Оценка защищённости ресурсов
@@ -23,9 +23,70 @@
                 </button>
             </div>
 
-            <img class="header__image header__image--desktop analytics-header__image" src="/disks.png" alt="Ball" />
+            <img class="header__image header__image--desktop sec-header__image" src="/disks.png" alt="Ball" />
         </div>
     </header>
+
+    <section class="section section--white">
+      <div class="container">
+        <h2 class="head-2 text-primary">
+          Мы проводим мероприятия по оценке защищенности ресурсов при разработке ПО
+        </h2>
+
+        <div class="toggle-cards">
+          <div class="toggle-card">
+            <button class="btn-icon toggle-card__arrow toggle-card__arrow--mobile opener" data-target="#text-1, #number-1">
+              <img src="/arrow-bottom.png" />
+            </button>
+            
+
+            <div class="toggle-card__content">
+              <div class="toggle-card__number font-roboto t-5 text-primary" id="number-1">01</div>
+              <div class="t-2 text-primary toggle-card__main">
+                Наша компания относится к субъектам малого и среднего  предпринимательства и имеет статус малое предприятие с 10 января 2019 г. и обладает лицензиями в части обеспечения работ по информационной безопасности.
+                <button class="btn-icon toggle-card__arrow toggle-card__arrow--desktop opener" data-target="#text-1, #number-1">
+                  <img src="/arrow-bottom.png" />
+                </button>
+              </div>
+            </div>
+
+            <div class="toggle-card__text t-2" id="text-1">
+              <div>
+                № Л024-00107-00/00582622 №3642 от 11 сентября 2019 г. Вид деятельности: Деятельность по технической защите конфиденциальной информации. Лицензирующий орган: Федеральная служба по техническому и экспортному контролю (ФСТЭК).
+              </div>
+              <div>
+                №ЛСЗ0016578 17477Н от 1 октября 2019 г. Вид деятельности: Разработка, производство, распространение шифровальных (криптографических) средств, информационных систем и телекоммуникационных систем, защищенных с использованием шифровальных (криптографических) средств, выполнение работ, оказание услуг в области шифрования информации, техническое обслуживание шифровальных (криптографических) средств, информационных систем и телекоммуникационных систем, защищенных с использованием шифровальных (криптографических) средств (за исключением случая, если техническое обслуживание шифровальных (криптографических) средств, информационных систем и телекоммуникационных систем, защищенных с использованием шифровальных (криптографических) средств, осуществляется для обеспечения собственных нужд юридического лица или индивидуального предпринимателя). Лицензирующий орган: ФСБ России.
+              </div>
+            </div>
+          </div>
+
+          <div class="toggle-card">
+            <button class="btn-icon toggle-card__arrow toggle-card__arrow--mobile opener" data-target="#text-2, #number-2">
+              <img src="/arrow-bottom.png" />
+            </button>
+
+            <div class="toggle-card__content">
+              <div class="toggle-card__number font-roboto t-5 text-primary" id="number-2">02</div>
+              <div class="t-2 text-primary toggle-card__main">
+                Оценка защищенности ресурсов при выполнении разработки программного обеспечения оказывается в соответствии с основными законо-дательными актами РФ.
+                <button class="btn-icon toggle-card__arrow toggle-card__arrow--desktop opener" data-target="#text-2, #number-2">
+                  <img src="/arrow-bottom.png" />
+                </button>
+              </div>
+            </div>
+
+            <div class="toggle-card__text t-2" id="text-2">
+              <div>
+               Федеральный закон от 27 июля 2006 г. N 149-ФЗ «Об информации, информационных технологиях и о защите информации».
+              </div>
+              <div>
+               Рекомендации в области стандартизации Банка России PC БР ИББС-2.6-2014 "Обеспечение информационной безопасности организаций банковской системы Российской Федерации. Обеспечение информационной безопасности на стадиях жизненного цикла автоматизированных банковских систем".
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
 
     <section class="expertise section section--white">
       <div class="expertise__container container">
@@ -35,12 +96,12 @@
           </div>
           <div class="expertise__title-wrapper analytics__title">
             <h2 class="expertise__title head-2 text-primary">
-              Мы проводим мероприятия по оценке защищенности ресурсов при разработке ПО
+              Мы предлагаем следующие виды работ:
             </h2>
           </div>
         </div>
 
-        <div class="expertise__grid">
+        <div class="expertise__grid expertise__grid--security">
           <div class="expertise__card expertise__card--text security__card">
             <div class="expertise__card-number">01</div>
             <div class="expertise__card-content">
@@ -88,6 +149,63 @@
             </div>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <section class="business-model section business-model--security">
+      <div class="business-model__container container">
+        <h2 class="business-model__title head-2">
+          <span class="business-model__title-accent">
+            Состав инфраструктуры уточняется по результатам проведения работ по аудиту, 
+          </span>
+          <span class="text-primary">в том числе исходя из перечня используемых технологий</span>
+        </h2>
+        <h3 class="business-model__title head-3 text-primary">
+          Тестирование проводится с использованием стратегий «белого» и&#160;«черного» ящика
+        </h3>
+
+        <div class="business-model__tabs">
+          <div class="business-model__tab">Консультация</div>
+          <div class="business-model__tab">Разработка</div>
+        </div>
+
+        <div class="business-model__mobile-controls">
+          <div class="business-model__arrow business-model__arrow--prev">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.1016 6.08204L3.06594 6.08204L7.45034 1.5799C7.80074 1.2201 7.80074 0.629655 7.45034 0.269853C7.09995 -0.0899493 6.53393 -0.0899494 6.18354 0.269853L0.262794 6.34959C-0.0875995 6.70939 -0.0875996 7.29061 0.262793 7.65041L6.18354 13.7301C6.53393 14.09 7.09995 14.09 7.45034 13.7301C7.80074 13.3703 7.80074 12.7891 7.45034 12.4293L3.06594 7.92718L13.1016 7.92718C13.5957 7.92718 14 7.51203 14 7.00461C14 6.4972 13.5957 6.08204 13.1016 6.08204Z" fill="#A1EAF7"/>
+            </svg>
+          </div>
+          <div class="business-model__arrow business-model__arrow--next">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.898444 7.91796L10.9341 7.91796L6.54966 12.4201C6.19926 12.7799 6.19926 13.3703 6.54965 13.7301C6.90005 14.0899 7.46607 14.0899 7.81646 13.7301L13.7372 7.65041C14.0876 7.29061 14.0876 6.70939 13.7372 6.34959L7.81646 0.269852C7.46607 -0.0899502 6.90005 -0.0899502 6.54966 0.269852C6.19926 0.629654 6.19926 1.21087 6.54966 1.57068L10.9341 6.07282L0.898444 6.07282C0.404299 6.07282 -2.96952e-07 6.48797 -3.41312e-07 6.99539C-3.85671e-07 7.5028 0.404299 7.91796 0.898444 7.91796Z" fill="white"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="business-model__slider swiper">
+          <div>
+            <div class="business-model__slide business-model__slide--white swiper-slide">
+              <div class="business-model__slide-content">
+                <h3 class="t-1">Консультационные услуги при проведении работ по устранению выявленных уязвимостей</h3>
+                <p class="security__slide-text t-2">
+                  Процессы сопровождения созданы по лучшим практикам ИT-компаний и используют систему ITIL.
+                </p>
+                <img src="/triangle.png" alt="" class="business-model__slide-icon" />
+              </div>
+            </div>
+
+            <div class="business-model__slide swiper-slide">
+              <div class="business-model__slide-content">
+                <h3 class="t-1">Разработка и согласование отчета об оценке защищенности</h3>
+                <p class="security__slide-text t-2">
+                  Наши специалисты круглосуточно в реальном времени контролируют процессы, отображаемые в Системе мониторинга.
+                </p>
+                <img src="/triangle.png" alt="" class="business-model__slide-icon" />
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
