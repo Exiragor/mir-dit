@@ -3663,6 +3663,18 @@ blockquote::after {
   .security-header__button {
     width: fit-content;
   }
+
+  .sec__slide-content {
+    gap: 20px; 
+  }
+
+  .sec__triangle {
+    right: 40px;
+  }
+
+  .toggle-card + .toggle-card {
+    margin-top: 20px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -3707,6 +3719,15 @@ blockquote::after {
   .toggle-card__number {
     text-align: center;
   }
+
+  .sec__triangle {
+    right: 1.25rem;
+    bottom: 40px;
+  }
+
+  .sec__card-title {
+    max-width: none;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -3720,5 +3741,41 @@ blockquote::after {
 
   .security__card {
     min-height: 279px;
+  }
+
+  .sec__model-slide {
+    min-height: 200px;
+  }
+
+  .toggle-card {
+    padding: 20px;
+    min-height: 148px;
+  }
+
+  .toggle-card__main {
+    height: 108px;
+    align-items: center;
+  }
+
+  .toggle-card__arrow {
+    align-self: flex-start;
+  }
+
+  .sec__card-title {
+    max-width: 356px;
+  }
+
+  .toggle-card__number {
+    margin-top: -52px;
+  }
+
+  .sec__card-desc {
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .sec-header__image {
+    width: 626px;
   }
 }
