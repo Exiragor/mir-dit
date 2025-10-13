@@ -170,7 +170,7 @@ class MobileMenu {
         this.burgerMenu = document.getElementById('burgerMenu');
         this.mobileNav = document.getElementById('mobileNav');
         this.closeMenu = document.getElementById('closeMenu');
-        this.navLinks = document.querySelectorAll('.nav-link');
+        this.navLinks = document.querySelectorAll('.mobile-link');
         
         this.init();
     }
