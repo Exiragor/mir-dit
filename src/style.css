@@ -3779,3 +3779,21 @@ blockquote::after {
     width: 626px;
   }
 }
+
+.about-header {
+  background-image: url("/bg-about-mobile.png");
+  background-size: cover;
+}
+
+.about-header .header__content {
+  justify-content: flex-start;
+  margin-top: 0;
+}
+
+.about-header .header-nav {
+  background: transparent;
+}
+
+.about-header .burger-menu  {
+  background: transparent;
+}
