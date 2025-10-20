@@ -3869,8 +3869,11 @@ blockquote::after {
 }
 
 .about-team__blockquote {
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin: 40px -15px 20px;
+}
+
+.about-team__desc {
+  padding: 0 15px;
 }
 
 .about-team__lead {
@@ -3893,4 +3896,139 @@ blockquote::after {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   margin-top: 80px;
+}
+
+.gymn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("/gymn_bg_mobile.png");
+  background-size: cover;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.gymn > h2 {
+  text-align: center;
+}
+
+.gymn__button {
+  margin-top: 20px;
+}
+
+.history__blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.history__block {
+  border: 1px solid var(--color-primary);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.history__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.history {
+  padding: 80px 0;
+}
+
+.history__text {
+  display: none;
+}
+
+.history__date--open {
+  display: none;
+}
+
+.history__date--close {
+  display: block;
+}
+
+.history__block._open {
+  background-color: var(--color-primary);
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.history__block._open .history__main {
+  align-items: flex-start;
+  margin-bottom: 72px;
+}
+
+.history__block._open .history__date {
+  align-items: flex-start;
+}
+
+.history__block._open .history__date--close {
+  display: none;
+}
+
+.history__block._open .history__date--open {
+  display: block;
+}
+
+.history__toggle {
+  width: 20px;
+  height: 20px;
+  background-image: url("/plus-circle.svg");
+}
+
+.history__block._open .history__toggle {
+  background-image: url("/circle-close.svg");
+}
+
+.history__block._open .history__text {
+  display: block;
+}
+
+.join-us__star {
+  width: 105px;
+  margin: 0 auto;
+}
+
+.join-us__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+  gap: 10px;
+}
+
+.join-us__button {
+  margin-top: 20px;
+}
+
+.join-us__title {
+  margin-top: 28px;
+}
+
+.about__toggle-card {
+  position: relative;
+  padding: 10px 20px;
+}
+
+.about__toggle-card .toggle-card__content {
+  margin-top: 0;
+}
+
+.about__toggle-card .toggle-card__arrow {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.about__toggle-card .toggle-card__main {
+  display: flex;
+  align-items: center;
 }
