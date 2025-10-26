@@ -323,3 +323,76 @@
     width: 100%;
   }
 }
+
+@media (min-width: 1024px) {
+    .about-clients__title-br {
+        display: none;
+    }
+
+    .about-clients__wrapper {
+        gap: 0;
+    }
+
+    .about-clients__wrapper > * {
+        flex: 1;
+    }
+
+    .about-clients__grid {
+        justify-content: flex-start;
+        gap: 74px;
+    }
+
+    .about-clients__row {
+        gap: 55px;
+    }
+
+    .about-clients {
+        gaP: 55px;
+    }
+
+    .toggle-card__text--about > * {
+        flex: 1;
+    }
+
+    .development__title--about {
+        max-width: 610px;
+    }
+
+    .about-team__avatar {
+        width: 210px;
+    }
+
+    .about-team__lead {
+        max-width: 300px;
+        display: flex;
+    }
+
+    .about-team__lead--mobile {
+        display: none;
+    }
+
+    .about-team__lead-text {
+        order: 0;
+    }
+
+    .about-team__avatar--lead {
+        order: 1;
+    }
+
+    .gymn > h2 {
+        max-width: 675px;
+    }
+
+    .gymn__button {
+        margin-top: 60px;
+    }
+
+    .join-us__wrapper {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .join-us__star {
+        margin: 0;
+    }
+}
