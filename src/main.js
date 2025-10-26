@@ -289,14 +289,32 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // toggle open class
+const OPENER_CLASS = 'opener';
+const OPENED_CLASS = '_opened';
+const OPEN_CLASS = '_open';
+const OPENER_WRAP_CLASS = 'opener-wrap';
+
 document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.opener');
+    const buttons = document.querySelectorAll(`.${OPENER_CLASS}`);
     
     buttons.forEach(button => {
         button.addEventListener('click', function() {
-          console.log('click');
+            // clear other els
+            const wrapper = button.closest(`.${OPENER_WRAP_CLASS}`);
+            if (wrapper && !button.classList.contains(OPENED_CLASS)) {
+              const clearClasses = (cls) => {
+                const openedItems = wrapper.querySelectorAll(`.${cls}`);
+                openedItems.forEach(element => {
+                    element.classList.toggle(cls);
+                });
+              }
+
+              clearClasses(OPENED_CLASS);
+              clearClasses(OPEN_CLASS);
+            }
+
             const targetSelectors = this.getAttribute('data-target');
-            button.classList.toggle('_opened');
+            button.classList.toggle(OPENED_CLASS);
             
             // Разделяем селекторы по запятой и обрабатываем каждый
             targetSelectors.split(',').forEach(selector => {
@@ -304,7 +322,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const elements = document.querySelectorAll(trimmedSelector);
                 
                 elements.forEach(element => {
-                    element.classList.toggle('_open');
+                    element.classList.toggle(OPEN_CLASS);
                 });
             });
         });

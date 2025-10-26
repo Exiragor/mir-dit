@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%- title %></title>
     <link href="/src/style.css" rel="stylesheet" />
+    <link href="/src/styles/about.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-light p-5 font-manrope font-light">
     <header class="header section section--primary about-header">
         <%- headerNav %>
         <div class="container header__content">
             <div class="header__main">
-                <h1 class="head-1 header__title text-white">
+                <h1 class="head-1 header__title text-white about-header__title">
                     О компании
                 </h1>
             </div>
@@ -22,27 +23,32 @@
 
     <section class="stats section section--white">
       <div class="stats__container container">
-        <div class="stats__grid">
-          <div class="stats__item stats__item--about">
-            <div class="stats__number font-roboto text-gradient t-3 bg-clip-text text-transparent">50+</div>
-            <div class="stats__text t-2">Специалистов<br /> в сфере ИТ</div>
+        <div class="about-clients__wrapper">
+          <div class="stats__grid about-clients__grid">
+            <div class="stats__item stats__item--about">
+              <div class="stats__number font-roboto text-gradient t-3 bg-clip-text text-transparent">50+</div>
+              <div class="stats__text t-2">Специалистов<br /> в сфере ИТ</div>
+            </div>
+
+            <div class="stats__item stats__item--about">
+              <div class="stats__number font-roboto text-gradient t-3 bg-clip-text text-transparent">6+</div>
+              <div class="stats__text t-2">Лет работы<br /> в России</div>
+            </div>
           </div>
 
-          <div class="stats__item stats__item--about">
-            <div class="stats__number font-roboto text-gradient t-3 bg-clip-text text-transparent">6+</div>
-            <div class="stats__text t-2">Лет работы<br /> в России</div>
+          <div class="t-1 about__desc">
+            <span class="text-primary">Компания МИР ДАННЫХ ИТ выполняет задачи по проектированию и тестированию, в том числе в направлении информационная безопасность,</span> а также по сопровождению и эксплуатации внедренных решений для средних и крупных предприятий.
           </div>
         </div>
 
-        <div class="t-1 about__desc">
-          <span class="text-primary">Компания МИР ДАННЫХ ИТ выполняет задачи по проектированию и тестированию, в том числе в направлении информационная безопасность,</span> а также по сопровождению и эксплуатации внедренных решений для средних и крупных предприятий.
+        <div class="about-clients__title-wrapper">
+          <div></div>
+          <div class="head-2 about-clients__title">
+            Постоянные <br class="about-clients__title-br" /> клиенты
+          </div>
         </div>
 
-        <div class="head-2 about-clients__title">
-          Постоянные клиенты
-        </div>
-
-        <div class="about-clients">
+        <div class="about-clients about-clients--mobile">
           <div class="about-clients__row">
             <div class="about-clients__row-item about-clients__row-item--center">
               <img src="/clients/mts.svg" alt="MTS" />
@@ -70,12 +76,38 @@
             </div>
           </div>
         </div>
+
+        <div class="about-clients">
+          <div class="about-clients__row">
+            <div class="about-clients__row-item about-clients__row-item--center">
+              <img src="/clients/mts.svg" alt="MTS" />
+            </div>
+            <div class="about-clients__row-item">
+              <img src="/clients/otp-bank.svg" alt="OTP" />
+            </div>
+            <div class="about-clients__row-item">
+              <img class="t1-img" src="/clients/t1-integration.svg" alt="T1-integration" />
+            </div>
+          </div>
+
+          <div class="about-clients__row">
+            <div class="about-clients__row-item about-clients__row-item--right">
+              <img src="/clients/lanit.svg" alt="Lanit" />
+            </div>
+            <div class="about-clients__row-item about-clients__row-item--center">
+              <img src="/clients/otr-tv.svg" alt="OTR-TV" />
+            </div>
+            <div class="about-clients__row-item">
+              <img src="/clients/atomyze.svg" alt="ATOMYZE" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="development section section--white">
         <div class="development__container container">
-            <div class="development__header">
+            <div class="development__header development__header--about">
                 <div class="development__label">
                     <span class="development__label-text t-2 text-primary">Компетенции</span>
                 </div>
@@ -96,13 +128,13 @@
                   </div>
                 </div>
 
-                <div class="toggle-card__text t-2" id="text-1">
-                  <div></div>
+                <div class="toggle-card__text toggle-card__text--about t-2" id="text-1">
+                  <div class="first toggle-card__number font-roboto t-5 text-primary" id="number-hidden-1">01</div>
                   <div>
                     Наши специалисты работают с крупнейшими системными интеграторами, выполняя задачи по проектированию, тестированию, сопровождению и эксплуатации внедренных решений. Проводят оценку защищенности ресурсов при выполнении разработки программного обеспечения лицензии ФСТЭК (№Л024-00107-00/00582622 от 11 сентября 2019 г.) и ФСБ (ЛСЗ0016578 17477Н от 1 октября 2019 г.)
                   </div>
                 </div>
-                <button class="btn-icon toggle-card__arrow opener" data-target="#text-1, #number-1">
+                <button class="btn-icon toggle-card__arrow opener" data-target="#text-1, #number-1, #number-hidden-1">
                   <img src="/arrow-bottom.png" />
                 </button>
               </div>
@@ -115,13 +147,13 @@
                   </div>
                 </div>
 
-                <div class="toggle-card__text t-2" id="text-2">
-                  <div></div>
+                <div class="toggle-card__text toggle-card__text--about t-2" id="text-2">
+                  <div class="first toggle-card__number font-roboto t-5 text-primary" id="number-hidden-2">02</div>
                   <div>
                     Учебный центр разрабатывает индивидуальные программы обучения по заказу компаний. Программы длятся от недели до двух месяцев, проводятся удаленно или очно. Компания имеет лицензию на образовательную деятельность (Л035-01298-77/00180273 от 19 апреля 2021 г.).
                   </div>
                 </div>
-                <button class="btn-icon toggle-card__arrow opener" data-target="#text-2, #number-2">
+                <button class="btn-icon toggle-card__arrow opener" data-target="#text-2, #number-2, #number-hidden-2">
                   <img src="/arrow-bottom.png" />
                 </button>
               </div>
@@ -134,14 +166,14 @@
                   </div>
                 </div>
 
-                <div class="toggle-card__text t-2" id="text-3">
-                  <div></div>
+                <div class="toggle-card__text toggle-card__text--about t-2" id="text-3">
+                  <div class="first toggle-card__number font-roboto t-5 text-primary" id="number-hidden-3">03</div>
                   <div>
                     Центр администрирования баз данных занимается увеличением скорости работы с цифровыми данными Заказчика, снижением рисков остановки, проведением аудита, помощью в оптимизации существующей инфраструктуры баз данных и созданием решений для новых проектов. Осуществляет работы по импортозамещению.
                   </div>
                 </div>
 
-                <button class="btn-icon toggle-card__arrow opener" data-target="#text-3, #number-3">
+                <button class="btn-icon toggle-card__arrow opener" data-target="#text-3, #number-3, #number-hidden-3">
                   <img src="/arrow-bottom.png" />
                 </button>
               </div>
@@ -151,7 +183,7 @@
 
     <section class="development section section--white">
         <div class="development__container container">
-            <div class="development__header">
+            <div class="development__header development__header--licences">
                 <div class="development__label">
                     <span class="development__label-text t-2 text-primary">Преимущества</span>
                 </div>
@@ -257,6 +289,16 @@
             <div class="development__header">
                 <div class="development__label">
                     <span class="development__label-text t-2 text-primary">Наша команда</span>
+                    <div class="about-team__lead">
+                      <img class="about-team__avatar" src="/team/lead.png" />
+
+                      <div class="t-2 text-primary about-team__fio">
+                        Елена Витальена Константинова
+                      </div>
+                      <div class="t-2">
+                        Гендиректор ООО&#160;МИР&#160;ДАННЫХ&#160;ИТ
+                      </div>
+                    </div>
                 </div>
                 <div class="development__title-wrapper">
                     <blockquote class="about-team__blockquote">
@@ -264,14 +306,18 @@
                           Мы создали дружную команду специалистов, работающих в разных уголках России.
                         </h2>
                     </blockquote>
+
+                    <div class="t-2 about-team__desc about-team__desc--tablet">
+                      Наши сотрудники регулярно обучаются и подтверждают свою квалификацию с получением сертификатов. Учебный центр нашей компании помогает получить навыки и знания как новичкам, так и опытным специалистам.
+                    </div>
                 </div>
             </div>
 
-            <div class="t-2 about-team__desc">
+            <div class="t-2 about-team__desc about-team__desc--mobile">
               Наши сотрудники регулярно обучаются и подтверждают свою квалификацию с получением сертификатов. Учебный центр нашей компании помогает получить навыки и знания как новичкам, так и опытным специалистам.
             </div>
 
-            <div class="about-team__lead">
+            <div class="about-team__lead about-team__lead--mobile">
               <img class="about-team__avatar" src="/team/lead.png" />
 
               <div class="t-2 text-primary about-team__fio">
@@ -323,7 +369,7 @@
       <div class="t-2 text-primary">
         История компании
       </div>
-      <div class="history__blocks">
+      <div class="history__blocks opener-wrap">
         <div class="history__block" id="block-1">
           <div class="history__main">
             <div class="history__date--close t-2 text-primary">2018</div>
@@ -363,20 +409,8 @@
             <button class="btn-icon opener history__toggle" data-target="#block-3"></button>
           </div>
           <div class="history__text t-2 text-white">
-           Открытие офиса в Нижнем Новгороде <br />
-          Реестр МСП. Малое предприятие  с 10.08.2020 <br />
-          </div>
-        </div>
-
-        <div class="history__block" id="block-3">
-          <div class="history__main">
-            <div class="history__date--close t-2 text-primary">2020</div>
-            <div class="history__date--open head-2 text-white">2020</div>
-            <button class="btn-icon opener history__toggle" data-target="#block-3"></button>
-          </div>
-          <div class="history__text t-2 text-white">
-           Открытие офиса в Нижнем Новгороде <br />
-          Реестр МСП. Малое предприятие  с 10.08.2020 <br />
+            Открытие офиса в Нижнем Новгороде <br />
+            Реестр МСП. Малое предприятие  с 10.08.2020 <br />
           </div>
         </div>
 
@@ -435,16 +469,18 @@
       <div class="container">
         <div class="join-us__wrapper">
           <img class="join-us__star" src="/star-4.png" alt="star" />
-          <h2 class="head-2 text-primary join-us__title">
-            Станьте частью нашей команды
-          </h2>
-          <div class="t-2">
-            Мы всегда готовы взять в команду талантливых и целеустремлённых сотрудников.
-          </div>
+          <div class="join-us__content">
+            <h2 class="head-2 text-primary join-us__title">
+              Станьте частью нашей команды
+            </h2>
+            <div class="t-2">
+              Мы всегда готовы взять в команду талантливых и целеустремлённых сотрудников.
+            </div>
 
-          <button type="button" class="btn btn--primary t-2 join-us__button">
-              Посмотреть вакансии
-          </button>
+            <button type="button" class="btn btn--primary t-2 join-us__button">
+                Посмотреть вакансии
+            </button>
+          </div>
         </div>
         </div>
       </section>
