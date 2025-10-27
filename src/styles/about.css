@@ -347,7 +347,9 @@
     }
 
     .about-clients {
-        gaP: 55px;
+      justify-content: center;
+      flex-direction: row;
+      gap: 55px;
     }
 
     .toggle-card__text--about > * {
@@ -393,6 +395,57 @@
     }
 
     .join-us__star {
+        width: 350px;
         margin: 0;
+    }
+
+    .about-header {
+      background-image: url("/about-header-tablet.png");
+      padding-bottom: 32px;
+    }
+
+    .about-clients__title {
+      margin-top: 120px;
+      margin-bottom: 60px;
+    }
+
+    .toggle-card__text--about {
+      margin-bottom: 30px;
+    }
+
+    .development__header--licences .development__label {
+      margin-right: 20px;
+    }
+
+    .development__header {
+      margin-bottom: 60px;
+    }
+
+    .about-team__lead {
+      max-width: max-content;
+      align-items: flex-end;
+      gap: 20px;
+    }
+
+    .about-team__desc--tablet {
+      padding-left: 7px;
+      max-width: 354px;
+    }
+
+    .development__label {
+      margin-right: 20px;
+    }
+
+    .gymn {
+      background-image: url("/gymn_bg_tablet.png");
+    }
+
+    .join-us__content {
+      max-width: 261px;
+    }
+
+    .join-us {
+      padding-top: 80px;
+      padding-bottom: 80px;
     }
 }
