@@ -8,41 +8,117 @@
     <link href="/src/style.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-light p-5 font-manrope font-light">
-    <header class="rounded-5xl bg-primary p-8 pb-40">
-      <%- headerNav %>
-      <div
-        class="container mx-auto flex justify-between items-center mt-[88px]"
-      >
-        <div>
-          <h1 class="text-h-1">
-            <span class="text-white">Центр разработки</span> <br />
-            <span class="text-neon">Мир данных ИТ</span>
-          </h1>
+    <header class="header section section--primary analytics-header">
+        <%- headerNav %>
+        <div class="container header__content">
+            <div class="header__main">
+                <img class="header__image header__image--mobile analytics-header__image" src="/cells-header-bg.png" alt="Ball" />
 
-          <button
-            type="button"
-            class="bg-tranparent border-1 border-neon rounded-btn text-neon hover:text-white hover:border-white px-[30px] py-5 mt-25 cursor-pointer"
-          >
-            Заказать консультацию
-          </button>
+                <h1 class="head-1 header__title text-white">
+                    Обслуживание и администрирование баз данных
+                </h1>
 
-          <div class="text-neon text-t-1 mt-27 desktop:min-w-[910px] laptop:min-w-[788px]">
-            ИТ аутсорсинг. Полный комплекс услуг по разработке ПО
+                <button type="button" class="header__button btn btn--outline t-2">
+                    Заказать аудит базы данных
+                </button>
+            </div>
+
+            <img class="header__image header__image--desktop analytics-header__image" src="/analytics-header-img.png" alt="Ball" />
+        </div>
+    </header>
+
+    <section class="section section--white">
+      <div class="container">
+        <div class="common-header">
+          <div class="common-header__label t-2 text-primary">
+            Нам доверяют
           </div>
-          <div class="text-neon text-t-1 mt-1">
-            Функциональное тестирование высоконагруженных систем
-          </div>
-          <div class="text-neon text-t-1 mt-1">
-            Разработка, производство и ТО криптографических средств
-          </div>
-          <div class="text-neon text-t-1 mt-1">
-            Шифрование информации. Обслуживание и администрирование БД
+
+          <div class="common-header__title-wrapper">
+            <h2 class="head-2">
+              13 лет работы на рынках России, Европы, СНГ, <span class="text-primary">включая федеральные проекты для госсектора</span>
+            </h2>
           </div>
         </div>
 
-        <img class="mix-blend-luminosity desktop:w-[560px] laptop:w-[490px]" src="/ball.png" />
+        <div class="stats__grid">
+          <div class="stats__item">
+            <div class="stats__number font-roboto text-gradient t-3 bg-clip-text text-transparent">60+</div>
+            <div class="stats__text t-2">Реализованных проекта</div>
+          </div>
+          
+          <div class="stats__item">
+            <div class="stats__number font-roboto text-gradient t-3 bg-clip-text text-transparent">100+</div>
+            <div class="stats__text t-2">Террабайт данных на обслуживании</div>
+          </div>
+        </div>
+
+        <h2 class="head-2">
+          90%  банков и ритейлов теряли деньги <span class="text-primary">из-за медленной и некачественной работы баз данных</span>
+        </h2>
+
+        <div class="tasks__slider swiper" id="main-swiper">
+          <div class="swiper-wrapper tasks__slider-wrapper">
+            <div class="swiper-slide tasks__slide tasks__slide--gray">
+              <div class="tasks__slide-content">
+                <h3 class="tasks__slide-title t-1 text-primary">Разработка и тестирование</h3>
+                <p class="tasks__slide-text t-2">
+                  Технологические и эксплуатационные решения, учитывающие уникальность каждого бизнеса.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide tasks__slide tasks__slide--2">
+              <div class="tasks__slide-content">
+                <h3 class="tasks__slide-title t-1 text-white">Удалённое администрирование</h3>
+                <p class="tasks__slide-text t-2 text-white">
+                  Баз данных Oracle Database, Microsoft SQL Server, MySQL, PostgreSQL.
+                </p>
+              </div>
+            </div>
+            <!-- <div class="swiper-slide tasks__slide">
+              <div class="tasks__slide-content">
+                <h3 class="tasks__slide-title t-1 text-white">Доступность данных</h3>
+                <p class="tasks__slide-text t-2 text-white">
+                  Обеспечение постоянного доступа к данным во избежание остановки бизнеса.
+                </p>
+              </div>
+            </div> -->
+            <div class="swiper-slide tasks__slide tasks__slide--primary">
+              <div class="tasks__slide-content">
+                <h3 class="tasks__slide-title t-1 text-white">Защита данных</h3>
+                <p class="tasks__slide-text t-2 text-white">
+                  Предотвращение потерь данных, подрывающих жизнеспособность бизнеса.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide tasks__slide tasks__slide--gray">
+              <div class="tasks__slide-content">
+                <h3 class="tasks__slide-title t-1 text-primary">Минимизация рисков</h3>
+                <p class="tasks__slide-text t-2">
+                  Долгосрочное, стабильное обеспечение требуемых уровней обслуживания с учетом развития бизнеса без неожиданных больших затрат и разочарований.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide tasks__slide tasks__slide--5">
+              <div class="tasks__slide-content">
+                <h3 class="tasks__slide-title t-1 text-white">Снижение расходов</h3>
+                <p class="tasks__slide-text t-2 text-white">
+                  Уменьшение затрат на развертывание, управление и поддержку для экономии корпоративных ресурсов.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide tasks__slide tasks__slide--gray">
+              <div class="tasks__slide-content">
+                <h3 class="tasks__slide-title t-1 text-primary">Производительность</h3>
+                <p class="tasks__slide-text t-2">
+                  Достаточно короткое время отклика для эффективных бизнес-операций.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
+    </section>
     <%- footer %>
   </body>
 </html>

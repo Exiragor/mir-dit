@@ -3938,3 +3938,18 @@ blockquote::after {
 .history__block._open .history__text {
   display: block;
 }
+
+.common-header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5rem;
+}
+
+.common-header__label {
+  flex: 1;
+  margin-bottom: 0.5rem;
+}
+
+.common-header__title-wrapper {
+  flex: 1;
+}
