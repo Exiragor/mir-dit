@@ -152,6 +152,14 @@ body {
   color: var(--color-neon);
 }
 
+.text-black {
+  color: var(--color-black);
+}
+
+.text-center {
+  text-align: center;
+}
+
 /* Адаптивная типография */
 @media (max-width: 1024px) {
   .head-1 {
