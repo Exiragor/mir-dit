@@ -120,6 +120,11 @@ const swiperConfig = [
         prevEl: ".admin-slider__prev",
       },
       modules: [Navigation],
+      breakpoints: {
+        768: {
+          slidesPerView: "auto",
+        }
+      },
     },
   },
 
@@ -139,6 +144,11 @@ const swiperConfig = [
         prevEl: ".advanse-slider__prev",
       },
       modules: [Navigation],
+      breakpoints: {
+        768: {
+          slidesPerView: "auto",
+        }
+      },
     },
   },
 

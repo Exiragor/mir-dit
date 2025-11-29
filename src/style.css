@@ -3962,3 +3962,10 @@ blockquote::after {
 .common-header__title-wrapper {
   flex: 1;
 }
+
+@media (min-width: 768px) {
+    .common-header {
+      flex-direction: row;
+      margin-bottom: 5rem;
+    }
+}
