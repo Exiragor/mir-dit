@@ -103,6 +103,63 @@ const swiperConfig = [
       modules: [Navigation],
     },
   },
+
+  {
+    element: '.admin-slider',
+    wrapper: '.admin-slider-wrapper',
+    breakpoint: {
+      min: 0,
+      max: 1023 
+    },
+    swiperConfig: {
+      slidesPerView: 1,
+      spaceBetween: 21,
+      loop: true,
+      navigation: {
+        nextEl: ".admin-slider__next",
+        prevEl: ".admin-slider__prev",
+      },
+      modules: [Navigation],
+    },
+  },
+
+  {
+    element: '.advanse-slider',
+    wrapper: '.advanse-slider-wrapper',
+    breakpoint: {
+      min: 0,
+      max: 1023 
+    },
+    swiperConfig: {
+      slidesPerView: 1,
+      spaceBetween: 21,
+      loop: true,
+      navigation: {
+        nextEl: ".advanse-slider__next",
+        prevEl: ".advanse-slider__prev",
+      },
+      modules: [Navigation],
+    },
+  },
+
+  {
+    element: '.service-slider',
+    wrapper: '.service-slider-wrapper',
+    breakpoint: {
+      min: 0,
+      max: 1023 
+    },
+    swiperConfig: {
+      slidesPerView: 'auto',
+      spaceBetween: 10,
+      loop: true,
+      navigation: {
+        nextEl: ".service-slider__next",
+        prevEl: ".service-slider__prev",
+      },
+      modules: [Navigation],
+    },
+  },
 ];
 
 const swipersMap = new Map();
