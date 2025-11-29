@@ -157,7 +157,7 @@ const swiperConfig = [
     wrapper: '.service-slider-wrapper',
     breakpoint: {
       min: 0,
-      max: 1023 
+      max: Infinity 
     },
     swiperConfig: {
       slidesPerView: 'auto',
@@ -168,6 +168,12 @@ const swiperConfig = [
         prevEl: ".service-slider__prev",
       },
       modules: [Navigation],
+      breakpoints: {
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        }
+      },
     },
   },
 ];

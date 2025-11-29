@@ -196,3 +196,13 @@
         display: flex;
     }
 }
+
+@media (min-width: 1024px) {
+    .stats__grid {
+        justify-content: flex-start;
+    }
+
+    .stats__item {
+        flex: 1;
+    }
+}
