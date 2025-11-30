@@ -133,7 +133,7 @@ const swiperConfig = [
     wrapper: '.advanse-slider-wrapper',
     breakpoint: {
       min: 0,
-      max: 1023 
+      max: Infinity 
     },
     swiperConfig: {
       slidesPerView: 1,
@@ -172,6 +172,12 @@ const swiperConfig = [
         1024: {
           slidesPerView: 3,
           spaceBetween: 20,
+        },
+        1600: {
+          slidesPerView: 4,
+        },
+        1920: {
+          slidesPerView: 5,
         }
       },
     },
@@ -400,4 +406,35 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+});
+
+// Инициализация - первый элемент активен по умолчанию
+document.addEventListener('DOMContentLoaded', function() {
+  const cards = document.querySelectorAll(".circle-slider__card");
+
+  let order = ["front", "right", "left"]; // по кругу
+
+  function applyOrder() {
+    cards.forEach((c, i) => {
+      c.classList.remove("front", "left", "right");
+      c.classList.add(order[i]);
+    });
+  }
+
+  cards.forEach(card => {
+    card.addEventListener("click", () => {
+      const role = order[cards.length - [...cards].reverse().indexOf(card) - 1];
+
+      if (role === "left") {
+        // вращаем вправо
+        order.push(order.shift());
+      } else if (role === "right") {
+        // вращаем влево
+        order.unshift(order.pop());
+      }
+      // front — ничего не делает
+
+      applyOrder();
+    });
+  });
 });

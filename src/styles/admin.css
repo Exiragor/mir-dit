@@ -72,6 +72,10 @@
     color: var(--color-black);
 }
 
+.admin-slide--gray-light {
+    background-color: var(--color-gray-light);
+}
+
 .admin-slide__text {
     margin-right: 35px;
     display: flex;
@@ -87,8 +91,8 @@
     height: 180px;
 }
 
-.service-slider__slide {
-    width: 180px !important;
+div.service-slider__slide {
+    width: 180px;
 }
 
 .service-slide {
@@ -107,12 +111,12 @@
 
 .service-slide--bg-1 {
     background-image: url("/slider/service-slider_bg-1.png");
-    background-size: contain;
+    background-size: cover;
 }
 
 .service-slide--bg-2 {
     background-image: url("/slider/service-slider_bg-2.png");
-    background-size: contain;
+    background-size: cover;
 }
 
 .service-slide--gray {
@@ -148,8 +152,8 @@
         padding: 40px;
     }
 
-    .admin-slider__slide {
-        width: 442px !important;
+    div.circle-slider__card {
+        width: 442px;
     }
 
     .advanse-slider {
@@ -162,8 +166,8 @@
         height: 89px;
     }
 
-    .advanse-slider__slide {
-        width: 568px !important;
+    div.advanse-slider__slide {
+        width: 568px;
     }
 
     .advanse-slider__avatar {
@@ -184,8 +188,8 @@
         margin-top: 20px;
     }
 
-    .service-slider__slide {
-        width: 276px !important;
+    div.service-slider__slide {
+        width: 276px;
     }
 
     .service-slider {
@@ -194,6 +198,18 @@
 
     .service-slider__controls {
         display: flex;
+    }
+
+    .oracle-activities__item {
+        color: var(--color-black);
+    }
+
+    .oracle-activities__item:hover {
+        color: var(--color-white);
+    }
+
+    .oracle-activities__item:hover .activities__text-2 {
+        color: var(--color-white);
     }
 }
 
@@ -204,5 +220,120 @@
 
     .stats__item {
         flex: 1;
+    }
+
+    /* Контейнер */
+    .circle-slider__container {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        perspective: 1024px;
+    }
+
+    /* Базовый стиль карточек */
+    div.circle-slider__card {
+        position: absolute;
+        width: 442px;
+        height: 289px;
+        top: 50%;
+        left: 50%;
+        transform-style: preserve-3d;
+        transition: transform 0.7s ease, z-index 0.7s ease, opacity 0.7s ease;
+        cursor: pointer;
+    }
+
+    /* Позиции */
+    .front {
+        transform: translate(-50%, calc(-50% + 145px)) translateZ(0px) scale(1);
+        z-index: 3;
+    }
+
+    /* Задние — выше */
+    .left {
+        transform: translate(-50%, -50%)
+                    translateX(-250px)
+                    translateZ(-300px);
+        z-index: 1;
+    }
+
+    .right {
+        transform: translate(-50%, -50%)
+                    translateX(250px)
+                    translateZ(-300px);
+        z-index: 1;
+    }
+
+    .admin-slider {
+        margin-bottom: 120px;
+    }
+
+    div.advanse-slider__slide {
+        width: 660px;
+    }
+
+    .service-slider__slide {
+        width: auto;
+    }
+}
+
+@media (min-width: 1600px) {
+    /* Контейнер */
+    .circle-slider__container {
+        height: 350px;
+        perspective: 1600px;
+    }
+
+    /* Базовый стиль карточек */
+    div.circle-slider__card {
+        width: 570px;
+        height: 373px;
+    }
+
+     .left {
+        transform: translate(-50%, -50%)
+                    translateX(-300px)
+                    translateZ(-300px);
+        z-index: 1;
+    }
+
+    .right {
+        transform: translate(-50%, -50%)
+                    translateX(300px)
+                    translateZ(-300px);
+        z-index: 1;
+    }
+
+    .bd-cl-section {
+        background-image: url("/bd_cl_bg--desktop.png");
+    }
+}
+
+@media (min-width: 1920px) {
+    /* Контейнер */
+    .circle-slider__container {
+        perspective: 1920px;
+    }
+
+    /* Базовый стиль карточек */
+    div.circle-slider__card {
+        width: 692px;
+    }
+
+    .left {
+        transform: translate(-50%, -50%)
+                    translateX(-400px)
+                    translateZ(-300px);
+        z-index: 1;
+    }
+
+    .right {
+        transform: translate(-50%, -50%)
+                    translateX(400px)
+                    translateZ(-300px);
+        z-index: 1;
+    }
+
+    div.advanse-slider__slide {
+        width: 849px;
     }
 }
