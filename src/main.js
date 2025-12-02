@@ -1,4 +1,6 @@
 import Swiper from "swiper";
+import Swal from 'sweetalert2'
+import Inputmask from "inputmask";
 import { Navigation } from "swiper/modules";
 // import Swiper styles
 import "swiper/css";
@@ -438,3 +440,74 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+function useForm(formId, formName, phoneSelector) {
+  const form = document.getElementById(formId);
+
+  if (!form) {
+    return;
+  }
+
+  const mask = Inputmask({
+    mask: '+7 (999) 999-99-99',
+    placeholder: '_',
+    oncomplete: () => {
+      document.querySelector(phoneSelector).classList.remove('invalid');
+    },
+  }).mask(phoneSelector);
+
+  document.getElementById(formId).addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    let bodyContent = '';
+    
+    // Собираем все поля формы
+    for(let [key, value] of formData.entries()) {
+        bodyContent += `<strong>${key}:</strong> ${value}<br>`;
+    }
+    
+    // Создаем объект с данными
+    const data = new URLSearchParams();
+    data.append('body', bodyContent);
+    data.append('subject', formName);
+    data.append('mailTo', 'info@mir-dit.ru');
+
+    if (!mask.isComplete()) {
+      document.querySelector(phoneSelector).classList.add('invalid');
+      return;
+    }
+    
+    // Отправляем запрос
+    fetch('/php/mail.php', {
+        method: 'POST',
+        body: data
+    })
+    .then(response => response.json())
+    .then(result => {
+        if(result.success) {
+            Swal.fire({
+              title: "Сообщение отправлено!",
+              icon: "success"
+            });
+            this.reset();
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "Ошибка с сервера",
+            text: result.message,
+          });
+        }
+    })
+    .catch(error => {
+        Swal.fire({
+          icon: "error",
+          title: "Упс!",
+          text: "Ошибка соединения",
+        });
+    });
+});
+}
+
+useForm("small-form", "Оставьте данные, мы проконсультируем вас по вопросам сотрудничества", ".phone-input");
+useForm("big-form", "Оставьте контакты, мы перезвоним", ".phone");
