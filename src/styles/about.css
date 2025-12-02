@@ -66,7 +66,16 @@
   margin: 40px -15px 20px;
 }
 
+.about-team__blockquote {
+  display: inline;
+}
+
+.about-team__blockquote > h2 {
+  display: inline;
+}
+
 .about-team__desc {
+  margin-top: 20px;
   padding: 0 15px;
 }
 
@@ -439,6 +448,10 @@
       max-width: max-content;
       align-items: flex-end;
       gap: 20px;
+    }
+
+    .about-team__desc {
+      margin-top: 40px;
     }
 
     .about-team__desc--tablet {
