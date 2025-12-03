@@ -3854,11 +3854,11 @@ blockquote::after {
   flex: 1;
 }
 
-.about-clients__row-item > img {
+.about-clients__row-item img {
   max-width: 100px;
 }
 
-.about-clients__row-item > .t1-img {
+.about-clients__row-item .t1-img {
   max-width: 159px;
 }
 

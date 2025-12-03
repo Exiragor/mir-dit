@@ -374,6 +374,7 @@ const OPENER_CLASS = 'opener';
 const OPENED_CLASS = '_opened';
 const OPEN_CLASS = '_open';
 const OPENER_WRAP_CLASS = 'opener-wrap';
+const OPENER_SCROLL_CLASS = 'opener-scroll';
 
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll(`.${OPENER_CLASS}`);
@@ -405,6 +406,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 elements.forEach(element => {
                     element.classList.toggle(OPEN_CLASS);
                 });
+
+                if (elements[0] && wrapper && wrapper.classList.contains(OPENER_SCROLL_CLASS)) {
+                      setTimeout(() => {
+                        requestAnimationFrame(() => {
+                          elements[0].scrollIntoView({
+                            behavior: 'smooth',    // плавная анимация
+                            block: 'nearest',      // по горизонтали - ближайший край
+                            inline: 'end'         // прокрутить так, чтобы элемент был у правого края
+                          });
+                        });
+                      }, 210);
+                    }
+                    
             });
         });
     });

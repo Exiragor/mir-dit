@@ -279,6 +279,7 @@
 
   .history__blocks {
     flex-direction: row;
+    overflow-x: auto;
   }
 
   .history__main {
@@ -298,24 +299,22 @@
     width: 28px;
     height: 28px;
     background-size: contain;
-  }
-
-  .history__block {
-    order: 2;
-  }
-
-  .history__block:first-child {
-    order: 0;
+    cursor: pointer;
   }
 
   .history__block._open {
     min-height: 375px;
     min-width: 456px;
-    order: 1;
+    max-width: 456px;
   }
 
   .history__block {
+    min-width: 73px;
+    max-width: 200px;
     min-height: 375px;
+    max-height: 375px;
+    transition: max-width 0.2s ease,
+              min-width 0.2s ease;
   }
 
   .join-us__wrapper {
@@ -541,6 +540,7 @@
 
   .history__block._open {
     min-width: 689px;
+    max-width: 689px;
     width: 689px;
   }
 
@@ -587,6 +587,7 @@
 
   .history__block._open {
     min-width: 897px;
+    max-width: 897px;
     width: 897px;
   }
 }
