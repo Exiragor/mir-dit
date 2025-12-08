@@ -3447,11 +3447,17 @@ blockquote::after {
 .contacts-header__address {
   color: var(--color-white);
   max-width: 173px;
+  flex: 1; /* Оба адреса занимают равную ширину */
+  display: flex;
+  flex-direction: column;
 }
 
 .address__name {
   color: var(--color-neon);
   margin-bottom: 10px;
+  flex: 1; /* Растягивается на всю доступную высоту */
+  display: flex;
+  align-items: center;
 }
 
 .contacts-header__addresses {
