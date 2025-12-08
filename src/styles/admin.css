@@ -138,6 +138,12 @@ div.service-slider__slide {
     margin-top: 11px;
 }
 
+.head-title {
+    hyphens: auto;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
 @media (min-width: 768px) {
     .admin-slider__controls {
         display: none;
