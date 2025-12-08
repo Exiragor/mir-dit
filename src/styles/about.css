@@ -154,6 +154,14 @@
   display: none;
 }
 
+.otr {
+  margin-top: -10px;
+}
+
+.otr img {
+  max-height: 32px;
+}
+
 @media (min-width: 768px) {
   .about-clients__wrapper {
     flex-direction: row;
