@@ -2,7 +2,7 @@
 :root {
   /* Цвета */
   --color-primary: #274a64;
-  --color-primary-light: rgba(39, 74, 100, 0.8);
+  --color-primary-light: rgb(82, 110, 131);
   --color-white: #ffffff;
   --color-gray-light: #f2f2f2;
   --color-gray-3: #828282;

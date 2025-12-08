@@ -135,7 +135,7 @@ const swiperConfig = [
     wrapper: '.advanse-slider-wrapper',
     breakpoint: {
       min: 0,
-      max: Infinity 
+      max: 1023 
     },
     swiperConfig: {
       slidesPerView: 1,
@@ -375,6 +375,7 @@ const OPENED_CLASS = '_opened';
 const OPEN_CLASS = '_open';
 const OPENER_WRAP_CLASS = 'opener-wrap';
 const OPENER_SCROLL_CLASS = 'opener-scroll';
+const OPENER_NO_TOGGLE_CLASS = 'opener-no-toggle';
 
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll(`.${OPENER_CLASS}`);
@@ -395,16 +396,25 @@ document.addEventListener('DOMContentLoaded', function() {
               clearClasses(OPEN_CLASS);
             }
 
-            const targetSelectors = this.getAttribute('data-target');
-            button.classList.toggle(OPENED_CLASS);
             
+            if (wrapper && wrapper.classList.contains(OPENER_NO_TOGGLE_CLASS)) {
+              button.classList.add(OPENED_CLASS);
+            } else {
+              button.classList.toggle(OPENED_CLASS);
+            }
+            
+            const targetSelectors = this.getAttribute('data-target');
             // Разделяем селекторы по запятой и обрабатываем каждый
             targetSelectors.split(',').forEach(selector => {
                 const trimmedSelector = selector.trim();
                 const elements = document.querySelectorAll(trimmedSelector);
                 
                 elements.forEach(element => {
+                  if (wrapper && wrapper.classList.contains(OPENER_NO_TOGGLE_CLASS)) {
+                    element.classList.add(OPEN_CLASS);
+                  } else {
                     element.classList.toggle(OPEN_CLASS);
+                  }
                 });
 
                 if (elements[0] && wrapper && wrapper.classList.contains(OPENER_SCROLL_CLASS)) {
@@ -525,3 +535,54 @@ function useForm(formId, formName, phoneSelector) {
 
 useForm("small-form", "Оставьте данные, мы проконсультируем вас по вопросам сотрудничества", ".phone-input");
 useForm("big-form", "Оставьте контакты, мы перезвоним", ".phone");
+
+const elements = document.querySelectorAll('.z-index-el');
+let openElement = null;
+
+// Инициализация начальных z-index
+function initializeZIndex() {
+    elements.forEach((element, index) => {
+        element.style.zIndex = elements.length - index;
+    });
+}
+
+// Расчет z-index относительно открытого элемента
+function updateZIndexes(clickedIndex) {
+    elements.forEach((element, currentIndex) => {
+        const elementIndex = parseInt(element.dataset.index);
+        
+        if (elementIndex === clickedIndex) {
+            // Открытый элемент получает максимальный z-index
+            element.style.zIndex = elements.length;
+        } else {
+            // Расчет расстояния от открытого элемента
+            const distance = Math.abs(clickedIndex - elementIndex);
+            // z-index уменьшается по мере удаления от открытого элемента
+            element.style.zIndex = elements.length - distance;
+        }
+    });
+}
+
+// Обработчик клика
+function handleClick(event) {
+    const clickedElement = event.currentTarget;
+    const clickedIndex = parseInt(clickedElement.dataset.index);
+    
+    // Если кликаем на уже открытый элемент - закрываем его
+    if (openElement === clickedElement) {
+        return;
+    }
+    
+    openElement = clickedElement;
+    
+    // Обновляем z-index
+    updateZIndexes(clickedIndex);
+}
+
+// Добавляем обработчики событий
+elements.forEach(element => {
+    element.addEventListener('click', handleClick);
+});
+
+// Инициализация при загрузке
+document.addEventListener('DOMContentLoaded', initializeZIndex);
