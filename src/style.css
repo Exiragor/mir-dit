@@ -2954,12 +2954,18 @@ body {
 
 /* Футер меню */
 .nav-footer {
-    text-align: center;
+    width: 144px;
     margin-top: 76px;
 }
 
 .nav-footer p {
     margin: 0 0 60px;
+}
+
+@media (min-width: 600px) {
+  .nav-footer {
+    width: 183px;
+  }
 }
 
 /* Основной контент */
@@ -3471,6 +3477,8 @@ blockquote::after {
   border-radius: 20px;
   overflow: hidden;
   padding: 0;
+  max-height: 85vh;
+  min-height: 300px;
 }
 
 .contacts-header__img--desktop {
