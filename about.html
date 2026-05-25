@@ -1,518 +1,693 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%- title %></title>
     <link href="/src/style.css" rel="stylesheet" />
     <link href="/src/styles/about.css" rel="stylesheet" />
-  </head>
-  <body class="bg-gray-light p-5 font-manrope font-light">
-    <header class="header section section--primary about-header">
-        <%- headerNav %>
-        <div class="container header__content">
-            <div class="header__main">
-                <h1 class="head-1 header__title text-white about-header__title">
-                    О компании
-                </h1>
-            </div>
-
+</head>
+<body class="bg-gray-light p-5 font-manrope font-light">
+<header class="header section section--primary about-header">
+    <%- headerNav %>
+    <div class="container header__content">
+        <div class="header__main">
+            <h1 class="head-1 header__title text-white about-header__title">
+                О компании
+            </h1>
         </div>
-    </header>
 
-    <section class="stats section section--white">
-      <div class="stats__container container">
+    </div>
+</header>
+
+<section class="stats section section--white">
+    <div class="stats__container container">
         <div class="about-clients__wrapper">
-          <div class="stats__grid about-clients__grid">
-            <div class="stats__item stats__item--about">
-              <div class="stats__number font-roboto text-gradient t-3 bg-clip-text text-transparent">50+</div>
-              <div class="stats__text t-2">Специалистов<br /> в сфере ИТ</div>
+            <div class="stats__grid about-clients__grid">
+                <div class="stats__item stats__item--about">
+                    <div class="stats__number font-roboto text-gradient t-3 bg-clip-text text-transparent">50+</div>
+                    <div class="stats__text t-2">Специалистов<br /> в сфере ИТ</div>
+                </div>
+
+                <div class="stats__item stats__item--about">
+                    <div class="stats__number font-roboto text-gradient t-3 bg-clip-text text-transparent">6+</div>
+                    <div class="stats__text t-2">Лет работы<br /> в России</div>
+                </div>
             </div>
 
-            <div class="stats__item stats__item--about">
-              <div class="stats__number font-roboto text-gradient t-3 bg-clip-text text-transparent">6+</div>
-              <div class="stats__text t-2">Лет работы<br /> в России</div>
+            <div class="t-1 about__desc">
+                <div>
+                    <span class="text-primary">Компания МИР ДАННЫХ ИТ выполняет задачи по проектированию и тестированию программного обеспечения, в том числе в направлении "информационная безопасность",</span> а также по сопровождению и эксплуатации внедренных решений для средних и крупных предприятий.
+                </div>
             </div>
-          </div>
-
-          <div class="t-1 about__desc">
-            <div>
-            <span class="text-primary">Компания МИР ДАННЫХ ИТ выполняет задачи по проектированию и тестированию программного обеспечения, в том числе в направлении "информационная безопасность",</span> а также по сопровождению и эксплуатации внедренных решений для средних и крупных предприятий.
-              </div>
-          </div>
         </div>
 
         <div class="about-clients__title-wrapper">
-          <div></div>
-          <div class="head-2 about-clients__title">
-            Постоянные клиенты
-          </div>
+            <div></div>
+            <div class="head-2 about-clients__title">
+                Постоянные клиенты
+            </div>
         </div>
 
         <div class="about-clients about-clients--mobile">
-          <div class="about-clients__row">
-            <div class="about-clients__row-item about-clients__row-item--center">
-              <a href="https://www.mtsbank.ru/" target="_blank"><img src="/clients/mts.svg" alt="MTS" /></a>
+            <div class="about-clients__row">
+                <div class="about-clients__row-item about-clients__row-item--center">
+                    <a href="https://www.mtsbank.ru/" target="_blank"><img src="/clients/mts.svg" alt="MTS" /></a>
+                </div>
+                <div class="about-clients__row-item">
+                    <a href="https://www.otpbank.ru/" target="_blank"><img src="/clients/otp-bank.svg" alt="OTP" /></a>
+                </div>
             </div>
-            <div class="about-clients__row-item">
-              <a href="https://www.otpbank.ru/" target="_blank"><img src="/clients/otp-bank.svg" alt="OTP" /></a>
-            </div>
-          </div>
 
-          <div class="about-clients__row about-clients__row--sb">
-            <div class="about-clients__row-item">
-              <a href="https://t1-integration.ru/" target="_blank"><img class="t1-img" src="/clients/t1-integration.svg" alt="T1-integration" /></a>
+            <div class="about-clients__row about-clients__row--sb">
+                <div class="about-clients__row-item">
+                    <a href="https://t1-integration.ru/" target="_blank"><img class="t1-img" src="/clients/t1-integration.svg" alt="T1-integration" /></a>
+                </div>
+                <div class="about-clients__row-item about-clients__row-item--right">
+                    <a href="https://lanit.ru/" target="_blank"><img src="/clients/lanit.svg" alt="Lanit" /></a>
+                </div>
             </div>
-            <div class="about-clients__row-item about-clients__row-item--right">
-              <a href="https://lanit.ru/" target="_blank"><img src="/clients/lanit.svg" alt="Lanit" /></a>
-            </div>
-          </div>
 
-          <div class="about-clients__row">
-            <div class="about-clients__row-item about-clients__row-item--center otr">
-              <a href="https://otr.ru/" target="_blank"><img src="/clients/otr.png" alt="OTR" /></a>
+            <div class="about-clients__row">
+                <div class="about-clients__row-item about-clients__row-item--center otr">
+                    <a href="https://otr.ru/" target="_blank"><img src="/clients/otr.png" alt="OTR" /></a>
+                </div>
+                <div class="about-clients__row-item">
+                    <a href="https://atomyze.ru/" target="_blank"><img src="/clients/atomyze.svg" alt="ATOMYZE" /></a>
+                </div>
             </div>
-            <div class="about-clients__row-item">
-              <a href="https://atomyze.ru/" target="_blank"><img src="/clients/atomyze.svg" alt="ATOMYZE" /></a>
-            </div>
-          </div>
         </div>
 
         <div class="about-clients">
-          <div class="about-clients__row">
-            <div class="about-clients__row-item about-clients__row-item--center">
-              <a href="https://www.mtsbank.ru/" target="_blank"><img src="/clients/mts.svg" alt="MTS" /></a>
+            <div class="about-clients__row">
+                <div class="about-clients__row-item about-clients__row-item--center">
+                    <a href="https://www.mtsbank.ru/" target="_blank"><img src="/clients/mts.svg" alt="MTS" /></a>
+                </div>
+                <div class="about-clients__row-item">
+                    <a href="https://www.otpbank.ru/" target="_blank"><img src="/clients/otp-bank.svg" alt="OTP" /></a>
+                </div>
+                <div class="about-clients__row-item">
+                    <a href="https://t1-integration.ru/" target="_blank"><img class="t1-img" src="/clients/t1-integration.svg" alt="T1-integration" /></a>
+                </div>
             </div>
-            <div class="about-clients__row-item">
-              <a href="https://www.otpbank.ru/" target="_blank"><img src="/clients/otp-bank.svg" alt="OTP" /></a>
-            </div>
-            <div class="about-clients__row-item">
-              <a href="https://t1-integration.ru/" target="_blank"><img class="t1-img" src="/clients/t1-integration.svg" alt="T1-integration" /></a>
-            </div>
-          </div>
 
-          <div class="about-clients__row">
-            <div class="about-clients__row-item about-clients__row-item--right">
-              <a href="https://lanit.ru/" target="_blank"><img src="/clients/lanit.svg" alt="Lanit" /></a>
+            <div class="about-clients__row">
+                <div class="about-clients__row-item about-clients__row-item--right">
+                    <a href="https://lanit.ru/" target="_blank"><img src="/clients/lanit.svg" alt="Lanit" /></a>
+                </div>
+                <div class="about-clients__row-item about-clients__row-item--center otr">
+                    <a href="https://otr.ru/" target="_blank"><img src="/clients/otr.png" alt="OTR" /></a>
+                </div>
+                <div class="about-clients__row-item">
+                    <a href="https://atomyze.ru/" target="_blank"><img src="/clients/atomyze.svg" alt="ATOMYZE" /></a>
+                </div>
             </div>
-            <div class="about-clients__row-item about-clients__row-item--center otr">
-              <a href="https://otr.ru/" target="_blank"><img src="/clients/otr.png" alt="OTR" /></a>
-            </div>
-            <div class="about-clients__row-item">
-              <a href="https://atomyze.ru/" target="_blank"><img src="/clients/atomyze.svg" alt="ATOMYZE" /></a>
-            </div>
-          </div>
         </div>
 
         <div class="about-clients about-clients--tablet">
-          <div class="about-clients__row-item about-clients__row-item--center">
-            <a href="https://www.mtsbank.ru/" target="_blank"><img src="/clients/mts.svg" alt="MTS" /></a>
-          </div>
-          <div class="about-clients__row-item">
-            <a href="https://www.otpbank.ru/" target="_blank"><img src="/clients/otp-bank.svg" alt="OTP" /></a>
-          </div>
-          <div class="about-clients__row-item">
-            <a href="https://t1-integration.ru/" target="_blank"><img class="t1-img" src="/clients/t1-integration.svg" alt="T1-integration" /></a>
-          </div>
-
-          <div class="about-clients__row-item about-clients__row-item--right">
-              <a href="https://lanit.ru/" target="_blank"><img src="/clients/lanit.svg" alt="Lanit" /></a>
-            </div>
             <div class="about-clients__row-item about-clients__row-item--center">
-              <a href="https://otr.ru/" target="_blank"><img src="/clients/otr.png" alt="OTR" /></a>
+                <a href="https://www.mtsbank.ru/" target="_blank"><img src="/clients/mts.svg" alt="MTS" /></a>
             </div>
             <div class="about-clients__row-item">
-              <a href="https://atomyze.ru/" target="_blank"><img src="/clients/atomyze.svg" alt="ATOMYZE" /></a>
+                <a href="https://www.otpbank.ru/" target="_blank"><img src="/clients/otp-bank.svg" alt="OTP" /></a>
+            </div>
+            <div class="about-clients__row-item">
+                <a href="https://t1-integration.ru/" target="_blank"><img class="t1-img" src="/clients/t1-integration.svg" alt="T1-integration" /></a>
+            </div>
+
+            <div class="about-clients__row-item about-clients__row-item--right">
+                <a href="https://lanit.ru/" target="_blank"><img src="/clients/lanit.svg" alt="Lanit" /></a>
+            </div>
+            <div class="about-clients__row-item about-clients__row-item--center">
+                <a href="https://otr.ru/" target="_blank"><img src="/clients/otr.png" alt="OTR" /></a>
+            </div>
+            <div class="about-clients__row-item">
+                <a href="https://atomyze.ru/" target="_blank"><img src="/clients/atomyze.svg" alt="ATOMYZE" /></a>
             </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <section class="development section section--white">
-        <div class="development__container container">
-            <div class="development__header development__header--about">
-                <div class="development__label">
-                    <span class="development__label-text t-2 text-primary">Компетенции</span>
-                </div>
-                <div class="development__title-wrapper">
-                    <h2 class="development__title head-2 development__title--about">
-                        <span class="development__title-primary text-primary">Мы стремимся к лидерству компании на рынке России,</span>
-                        <span class="development__title-secondary">активно развиваемся в следующих направлениях</span>
-                    </h2>
-                </div>
+<section class="development section section--white">
+    <div class="development__container container">
+        <div class="development__header development__header--about">
+            <div class="development__label">
+                <span class="development__label-text t-2 text-primary">Компетенции</span>
             </div>
+            <div class="development__title-wrapper">
+                <h2 class="development__title head-2 development__title--about">
+                    <span class="development__title-primary text-primary">Мы стремимся к лидерству компании на рынке России,</span>
+                    <span class="development__title-secondary">активно развиваемся в следующих направлениях</span>
+                </h2>
+            </div>
+        </div>
 
-            <div class="toggle-cards">
-              <div class="toggle-card about__toggle-card">
+        <div class="toggle-cards">
+            <div class="toggle-card about__toggle-card">
                 <div class="toggle-card__content">
-                  <div class="toggle-card__number font-roboto t-5 text-primary" id="number-1">01</div>
-                  <div class="head-3 text-primary toggle-card__main">
-                    Разработка программного <br /> обеспечения
-                  </div>
+                    <div class="toggle-card__number font-roboto t-5 text-primary" id="number-1">01</div>
+                    <div class="head-3 text-primary toggle-card__main">
+                        Разработка программного <br /> обеспечения
+                    </div>
                 </div>
 
                 <div class="toggle-card__text toggle-card__text--about t-2" id="text-1">
-                  <div class="first toggle-card__number font-roboto t-5 text-primary" id="number-hidden-1">01</div>
-                  <div>
-                    Наши специалисты работают с крупнейшими системными интеграторами, выполняя задачи по проектированию, тестированию, сопровождению и эксплуатации внедренных решений. Проводят оценку защищенности ресурсов при выполнении разработки программного обеспечения лицензии ФСТЭК (№Л024-00107-00/00582622 от 11 сентября 2019 г.) и ФСБ (ЛСЗ0016578 17477Н от 1 октября 2019 г.)
-                  </div>
+                    <div class="first toggle-card__number font-roboto t-5 text-primary" id="number-hidden-1">01</div>
+                    <div>
+                        Наши специалисты работают с крупнейшими системными интеграторами, выполняя задачи по проектированию, тестированию, сопровождению и эксплуатации внедренных решений. Проводят оценку защищенности ресурсов при выполнении разработки программного обеспечения лицензии ФСТЭК (№Л024-00107-00/00582622 от 11 сентября 2019 г.) и ФСБ (ЛСЗ0016578 17477Н от 1 октября 2019 г.)
+                    </div>
                 </div>
                 <button class="btn-icon toggle-card__arrow opener" data-target="#text-1, #number-1, #number-hidden-1">
-                  <img src="/arrow-bottom.png" />
+                    <img src="/arrow-bottom.png" />
                 </button>
-              </div>
+            </div>
 
-              <div class="toggle-card about__toggle-card">
+            <div class="toggle-card about__toggle-card">
                 <div class="toggle-card__content">
-                  <div class="toggle-card__number font-roboto t-5 text-primary" id="number-2">02</div>
-                  <div class="head-3 text-primary toggle-card__main">
-                    Обучение персонала <br /> заказчика
-                  </div>
+                    <div class="toggle-card__number font-roboto t-5 text-primary" id="number-2">02</div>
+                    <div class="head-3 text-primary toggle-card__main">
+                        Обучение персонала <br /> заказчика
+                    </div>
                 </div>
 
                 <div class="toggle-card__text toggle-card__text--about t-2" id="text-2">
-                  <div class="first toggle-card__number font-roboto t-5 text-primary" id="number-hidden-2">02</div>
-                  <div>
-                    Учебный центр разрабатывает индивидуальные программы обучения по заказу компаний. Программы длятся от недели до двух месяцев, проводятся удаленно или очно. Компания имеет лицензию на образовательную деятельность (Л035-01298-77/00180273 от 19 апреля 2021 г.).
-                  </div>
+                    <div class="first toggle-card__number font-roboto t-5 text-primary" id="number-hidden-2">02</div>
+                    <div>
+                        Учебный центр разрабатывает индивидуальные программы обучения по заказу компаний. Программы длятся от недели до двух месяцев, проводятся удаленно или очно. Компания имеет лицензию на образовательную деятельность (Л035-01298-77/00180273 от 19 апреля 2021 г.).
+                    </div>
                 </div>
                 <button class="btn-icon toggle-card__arrow opener" data-target="#text-2, #number-2, #number-hidden-2">
-                  <img src="/arrow-bottom.png" />
+                    <img src="/arrow-bottom.png" />
                 </button>
-              </div>
+            </div>
 
-              <div class="toggle-card about__toggle-card">
+            <div class="toggle-card about__toggle-card">
                 <div class="toggle-card__content">
-                  <div class="toggle-card__number font-roboto t-5 text-primary" id="number-3">03</div>
-                  <div class="head-3 text-primary toggle-card__main">
-                    Администрирование <br /> баз данных
-                  </div>
+                    <div class="toggle-card__number font-roboto t-5 text-primary" id="number-3">03</div>
+                    <div class="head-3 text-primary toggle-card__main">
+                        Администрирование <br /> баз данных
+                    </div>
                 </div>
 
                 <div class="toggle-card__text toggle-card__text--about t-2" id="text-3">
-                  <div class="first toggle-card__number font-roboto t-5 text-primary" id="number-hidden-3">03</div>
-                  <div>
-                    Центр администрирования баз данных занимается увеличением скорости работы с цифровыми данными заказчика, снижением рисков остановки, проведением аудита, помощью в оптимизации существующей инфраструктуры баз данных и созданием решений для новых проектов. Осуществляет работы по импортозамещению.
-                  </div>
+                    <div class="first toggle-card__number font-roboto t-5 text-primary" id="number-hidden-3">03</div>
+                    <div>
+                        Центр администрирования баз данных занимается увеличением скорости работы с цифровыми данными заказчика, снижением рисков остановки, проведением аудита, помощью в оптимизации существующей инфраструктуры баз данных и созданием решений для новых проектов. Осуществляет работы по импортозамещению.
+                    </div>
                 </div>
 
                 <button class="btn-icon toggle-card__arrow opener" data-target="#text-3, #number-3, #number-hidden-3">
-                  <img src="/arrow-bottom.png" />
+                    <img src="/arrow-bottom.png" />
                 </button>
-              </div>
-          </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="development section section--white">
-        <div class="development__container container">
-            <div class="development__header development__header--licences">
-                <div class="development__label">
-                    <span class="development__label-text t-2 text-primary">Преимущества</span>
-                </div>
-                <div class="development__title-wrapper">
-                    <h2 class="development__title head-2">
-                        <span class="development__title-primary text-primary">Мы имеем</span>
-                        <span class="development__title-secondary">лицензии</span>
-                    </h2>
+<section class="development section section--white">
+    <div class="development__container container">
+        <div class="development__header development__header--licences">
+            <div class="development__label">
+                <span class="development__label-text t-2 text-primary">Преимущества</span>
+            </div>
+            <div class="development__title-wrapper">
+                <h2 class="development__title head-2">
+                    <span class="development__title-primary text-primary">Мы имеем</span>
+                    <span class="development__title-secondary">лицензии</span>
+                </h2>
+            </div>
+        </div>
+
+        <div class="licences-links">
+            <div class="licences-link">
+                <div class="head-3 text-primary">01</div>
+                <div class="t-1 text-primary">
+                    Включена в реестр аккредитованных ИТ-компаний
                 </div>
             </div>
-            
-            <div class="licences-links">
-                <div class="licences-link">
-                    <div class="head-3 text-primary">01</div>
-                    <div class="t-1 text-primary">
-                      Включена в реестр аккредитованных ИТ-компаний
-                    </div>
-                </div>
 
-                <div class="licences-link">
-                    <div class="head-3 text-primary">02</div>
-                    <div class="t-1">
-                      <span class="text-primary">Включена в реестр МСП</span>
-                      <div class="t-2 licences-link__text-mt">
+            <div class="licences-link">
+                <div class="head-3 text-primary">02</div>
+                <div class="t-1">
+                    <span class="text-primary">Включена в реестр МСП</span>
+                    <div class="t-2 licences-link__text-mt">
                         Малое предприятие с 10.08.2020
-                      </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="licences-link">
-                    <div class="head-3 text-primary">03</div>
-                    <div class="t-1">
-                      <span class="text-primary">Имеет лицензию ФСТЭК</span>
-                      <div class="t-2 licences-link__text-mt">
+            <div class="licences-link">
+                <div class="head-3 text-primary">03</div>
+                <div class="t-1">
+                    <span class="text-primary">Имеет лицензию ФСТЭК</span>
+                    <div class="t-2 licences-link__text-mt">
                         №Л024-00107-00/00582622 от 11 сентября 2019 г.
-                      </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="licences-link">
-                    <div class="head-3 text-primary">04</div>
-                    <div class="t-1">
-                      <span class="text-primary">Имеет лицензию ФСБ</span>
-                      <div class="t-2 licences-link__text-mt">
+            <div class="licences-link">
+                <div class="head-3 text-primary">04</div>
+                <div class="t-1">
+                    <span class="text-primary">Имеет лицензию ФСБ</span>
+                    <div class="t-2 licences-link__text-mt">
                         ЛСЗ0016578 17477Н от 1 октября 2019 г.
-                      </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="licences-link">
-                    <div class="head-3 text-primary">05</div>
-                    <div class="t-1 text-primary">
-                      Заключает NDA
-                    </div>
+            <div class="licences-link">
+                <div class="head-3 text-primary">05</div>
+                <div class="t-1 text-primary">
+                    Заключает NDA
                 </div>
+            </div>
 
-                <div class="licences-link">
-                    <div class="head-3 text-primary">06</div>
-                    <div class="t-1 text-primary">
-                      Применяет УСН
-                    </div>
+            <div class="licences-link">
+                <div class="head-3 text-primary">06</div>
+                <div class="t-1 text-primary">
+                    Применяет УСН
                 </div>
+            </div>
 
-                <div class="licences-link">
-                    <div class="head-3 text-primary">07</div>
-                    <div class="t-1 text-primary">
-                      Использует ЭДО — «Контур.Диадок», «Такском»
-                    </div>
+            <div class="licences-link">
+                <div class="head-3 text-primary">07</div>
+                <div class="t-1 text-primary">
+                    Использует ЭДО — «Контур.Диадок», «Такском»
                 </div>
+            </div>
 
-                <div class="licences-link">
-                    <div class="head-3 text-primary">08</div>
-                    <div class="t-1">
-                      <span class="text-primary">Имеет лицензию на образовательную деятельность</span>
-                      <div class="t-2 licences-link__text-mt">
+            <div class="licences-link">
+                <div class="head-3 text-primary">08</div>
+                <div class="t-1">
+                    <span class="text-primary">Имеет лицензию на образовательную деятельность</span>
+                    <div class="t-2 licences-link__text-mt">
                         (Л035-01298-77/00180273 от 19 апреля 2021 г.)
-                      </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="licences-link">
-                    <div class="head-3 text-primary">09</div>
-                    <div class="t-1">
-                      <span class="text-primary">Является оператором персональных данных</span>
-                      <div class="t-2 licences-link__text-mt">
+            <div class="licences-link">
+                <div class="head-3 text-primary">09</div>
+                <div class="t-1">
+                    <span class="text-primary">Является оператором персональных данных</span>
+                    <div class="t-2 licences-link__text-mt">
                         №77-21-018783 от 21.01.2021
-                      </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="licences-link">
-                    <div class="head-3 text-primary">10</div>
-                    <div class="t-1 text-primary">
-                      На рынке с 2018 года
-                    </div>
+            <div class="licences-link">
+                <div class="head-3 text-primary">10</div>
+                <div class="t-1 text-primary">
+                    На рынке с 2018 года
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- <section class="development section section--white">
-        <div class="development__container container">
-            <div class="development__header">
-                <div class="development__label">
-                    <span class="development__label-text t-2 text-primary">Наша команда</span>
-                    <div class="about-team__lead">
-                      <img class="about-team__avatar about-team__avatar--lead" src="/team/lead.png" />
+<!-- <section class="development section section--white">
+    <div class="development__container container">
+        <div class="development__header">
+            <div class="development__label">
+                <span class="development__label-text t-2 text-primary">Наша команда</span>
+                <div class="about-team__lead">
+                  <img class="about-team__avatar about-team__avatar--lead" src="/team/lead.png" />
 
-                      <div class="about-team__lead-text">
-                        <div class="t-2 text-primary about-team__fio">
-                          Елена Витальевна Константинова
-                        </div>
-                        <div class="t-2">
-                          Основатель компании ООО&#160;МИР&#160;ДАННЫХ&#160;ИТ
-                        </div>
-                      </div>
+                  <div class="about-team__lead-text">
+                    <div class="t-2 text-primary about-team__fio">
+                      Елена Витальевна Константинова
                     </div>
-                </div>
-                <div class="development__title-wrapper">
-                    <blockquote class="about-team__blockquote">
-                        <h2 class="mission__quote-text head-2 text-primary">
-                          Мы создали дружную команду специалистов, работающих в разных уголках России.
-                        </h2>
-                    </blockquote>
-
-                    <div class="t-2 about-team__desc about-team__desc--tablet">
-                      Наши сотрудники регулярно обучаются и подтверждают свою квалификацию с получением сертификатов. Учебный центр нашей компании помогает получить навыки и знания как новичкам, так и опытным специалистам.
+                    <div class="t-2">
+                      Основатель компании ООО&#160;МИР&#160;ДАННЫХ&#160;ИТ
                     </div>
+                  </div>
                 </div>
             </div>
+            <div class="development__title-wrapper">
+                <blockquote class="about-team__blockquote">
+                    <h2 class="mission__quote-text head-2 text-primary">
+                      Мы создали дружную команду специалистов, работающих в разных уголках России.
+                    </h2>
+                </blockquote>
 
-            <div class="t-2 about-team__desc about-team__desc--mobile">
-              Наши сотрудники регулярно обучаются и подтверждают свою квалификацию с получением сертификатов. Учебный центр нашей компании помогает получить навыки и знания как новичкам, так и опытным специалистам.
-            </div>
-
-            <div class="about-team__lead about-team__lead--mobile">
-              <img class="about-team__avatar" src="/team/lead.png" />
-
-              <div class="t-2 text-primary about-team__fio">
-                Елена Витальевна Константинова
-              </div>
-              <div class="t-2">
-                Основатель компании ООО&#160;МИР&#160;ДАННЫХ&#160;ИТ
-              </div>
-            </div>
-
-            <div class="about-team__list">
-              <img class="about-team__avatar" src="/team/1.png" />
-              <img class="about-team__avatar" src="/team/2.png" />
-              <img class="about-team__avatar" src="/team/3.png" />
-              <img class="about-team__avatar" src="/team/4.png" />
-              <img class="about-team__avatar" src="/team/5.png" />
-              <img class="about-team__avatar" src="/team/6.png" />
-              <img class="about-team__avatar" src="/team/7.png" />
-              <img class="about-team__avatar" src="/team/8.png" />
-              <img class="about-team__avatar" src="/team/9.png" />
-              <img class="about-team__avatar" src="/team/10.png" />
-              <img class="about-team__avatar" src="/team/11.png" />
-              <img class="about-team__avatar" src="/team/12.png" />
-              <img class="about-team__avatar" src="/team/13.png" />
-              <img class="about-team__avatar" src="/team/14.png" />
-              <img class="about-team__avatar" src="/team/15.png" />
-              <img class="about-team__avatar" src="/team/16.png" />
-              <img class="about-team__avatar" src="/team/17.png" />
-              <img class="about-team__avatar" src="/team/18.png" />
-              <img class="about-team__avatar" src="/team/19.png" />
-              <img class="about-team__avatar" src="/team/20.png" />
-              <img class="about-team__avatar" src="/team/21.png" />
-              <img class="about-team__avatar" src="/team/22.png" />
-              <img class="about-team__avatar" src="/team/23.png" />
-              <img class="about-team__avatar" src="/team/24.png" />
+                <div class="t-2 about-team__desc about-team__desc--tablet">
+                  Наши сотрудники регулярно обучаются и подтверждают свою квалификацию с получением сертификатов. Учебный центр нашей компании помогает получить навыки и знания как новичкам, так и опытным специалистам.
+                </div>
             </div>
         </div>
-    </section> -->
 
-    <section class="section gymn section--primary">
-      <h2 class="head-2 text-white">К шестилетию компании у нас появился гимн, который Вы можете прослушать</h2>
+        <div class="t-2 about-team__desc about-team__desc--mobile">
+          Наши сотрудники регулярно обучаются и подтверждают свою квалификацию с получением сертификатов. Учебный центр нашей компании помогает получить навыки и знания как новичкам, так и опытным специалистам.
+        </div>
 
-      <a type="button" class="btn btn--outline t-2 gymn__button" href="/files/МИР ДАННЫХ ИТ.mp3" download>
-          Прослушать гимн компании
-      </a>
-    </section>
+        <div class="about-team__lead about-team__lead--mobile">
+          <img class="about-team__avatar" src="/team/lead.png" />
 
-    <section class="history">
-      <div class="container">
+          <div class="t-2 text-primary about-team__fio">
+            Елена Витальевна Константинова
+          </div>
+          <div class="t-2">
+            Основатель компании ООО&#160;МИР&#160;ДАННЫХ&#160;ИТ
+          </div>
+        </div>
+
+        <div class="about-team__list">
+          <img class="about-team__avatar" src="/team/1.png" />
+          <img class="about-team__avatar" src="/team/2.png" />
+          <img class="about-team__avatar" src="/team/3.png" />
+          <img class="about-team__avatar" src="/team/4.png" />
+          <img class="about-team__avatar" src="/team/5.png" />
+          <img class="about-team__avatar" src="/team/6.png" />
+          <img class="about-team__avatar" src="/team/7.png" />
+          <img class="about-team__avatar" src="/team/8.png" />
+          <img class="about-team__avatar" src="/team/9.png" />
+          <img class="about-team__avatar" src="/team/10.png" />
+          <img class="about-team__avatar" src="/team/11.png" />
+          <img class="about-team__avatar" src="/team/12.png" />
+          <img class="about-team__avatar" src="/team/13.png" />
+          <img class="about-team__avatar" src="/team/14.png" />
+          <img class="about-team__avatar" src="/team/15.png" />
+          <img class="about-team__avatar" src="/team/16.png" />
+          <img class="about-team__avatar" src="/team/17.png" />
+          <img class="about-team__avatar" src="/team/18.png" />
+          <img class="about-team__avatar" src="/team/19.png" />
+          <img class="about-team__avatar" src="/team/20.png" />
+          <img class="about-team__avatar" src="/team/21.png" />
+          <img class="about-team__avatar" src="/team/22.png" />
+          <img class="about-team__avatar" src="/team/23.png" />
+          <img class="about-team__avatar" src="/team/24.png" />
+        </div>
+    </div>
+</section> -->
+
+<section class="section gymn section--primary">
+    <h2 class="head-2 text-white">К шестилетию компании у нас появился гимн, который Вы можете прослушать</h2>
+
+    <a type="button" class="btn btn--outline t-2 gymn__button" href="/files/МИР ДАННЫХ ИТ.mp3" download>
+        Прослушать гимн компании
+    </a>
+</section>
+
+<section class="history">
+    <div class="container">
         <div class="t-2 text-primary">
-        История компании
-      </div>
-      <div class="history__blocks opener-wrap opener-scroll">
-        <div class="history__block _open" id="block-1">
-          <div class="history__main">
-            <div class="history__date--close t-2 text-primary">2018</div>
-            <div class="history__date--open head-2 text-white">2018</div>
-            <button class="btn-icon opener history__toggle _opened" data-target="#block-1"></button>
-          </div>
-          <div class="history__text t-2 text-white">
-            Год основания компании МИР ДАННЫХ ИТ <br />
-            Открытие центрального офиса в Москве <br />
-            Внедрение ЭДО с заказчиками (Контур.Диадок) <br />
-            Начало сотрудничества с крупными системными интеграторами: проекты в госсекторе и открытие коммерческого направления <br />
-            Старт проектов по импортозамещению <br />
-          </div>
+            История компании
         </div>
-
-        <div class="history__block" id="block-2">
-          <div class="history__main">
-            <div class="history__date--close t-2 text-primary">2019</div>
-            <div class="history__date--open head-2 text-white">2019</div>
-            <button class="btn-icon opener history__toggle" data-target="#block-2"></button>
-          </div>
-          <div class="history__text t-2 text-white">
-            Реестр МСП. Микропредприятие  с 10.01.2019 <br />
-            Компания входит в реестр аккредитованных ИТ-компаний <br />
-            Старт проектов в банковском секторе <br />
-            Открытие офиса в Ростове-на-Дону <br />
-            Получение лицензии ФСТЭК (№Л024-00107-00/00582622 от 11 сентября 2019 г.) <br />
-            Получение лицензии ФСБ (ЛСЗ0016578 17477Н от 1 октября 2019 г.) <br />
-            Открытие офиса информационной безопасности в Москве <br />
-          </div>
-        </div>
-
-        <div class="history__block" id="block-3">
-          <div class="history__main">
-            <div class="history__date--close t-2 text-primary">2020</div>
-            <div class="history__date--open head-2 text-white">2020</div>
-            <button class="btn-icon opener history__toggle" data-target="#block-3"></button>
-          </div>
-          <div class="history__text t-2 text-white">
-            Открытие офиса в Нижнем Новгороде <br />
-            Реестр МСП. Малое предприятие  с 10.08.2020 <br />
-          </div>
-        </div>
-
-        <div class="history__block" id="block-4">
-          <div class="history__main">
-            <div class="history__date--close t-2 text-primary">2021</div>
-            <div class="history__date--open head-2 text-white">2021</div>
-            <button class="btn-icon opener history__toggle" data-target="#block-4"></button>
-          </div>
-          <div class="history__text t-2 text-white">
-           Получение лицензии на образовательную деятельность (Л035-01298-77/00180273 от 19 апреля 2021 г.) <br />
-            открытие учебного центра <br />
-            Оператор персональных данных (№77-21-018783 от 21.01.2021) <br />
-            Переезд центрального офиса <br />
-          </div>
-        </div>
-
-        <div class="history__block" id="block-5">
-          <div class="history__main">
-            <div class="history__date--close t-2 text-primary">2022</div>
-            <div class="history__date--open head-2 text-white">2022</div>
-            <button class="btn-icon opener history__toggle" data-target="#block-5"></button>
-          </div>
-          <div class="history__text t-2 text-white">
-            Внедрение КЭДО с сотрудниками <br />
-            Получение аккредитации ЦБ <br />
-          </div>
-        </div>
-
-        <div class="history__block" id="block-6">
-          <div class="history__main">
-            <div class="history__date--close t-2 text-primary">2023</div>
-            <div class="history__date--open head-2 text-white">2023</div>
-            <button class="btn-icon opener history__toggle" data-target="#block-6"></button>
-          </div>
-          <div class="history__text t-2 text-white">
-            Оптимизация бизнеса, закрытие региональных офисов, переход на полностью удаленный формат работы.
-          </div>
-        </div>
-
-        <div class="history__block" id="block-7">
-          <div class="history__main">
-            <div class="history__date--close t-2 text-primary">2024</div>
-            <div class="history__date--open head-2 text-white">2024</div>
-            <button class="btn-icon opener history__toggle" data-target="#block-7"></button>
-          </div>
-          <div class="history__text t-2 text-white">
-            Выделение отдельного направления проектов по информационной безопасности
-          </div>
-        </div>
-      </div>
-      </div>
-      
-    </section>
-
-    <section class="section section--white join-us">
-      <div class="container">
-        <div class="join-us__wrapper">
-          <img class="join-us__star" src="/star-4.png" alt="star" />
-          <div class="join-us__content">
-            <h2 class="head-2 text-primary join-us__title">
-              Станьте частью нашей команды
-            </h2>
-            <div class="t-2">
-              Мы всегда готовы взять в команду талантливых и целеустремлённых сотрудников.
+        <div class="history__blocks opener-wrap opener-scroll">
+            <div class="history__block _open" id="block-1">
+                <div class="history__main">
+                    <div class="history__date--close t-2 text-primary">2018</div>
+                    <div class="history__date--open head-2 text-white">2018</div>
+                    <button class="btn-icon opener history__toggle _opened" data-target="#block-1"></button>
+                </div>
+                <div class="history__text t-2 text-white">
+                    Год основания компании МИР ДАННЫХ ИТ <br />
+                    Открытие центрального офиса в Москве <br />
+                    Внедрение ЭДО с заказчиками (Контур.Диадок) <br />
+                    Начало сотрудничества с крупными системными интеграторами: проекты в госсекторе и открытие коммерческого направления <br />
+                    Старт проектов по импортозамещению <br />
+                </div>
             </div>
 
-            <a type="button" class="btn btn--primary t-2 join-us__button" href="https://hh.ru/employer/3827157?hhtmFrom=vacancy" target="_blank">
-                Посмотреть вакансии
-            </a>
-          </div>
-        </div>
-        </div>
-      </section>
+            <div class="history__block" id="block-2">
+                <div class="history__main">
+                    <div class="history__date--close t-2 text-primary">2019</div>
+                    <div class="history__date--open head-2 text-white">2019</div>
+                    <button class="btn-icon opener history__toggle" data-target="#block-2"></button>
+                </div>
+                <div class="history__text t-2 text-white">
+                    Реестр МСП. Микропредприятие  с 10.01.2019 <br />
+                    Компания входит в реестр аккредитованных ИТ-компаний <br />
+                    Старт проектов в банковском секторе <br />
+                    Открытие офиса в Ростове-на-Дону <br />
+                    Получение лицензии ФСТЭК (№Л024-00107-00/00582622 от 11 сентября 2019 г.) <br />
+                    Получение лицензии ФСБ (ЛСЗ0016578 17477Н от 1 октября 2019 г.) <br />
+                    Открытие офиса информационной безопасности в Москве <br />
+                </div>
+            </div>
 
-    <%- footer %>
-  </body>
+            <div class="history__block" id="block-3">
+                <div class="history__main">
+                    <div class="history__date--close t-2 text-primary">2020</div>
+                    <div class="history__date--open head-2 text-white">2020</div>
+                    <button class="btn-icon opener history__toggle" data-target="#block-3"></button>
+                </div>
+                <div class="history__text t-2 text-white">
+                    Открытие офиса в Нижнем Новгороде <br />
+                    Реестр МСП. Малое предприятие  с 10.08.2020 <br />
+                </div>
+            </div>
+
+            <div class="history__block" id="block-4">
+                <div class="history__main">
+                    <div class="history__date--close t-2 text-primary">2021</div>
+                    <div class="history__date--open head-2 text-white">2021</div>
+                    <button class="btn-icon opener history__toggle" data-target="#block-4"></button>
+                </div>
+                <div class="history__text t-2 text-white">
+                    Получение лицензии на образовательную деятельность (Л035-01298-77/00180273 от 19 апреля 2021 г.) <br />
+                    открытие учебного центра <br />
+                    Оператор персональных данных (№77-21-018783 от 21.01.2021) <br />
+                    Переезд центрального офиса <br />
+                </div>
+            </div>
+
+            <div class="history__block" id="block-5">
+                <div class="history__main">
+                    <div class="history__date--close t-2 text-primary">2022</div>
+                    <div class="history__date--open head-2 text-white">2022</div>
+                    <button class="btn-icon opener history__toggle" data-target="#block-5"></button>
+                </div>
+                <div class="history__text t-2 text-white">
+                    Внедрение КЭДО с сотрудниками <br />
+                    Получение аккредитации ЦБ <br />
+                </div>
+            </div>
+
+            <div class="history__block" id="block-6">
+                <div class="history__main">
+                    <div class="history__date--close t-2 text-primary">2023</div>
+                    <div class="history__date--open head-2 text-white">2023</div>
+                    <button class="btn-icon opener history__toggle" data-target="#block-6"></button>
+                </div>
+                <div class="history__text t-2 text-white">
+                    Оптимизация бизнеса, закрытие региональных офисов, переход на полностью удаленный формат работы.
+                </div>
+            </div>
+
+            <div class="history__block" id="block-7">
+                <div class="history__main">
+                    <div class="history__date--close t-2 text-primary">2024</div>
+                    <div class="history__date--open head-2 text-white">2024</div>
+                    <button class="btn-icon opener history__toggle" data-target="#block-7"></button>
+                </div>
+                <div class="history__text t-2 text-white">
+                    Выделение отдельного направления проектов по информационной безопасности
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="section section--white join-us">
+    <div class="container">
+        <div class="join-us__wrapper">
+            <img class="join-us__star" src="/star-4.png" alt="star" />
+            <div class="join-us__content">
+                <h2 class="head-2 text-primary join-us__title">
+                    Станьте частью нашей команды
+                </h2>
+                <div class="t-2">
+                    Мы всегда готовы взять в команду талантливых и целеустремлённых сотрудников.
+                </div>
+
+                <a type="button" class="btn btn--primary t-2 join-us__button" href="https://hh.ru/employer/3827157?hhtmFrom=vacancy" target="_blank">
+                    Посмотреть вакансии
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Информационная карта -->
+<section class="development section section--white">
+    <div class="development__container container">
+        <div class="development__header development__header--about about-title-margin-0">
+            <div class="development__label">
+                <span class="development__label-text t-2 text-primary">Реквизиты</span>
+            </div>
+            <div class="development__title-wrapper">
+                <h2 class="development__title head-2">
+                    <span class="development__title-primary text-primary">Информационная карта</span>
+                    <span class="development__title-secondary">ООО&nbsp;«МИР&nbsp;ДАННЫХ&nbsp;ИТ»</span>
+                </h2>
+            </div>
+        </div>
+
+        <div class="info-card-table-wrapper">
+            <table class="info-card-table t-2">
+                <tbody>
+                <tr>
+                    <td class="info-card-table__label">Организационно-правовая форма и полное фирменное наименование</td>
+                    <td>Общество с ограниченной ответственностью «МИР ДАННЫХ ИТ»</td>
+                </tr>
+                <tr>
+                    <td class="info-card-table__label">Сокращённое фирменное наименование</td>
+                    <td>ООО «МИР ДАННЫХ ИТ»</td>
+                </tr>
+                <tr>
+                    <td class="info-card-table__label">Юридический адрес / Центральный офис</td>
+                    <td>129090, город Москва, ул. Щепкина, д. 28, э/пом/к 3/I/9</td>
+                </tr>
+                <tr>
+                    <td class="info-card-table__label">Дополнительный офис / Центр информационной безопасности</td>
+                    <td>127214, город Москва, ул. Полярная, д. 31В стр. 1, оф. 203</td>
+                </tr>
+                <tr>
+                    <td class="info-card-table__label">ОГРН</td>
+                    <td>5187746013054</td>
+                </tr>
+                <tr>
+                    <td class="info-card-table__label">ИНН</td>
+                    <td>7702458771</td>
+                </tr>
+                <tr>
+                    <td class="info-card-table__label">Основной код ОКВЭД</td>
+                    <td>Разработка компьютерного программного обеспечения (62.01)</td>
+                </tr>
+                <tr>
+                    <td class="info-card-table__label">Коды ОКВЭД в области информационных технологий</td>
+                    <td>
+                        61.10 — Издание прочих программных продуктов<br />
+                        61.20 — Деятельность в области связи на базе проводных технологий<br />
+                        61.30 — Деятельность в области связи на базе беспроводных технологий<br />
+                        61.90 — Деятельность в области спутниковой связи<br />
+                        62.02 — Деятельность в области телекоммуникаций прочая<br />
+                        62.03 — Деятельность консультативная и работы в области компьютерных технологий<br />
+                        62.09 — Деятельность по управлению компьютерным оборудованием<br />
+                        63.11 — Деятельность, связанная с использованием вычислительной техники и ИТ, прочая<br />
+                        63.12 — Деятельность по обработке данных, предоставление услуг по размещению информации<br />
+                        63.99 — Деятельность web-порталов<br />
+                        69.20 — Деятельность информационных служб прочая<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="info-card-table__label">Электронная почта</td>
+                    <td><a href="mailto:info@mir-dit.ru" class="text-primary">info@mir-dit.ru</a></td>
+                </tr>
+                <tr>
+                    <td class="info-card-table__label">Контактный телефон</td>
+                    <td>+7 (495) 797-04-16</td>
+                </tr>
+                <tr>
+                    <td class="info-card-table__label">Адрес сайта</td>
+                    <td><a href="https://mir-dit.ru" target="_blank" class="text-primary">https://mir-dit.ru</a></td>
+                </tr>
+                <tr>
+                    <td class="info-card-table__label">Информация о наличии исключительных прав на ПО и базы данных, а также о способах предоставления права их использования, если ПО разработано данной организацией либо иным (*) связанным лицом</td>
+                    <td>Не применимо</td>
+                </tr>
+
+                <tr>
+                    <td class="info-card-table__label">Информация о наличии разрешения на обработку фискальных данных, если организация является оператором фискальных данных</td>
+                    <td>Не применимо</td>
+                </tr>
+                <tr>
+                    <td class="info-card-table__label">Функционирование сайта</td>
+                    <td>В круглосуточном режиме (24×7)</td>
+                </tr>
+                <tr>
+                    <td class="info-card-table__label">Ознакомление с документами без регистрации</td>
+                    <td>Не требует регистрации, доступно всем</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Работы и услуги -->
+<section class="development section section--white">
+    <div class="development__container container">
+        <div class="development__header development__header--about about-title-margin-0">
+            <div class="development__label">
+                <span class="development__label-text t-2 text-primary">Деятельность</span>
+            </div>
+            <div class="development__title-wrapper">
+                <h2 class="development__title head-2 development__title--about">
+                    <span class="development__title-primary text-primary">Реализуемые</span>
+                    <span class="development__title-secondary"> товары, работы и оказываемые услуги</span>
+                </h2>
+            </div>
+        </div>
+
+        <div class="works-section">
+
+            <div class="works-block">
+                <h3 class="head-3 text-primary works-block__title">1. Услуги по сопровождению подсистем государственных информационных систем</h3>
+                <ol class="t-2 works-block__list">
+                    <li>Обеспечение бесперебойной работы подсистем</li>
+                    <li>Организация обработки обращений</li>
+                    <li>Обеспечение постоянной круглосуточной технической поддержки пользователей в режиме горячей линии 7 дней в неделю</li>
+                    <li>Обеспечение поддержки процесса проведения технологических работ в подсистемах</li>
+                    <li>Предоставление информации для подготовки предложений по модернизации подсистем</li>
+                    <li>Взаимодействие со смежными сервисами</li>
+                    <li>Администрирование систем управления базой данных</li>
+                    <li>Восстановление функционирования подсистем / компонентов</li>
+                    <li>Расширенное конфигурирование и сопровождение виртуальных машин</li>
+                    <li>Миграция данных и виртуальных машин подсистем / компонентов</li>
+                    <li>Обеспечение защиты информации в ходе эксплуатации подсистем</li>
+                    <li>Доработка подсистем / компонентов</li>
+                    <li>И прочие необходимые услуги, согласованные с заказчиком</li>
+                </ol>
+            </div>
+
+            <div class="works-block">
+                <h3 class="head-3 text-primary works-block__title">2. Работы по развитию ЕИС в части подсистем и компонент</h3>
+                <ol class="t-2 works-block__list">
+                    <li>Разработка рабочей документации</li>
+                    <li>Разработка ПО</li>
+                    <li>Разработка плана пусконаладочных работ по развёртыванию на тестовой площадке</li>
+                    <li>Разработка программы и методики предварительных испытаний</li>
+                    <li>Разработка методики тестирования</li>
+                    <li>Пусконаладочные работы по развёртыванию на основной площадке</li>
+                    <li>Разработка программы опытной эксплуатации</li>
+                    <li>Пусконаладочные работы по развёртыванию на тестовой площадке</li>
+                    <li>Подготовка плана пусконаладочных работ по развёртыванию на основной площадке</li>
+                    <li>Проведение предварительных испытаний</li>
+                    <li>Проведение опытной эксплуатации</li>
+                    <li>Доработка ПО и дополнительная наладка при необходимости</li>
+                    <li>Тестирование программного обеспечения</li>
+                    <li>Разработка программы и методики приёмочных испытаний</li>
+                    <li>Проведение приёмочных испытаний</li>
+                    <li>И прочие необходимые работы, согласованные с заказчиком</li>
+                </ol>
+            </div>
+
+            <div class="works-block">
+                <h3 class="head-3 text-primary works-block__title">Стоимость работ и услуг</h3>
+                <ol class="t-2 works-block__list">
+                    <li>Стоимость реализуемых товаров, работ и услуг формируется на основе поступающих от заказчика технических требований.</li>
+                    <li>Стоимость может быть сформирована с учётом соблюдения государственной тайны, коммерческой тайны, иной охраняемой тайны.</li>
+                    <li>Стоимость реализации проектов развития и услуг сопровождения может составить от 1 млн рублей до 2 млрд рублей в зависимости от технических требований.</li>
+                </ol>
+            </div>
+
+            <div class="works-block">
+                <h3 class="head-3 text-primary works-block__title">Языки программирования и используемое ПО</h3>
+                <p class="t-2 works-block__tech">
+                    Angular · .NET: ASP.NET Core · Allure · Angular / AngularJS · Ansible · Ant Design · Apache · Apache Kafka · Apache NiFi · Argo CD · Astra Linux (SE/CE) · Альт Линукс · Bash · Bash &amp; PowerShell · C++ · C# (.NET) · Cadesplugin API (КриптоПро) · Cassandra · Celery · CentOS · Ceph RGW · ClickHouse · Couchbase · CSS3 · Dart · Debian / Ubuntu LTS · Django · Docker · Docker Compose · ELK Stack · Express · ExtJS · Flask · Flutter · GitLab CI · Jenkins · Go / Golang: Gin, Fiber · Grafana · GraphQL · gRPC · Gulp / Webpack / Vite · HAProxy · Helm · HTML5 · IndexedDB · Ionic · NativeScript · IPFS · Istio · Java · Java / Kotlin · Java: Spring Boot (WebFlux, Security, Data, Batch) · JavaEE (Wildfly) · JavaScript · Jetty · JSF · JSP · JUnit · Mockito · Kafka · Keycloak · KeyDB · Koa · Kubernetes · Laravel · Linkerd · Loki · Lombok · Material UI · MinIO · MkDocs · MongoDB · MySQL · Nagios · NATS · NestJS · Nginx · NgRX / NgXS · Node.js (TypeScript) · Node.js: NestJS, Fastify · OpenStack · OpenStreetMaps · OpenTelemetry · Pandas · openpyxl · Peewee · PHP · PHPUnit · Podman · Postgres Pro · PostgreSQL · Prometheus · PWA / SPA · Python: FastAPI, Django · pyinstaller · Pytest · RabbitMQ · RBAC · React (Next.js) · Redis · Redux · REST/JSON API · Rocky / AlmaLinux · RTK Query · RxJS · SAST/DAST · SQLAlchemy · SQLite · SQL Server Analytics (OLAP) · SSIS · Symfony · Yii2 · Codeigniter · Tarantool · Telegram WebApp SDK · Terraform · TLS ГОСТ · TypeScript · Vault · Vue 3 (Nuxt) · Vuetify · WASM · Web Components · WeasyPrint · YAML (CI/CD, Kubernetes) · Yandex Maps · ЕГИСЗ · ЕГРИП · ЕГРЮЛ · ЕПГУ · ЕСИА (OAuth 2.0, OpenID Connect, JWT ГОСТ) · КриптоПро CSP/Java · С-Терра · ViPNet · СКЗИ · СМЭВ 3/4 (SOAP/REST, WS-Security ГОСТ, MTOM) · ЭДО и подпись: УКЭП, КЭП, OCSP/CRL · РЕД ОС
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<%- footer %>
+</body>
 </html>
