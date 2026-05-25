@@ -1,477 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%- title %></title>
-    <link href="/src/style.css" rel="stylesheet" />
-    <link href="/src/styles/admin.css" rel="stylesheet" />
-  </head>
-  <body class="bg-gray-light p-5 font-manrope font-light">
-    <header class="header section section--primary analytics-header">
-        <%- headerNav %>
-        <div class="container header__content">
-            <div class="header__main">
-                <img class="header__image header__image--mobile analytics-header__image" src="/cells-header-bg.png" alt="cells" />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%- title %></title>
+  <link href="/src/style.css" rel="stylesheet" />
+  <link href="/src/styles/admin.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-light p-5 font-manrope font-light">
+<header class="header section section--primary analytics-header">
+  <%- headerNav %>
+  <div class="container header__content">
+    <div class="header__main">
+      <img class="header__image header__image--mobile analytics-header__image" src="/cells-header-bg.png" alt="cells" />
 
-                <h1 class="head-1 header__title text-white head-title">
-                    Обслуживание и администрирование баз&nbsp;данных
-                </h1>
+      <h1 class="head-1 header__title text-white head-title">
+        Обслуживание и администрирование баз&nbsp;данных
+      </h1>
 
-                <a type="button" class="header__button btn btn--outline t-2" href="mailto:info@mir-dit.ru">
-                    Заказать аудит базы данных
-                </a>
-            </div>
+      <a type="button" class="header__button btn btn--outline t-2" href="mailto:info@mir-dit.ru">
+        Заказать аудит базы данных
+      </a>
+    </div>
 
-            <img class="header__image header__image--desktop analytics-header__image" src="/cells-header-bg.png" alt="cells" />
-        </div>
-    </header>
+    <img class="header__image header__image--desktop analytics-header__image" src="/cells-header-bg.png" alt="cells" />
+  </div>
+</header>
 
-    <section class="section section--white">
-      <div class="container">
-        <div class="common-header">
-          <div class="common-header__label t-2 text-primary">
-            Нам доверяют
-          </div>
+<section class="section section--white">
+  <div class="container">
+    <div class="common-header">
+      <div class="common-header__label t-2 text-primary">
+        Нам доверяют
+      </div>
 
-          <div class="common-header__title-wrapper">
-            <h2 class="head-2">
-              13 лет работы на рынках России, Европы, СНГ, <span class="text-primary">включая федеральные проекты для госсектора</span>
-            </h2>
-          </div>
-        </div>
-
-        <div class="stats__grid admin__stats">
-          <div class="stats__item">
-            <div class="stats__number font-roboto text-gradient t-3 bg-clip-text text-transparent">60+</div>
-            <div class="stats__text t-2">Реализованных проекта</div>
-          </div>
-          
-          <div class="stats__item">
-            <div class="stats__number font-roboto text-gradient t-3 bg-clip-text text-transparent">1230+</div>
-            <div class="stats__text t-2">Террабайт данных на обслуживании</div>
-          </div>
-        </div>
-
+      <div class="common-header__title-wrapper">
         <h2 class="head-2">
-          90%  банков и ритейлов теряли деньги <span class="text-primary">из-за медленной и некачественной работы баз данных</span>
+          13 лет работы на рынках России, Европы, СНГ, <span class="text-primary">включая федеральные проекты для госсектора</span>
         </h2>
-        <div class="business-model__mobile-controls admin-slider__controls">
-          <div class="business-model__arrow business-model__arrow--prev admin-slider__prev">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.1016 6.08204L3.06594 6.08204L7.45034 1.5799C7.80074 1.2201 7.80074 0.629655 7.45034 0.269853C7.09995 -0.0899493 6.53393 -0.0899494 6.18354 0.269853L0.262794 6.34959C-0.0875995 6.70939 -0.0875996 7.29061 0.262793 7.65041L6.18354 13.7301C6.53393 14.09 7.09995 14.09 7.45034 13.7301C7.80074 13.3703 7.80074 12.7891 7.45034 12.4293L3.06594 7.92718L13.1016 7.92718C13.5957 7.92718 14 7.51203 14 7.00461C14 6.4972 13.5957 6.08204 13.1016 6.08204Z" fill="#A1EAF7"/>
-            </svg>
-          </div>
-          <div class="business-model__arrow business-model__arrow--next admin-slider__next">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.898444 7.91796L10.9341 7.91796L6.54966 12.4201C6.19926 12.7799 6.19926 13.3703 6.54965 13.7301C6.90005 14.0899 7.46607 14.0899 7.81646 13.7301L13.7372 7.65041C14.0876 7.29061 14.0876 6.70939 13.7372 6.34959L7.81646 0.269852C7.46607 -0.0899502 6.90005 -0.0899502 6.54966 0.269852C6.19926 0.629654 6.19926 1.21087 6.54966 1.57068L10.9341 6.07282L0.898444 6.07282C0.404299 6.07282 -2.96952e-07 6.48797 -3.41312e-07 6.99539C-3.85671e-07 7.5028 0.404299 7.91796 0.898444 7.91796Z" fill="white"/>
-            </svg>
+      </div>
+    </div>
+
+    <div class="stats__grid admin__stats">
+      <div class="stats__item">
+        <div class="stats__number font-roboto text-gradient t-3 bg-clip-text text-transparent">60+</div>
+        <div class="stats__text t-2">Реализованных проекта</div>
+      </div>
+
+      <div class="stats__item">
+        <div class="stats__number font-roboto text-gradient t-3 bg-clip-text text-transparent">1230+</div>
+        <div class="stats__text t-2">Террабайт данных на обслуживании</div>
+      </div>
+    </div>
+
+    <h2 class="head-2">
+      90%  банков и ритейлов теряли деньги <span class="text-primary">из-за медленной и некачественной работы баз данных</span>
+    </h2>
+    <div class="business-model__mobile-controls admin-slider__controls">
+      <div class="business-model__arrow business-model__arrow--prev admin-slider__prev">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.1016 6.08204L3.06594 6.08204L7.45034 1.5799C7.80074 1.2201 7.80074 0.629655 7.45034 0.269853C7.09995 -0.0899493 6.53393 -0.0899494 6.18354 0.269853L0.262794 6.34959C-0.0875995 6.70939 -0.0875996 7.29061 0.262793 7.65041L6.18354 13.7301C6.53393 14.09 7.09995 14.09 7.45034 13.7301C7.80074 13.3703 7.80074 12.7891 7.45034 12.4293L3.06594 7.92718L13.1016 7.92718C13.5957 7.92718 14 7.51203 14 7.00461C14 6.4972 13.5957 6.08204 13.1016 6.08204Z" fill="#A1EAF7"/>
+        </svg>
+      </div>
+      <div class="business-model__arrow business-model__arrow--next admin-slider__next">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.898444 7.91796L10.9341 7.91796L6.54966 12.4201C6.19926 12.7799 6.19926 13.3703 6.54965 13.7301C6.90005 14.0899 7.46607 14.0899 7.81646 13.7301L13.7372 7.65041C14.0876 7.29061 14.0876 6.70939 13.7372 6.34959L7.81646 0.269852C7.46607 -0.0899502 6.90005 -0.0899502 6.54966 0.269852C6.19926 0.629654 6.19926 1.21087 6.54966 1.57068L10.9341 6.07282L0.898444 6.07282C0.404299 6.07282 -2.96952e-07 6.48797 -3.41312e-07 6.99539C-3.85671e-07 7.5028 0.404299 7.91796 0.898444 7.91796Z" fill="white"/>
+        </svg>
+      </div>
+    </div>
+    <div class="admin-slider">
+      <div class="admin-slider-wrapper circle-slider__container">
+        <div class="admin-slider__slide circle-slider__card right">
+          <div class="admin-slide">
+            <div class="admin-slide__header">
+              <div class="head-3">
+                Касса
+              </div>
+
+              <img class="admin-slide__avatar" src="/slider/admin-slider_1.png" alt="1">
+            </div>
+            <div class="admin-slide__text t-1">
+              <span>Не проходит обновление ценников</span>
+              <span>Не привязываются скидки</span>
+              <span>Виснет касса</span>
+            </div>
           </div>
         </div>
-        <div class="admin-slider">
-          <div class="admin-slider-wrapper circle-slider__container">
-            <div class="admin-slider__slide circle-slider__card right">
-              <div class="admin-slide">
-                <div class="admin-slide__header">
-                  <div class="head-3">
-                    Касса
-                  </div>
 
-                 <img class="admin-slide__avatar" src="/slider/admin-slider_1.png" alt="1">
-                </div>
-                <div class="admin-slide__text t-1">
-                  <span>Не проходит обновление ценников</span>
-                  <span>Не привязываются скидки</span>
-                  <span>Виснет касса</span>
-                </div>
+        <div class="admin-slider__slide circle-slider__card left">
+          <div class="admin-slide admin-slide--primary">
+            <div class="admin-slide__header">
+              <div class="head-3">
+                Финансы
               </div>
+
+              <img class="admin-slide__avatar" src="/slider/admin-slider_2.png" alt="2">
             </div>
-
-            <div class="admin-slider__slide circle-slider__card left">
-              <div class="admin-slide admin-slide--primary">
-                <div class="admin-slide__header">
-                  <div class="head-3">
-                    Финансы
-                  </div>
-
-                 <img class="admin-slide__avatar" src="/slider/admin-slider_2.png" alt="2">
-                </div>
-                <div class="admin-slide__text t-1">
-                  <span>Невозможно внести данные</span>
-                  <span>Невозможно построить отчет</span>
-                  <span>Невозможно правильно расчитать</span>
-                  <span>бюджет на следующий период</span>
-                </div>
-              </div>
+            <div class="admin-slide__text t-1">
+              <span>Невозможно внести данные</span>
+              <span>Невозможно построить отчет</span>
+              <span>Невозможно правильно расчитать</span>
+              <span>бюджет на следующий период</span>
             </div>
+          </div>
+        </div>
 
-            <div class="admin-slider__slide circle-slider__card front">
-              <div class="admin-slide admin-slide--gray-light">
-                <div class="admin-slide__header">
-                  <div class="head-3">
-                    Документы
-                  </div>
-
-                 <img class="admin-slide__avatar" src="/slider/admin-slider_3.png" alt="3">
-                </div>
-                <div class="admin-slide__text t-1">
-                  <span>Заканчивается место на диске</span>
-                  <span>Ошибки документооборота</span>
-                  <span>Долгая загрузка</span>
-                </div>
+        <div class="admin-slider__slide circle-slider__card front">
+          <div class="admin-slide admin-slide--gray-light">
+            <div class="admin-slide__header">
+              <div class="head-3">
+                Документы
               </div>
+
+              <img class="admin-slide__avatar" src="/slider/admin-slider_3.png" alt="3">
+            </div>
+            <div class="admin-slide__text t-1">
+              <span>Заканчивается место на диске</span>
+              <span>Ошибки документооборота</span>
+              <span>Долгая загрузка</span>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="section section--primary bd-cl-section">
-      <div class="container bd-cl">
-        <h2 class="head-2 text-white text-center">
-          Проверьте свою базу данных
-          по чек-листу и узнайте сильные
-          и слабые места вашей системы
+<!-- Удалён блок с презентацией и картинкой по требованию -->
+
+<section class="section">
+  <div class="container">
+    <div class="common-header">
+      <div class="common-header__label t-2 text-primary">
+        Преимущества работы с нами
+      </div>
+
+      <div class="common-header__title-wrapper">
+        <h2 class="head-2">
+          <span class="text-primary">Добавьте</span> до 30% <br /> к скорости <span class="text-primary">баз данных</span>
         </h2>
 
-        <a class="bd-cl__button btn btn--outline t-2" href="/files/markiting-wd.pdf" download>
-          Скачать презентацию
-        </a>
+        <div class="t-1 text-primary bd-cl__text">
+          Мы занимаемся реализацией проектов обслуживания, контроля и обновления баз данных для средних и крупных предприятий.
+        </div>
       </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="common-header">
-          <div class="common-header__label t-2 text-primary">
-            Преимущества работы с нами
-          </div>
 
-          <div class="common-header__title-wrapper">
-            <h2 class="head-2">
-              <span class="text-primary">Добавьте</span> до 30% <br /> к скорости <span class="text-primary">баз данных</span>
-            </h2>
-
-            <div class="t-1 text-primary bd-cl__text">
-              Мы занимаемся реализацией проектов обслуживания, контроля и обновления баз данных для средних и крупных предприятий.
+      <div class="business-model__mobile-controls admin-slider__controls">
+        <div class="business-model__arrow business-model__arrow--prev advanse-slider__prev">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.1016 6.08204L3.06594 6.08204L7.45034 1.5799C7.80074 1.2201 7.80074 0.629655 7.45034 0.269853C7.09995 -0.0899493 6.53393 -0.0899494 6.18354 0.269853L0.262794 6.34959C-0.0875995 6.70939 -0.0875996 7.29061 0.262793 7.65041L6.18354 13.7301C6.53393 14.09 7.09995 14.09 7.45034 13.7301C7.80074 13.3703 7.80074 12.7891 7.45034 12.4293L3.06594 7.92718L13.1016 7.92718C13.5957 7.92718 14 7.51203 14 7.00461C14 6.4972 13.5957 6.08204 13.1016 6.08204Z" fill="#A1EAF7"/>
+          </svg>
+        </div>
+        <div class="business-model__arrow business-model__arrow--next advanse-slider__next">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.898444 7.91796L10.9341 7.91796L6.54966 12.4201C6.19926 12.7799 6.19926 13.3703 6.54965 13.7301C6.90005 14.0899 7.46607 14.0899 7.81646 13.7301L13.7372 7.65041C14.0876 7.29061 14.0876 6.70939 13.7372 6.34959L7.81646 0.269852C7.46607 -0.0899502 6.90005 -0.0899502 6.54966 0.269852C6.19926 0.629654 6.19926 1.21087 6.54966 1.57068L10.9341 6.07282L0.898444 6.07282C0.404299 6.07282 -2.96952e-07 6.48797 -3.41312e-07 6.99539C-3.85671e-07 7.5028 0.404299 7.91796 0.898444 7.91796Z" fill="white"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="advanse-slider">
+      <div class="advanse-slider-wrapper opener-wrap opener-no-toggle">
+        <div class="advanse-slider__slide opener block-1 z-index-el _opened _open" data-target=".block-1" data-index="1">
+          <div class="admin-slide admin-slide--white" >
+            <div class="t-1 advanse-slider__title bl-title-1">
+              Доступность данных
             </div>
-          </div>
 
-          <div class="business-model__mobile-controls admin-slider__controls">
-            <div class="business-model__arrow business-model__arrow--prev advanse-slider__prev">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.1016 6.08204L3.06594 6.08204L7.45034 1.5799C7.80074 1.2201 7.80074 0.629655 7.45034 0.269853C7.09995 -0.0899493 6.53393 -0.0899494 6.18354 0.269853L0.262794 6.34959C-0.0875995 6.70939 -0.0875996 7.29061 0.262793 7.65041L6.18354 13.7301C6.53393 14.09 7.09995 14.09 7.45034 13.7301C7.80074 13.3703 7.80074 12.7891 7.45034 12.4293L3.06594 7.92718L13.1016 7.92718C13.5957 7.92718 14 7.51203 14 7.00461C14 6.4972 13.5957 6.08204 13.1016 6.08204Z" fill="#A1EAF7"/>
-              </svg>
+            <div class="admin-slide__header">
+              <div class="head-3">
+                Доступность данных
+              </div>
+
+              <img class="admin-slide__avatar advanse-slider__avatar" src="/slider/advanse-slider_1.png" alt="1">
             </div>
-            <div class="business-model__arrow business-model__arrow--next advanse-slider__next">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.898444 7.91796L10.9341 7.91796L6.54966 12.4201C6.19926 12.7799 6.19926 13.3703 6.54965 13.7301C6.90005 14.0899 7.46607 14.0899 7.81646 13.7301L13.7372 7.65041C14.0876 7.29061 14.0876 6.70939 13.7372 6.34959L7.81646 0.269852C7.46607 -0.0899502 6.90005 -0.0899502 6.54966 0.269852C6.19926 0.629654 6.19926 1.21087 6.54966 1.57068L10.9341 6.07282L0.898444 6.07282C0.404299 6.07282 -2.96952e-07 6.48797 -3.41312e-07 6.99539C-3.85671e-07 7.5028 0.404299 7.91796 0.898444 7.91796Z" fill="white"/>
-              </svg>
+            <div class="advanse-slider__content t-1">
+              <div>
+                <div class="advanse-slider__text">Обеспечение постоянного доступа к данным во избежание сбоя выполнения бизнес-процессов.</div>
+                <div class="advanse-slider__text">Поддержка бесперебойной работы в реальном времени 24/7</div>
+              </div>
+              <img class="advanse-slider__pic" src="/slider/advanse-slider_1.png" alt="1">
             </div>
           </div>
         </div>
-        <div class="advanse-slider">
-          <div class="advanse-slider-wrapper opener-wrap opener-no-toggle">
-            <div class="advanse-slider__slide opener block-1 z-index-el _opened _open" data-target=".block-1" data-index="1">
-              <div class="admin-slide admin-slide--white" >
-                <div class="t-1 advanse-slider__title bl-title-1">
-                  Доступность данных
-                </div>
 
-                <div class="admin-slide__header">
-                  <div class="head-3">
-                    Доступность данных
-                  </div>
-
-                 <img class="admin-slide__avatar advanse-slider__avatar" src="/slider/advanse-slider_1.png" alt="1">
-                </div>
-                <div class="advanse-slider__content t-1">
-                  <div>
-                    <div class="advanse-slider__text">Обеспечение постоянного доступа к данным во избежание сбоя выполнения бизнес-процессов.</div>
-                    <div class="advanse-slider__text">Поддержка бесперебойной работы в реальном времени 24/7</div>
-                  </div>
-                  <img class="advanse-slider__pic" src="/slider/advanse-slider_1.png" alt="1">
-                </div>
+        <div class="advanse-slider__slide opener block-2 z-index-el" data-target=".block-2,.bl-title-1" data-index="2">
+          <div class="admin-slide admin-slide--primary bl-sl-2">
+            <div class="t-1 advanse-slider__title bl-title-2">
+              Защита данных
+            </div>
+            <div class="admin-slide__header">
+              <div class="head-3">
+                Защита данных
               </div>
+
+              <img class="admin-slide__avatar advanse-slider__avatar" src="/slider/advanse-slider_2.png" alt="2">
+            </div>
+            <div class="advanse-slider__content t-1">
+              <div>
+                От несанкционированного доступа
+              </div>
+              <img class="advanse-slider__pic" src="/slider/advanse-slider_2.png" alt="2">
+            </div>
+          </div>
+        </div>
+
+        <div class="advanse-slider__slide opener block-3 z-index-el" data-target=".block-3,.bl-title-2,.bl-title-1" data-index="3">
+          <div class="admin-slide admin-slide--primary-light">
+            <div class="t-1 advanse-slider__title bl-title-3">
+              Минимизация рисков
             </div>
 
-            <div class="advanse-slider__slide opener block-2 z-index-el" data-target=".block-2,.bl-title-1" data-index="2">
-              <div class="admin-slide admin-slide--primary bl-sl-2">
-                <div class="t-1 advanse-slider__title bl-title-2">
-                 Защита данных
-                </div>
-                <div class="admin-slide__header">
-                  <div class="head-3">
-                    Защита данных
-                  </div>
-
-                 <img class="admin-slide__avatar advanse-slider__avatar" src="/slider/advanse-slider_2.png" alt="2">
-                </div>
-                <div class="advanse-slider__content t-1">
-                  <div>
-                    От несанкционированного доступа
-                  </div>
-                  <img class="advanse-slider__pic" src="/slider/advanse-slider_2.png" alt="2">
-                </div>
+            <div class="admin-slide__header">
+              <div class="head-3">
+                Минимизация рисков
               </div>
+
+              <img class="admin-slide__avatar advanse-slider__avatar" src="/slider/advanse-slider_3.png" alt="3">
+            </div>
+            <div class="advanse-slider__content t-1">
+              <div>
+                Долгосрочное, стабильное обеспечение требуемого уровня обслуживания с учетом развития бизнеса без неожиданных больших затрат и разочарований.
+              </div>
+              <img class="advanse-slider__pic" src="/slider/advanse-slider_3.png" alt="3">
+            </div>
+          </div>
+        </div>
+
+        <div class="advanse-slider__slide opener block-4 z-index-el" data-target=".block-4,.bl-title-3,.bl-title-2,.bl-title-1" data-index="4">
+          <div class="admin-slide admin-slide--white">
+            <div class="t-1 advanse-slider__title bl-title-4">
+              Повышение производительности
             </div>
 
-            <div class="advanse-slider__slide opener block-3 z-index-el" data-target=".block-3,.bl-title-2,.bl-title-1" data-index="3">
-              <div class="admin-slide admin-slide--primary-light">
-                <div class="t-1 advanse-slider__title bl-title-3">
-                 Минимизация рисков
-                </div>
-
-                <div class="admin-slide__header">
-                  <div class="head-3">
-                    Минимизация рисков
-                  </div>
-
-                 <img class="admin-slide__avatar advanse-slider__avatar" src="/slider/advanse-slider_3.png" alt="3">
-                </div>
-                <div class="advanse-slider__content t-1">
-                  <div>
-                    Долгосрочное, стабильное обеспечение требуемого уровня обслуживания с учетом развития бизнеса без неожиданных больших затрат и разочарований.
-                  </div>
-                  <img class="advanse-slider__pic" src="/slider/advanse-slider_3.png" alt="3">
-                </div>
+            <div class="admin-slide__header">
+              <div class="head-3">
+                Повышение производительности
               </div>
+
+              <img class="admin-slide__avatar advanse-slider__avatar" src="/slider/advanse-slider_5.png" alt="5">
+            </div>
+            <div class="advanse-slider__content t-1">
+              <div>
+                Обеспечение оптимального времени отклика для эффективных бизнес-операций
+              </div>
+              <img class="advanse-slider__pic" src="/slider/advanse-slider_5.png" alt="5">
+            </div>
+          </div>
+        </div>
+
+        <div class="advanse-slider__slide opener block-5 z-index-el" data-target=".block-5,.bl-title-4,.bl-title-3,.bl-title-2,.bl-title-1" data-index="5">
+          <div class="admin-slide admin-slide--primary-light">
+            <div class="t-1 advanse-slider__title">
+              Снижение расходов
             </div>
 
-            <div class="advanse-slider__slide opener block-4 z-index-el" data-target=".block-4,.bl-title-3,.bl-title-2,.bl-title-1" data-index="4">
-              <div class="admin-slide admin-slide--white">
-                <div class="t-1 advanse-slider__title bl-title-4">
-                 Повышение производительности
-                </div>
-
-                <div class="admin-slide__header">
-                  <div class="head-3">
-                    Повышение производительности
-                  </div>
-
-                 <img class="admin-slide__avatar advanse-slider__avatar" src="/slider/advanse-slider_5.png" alt="5">
-                </div>
-                <div class="advanse-slider__content t-1">
-                  <div>
-                   Обеспечение оптимального времени отклика для эффективных бизнес-операций
-                  </div>
-                  <img class="advanse-slider__pic" src="/slider/advanse-slider_5.png" alt="5">
-                </div>
+            <div class="admin-slide__header">
+              <div class="head-3">
+                Снижение расходов
               </div>
+
+              <img class="admin-slide__avatar advanse-slider__avatar" src="/slider/advanse-slider_4.png" alt="4">
             </div>
-
-            <div class="advanse-slider__slide opener block-5 z-index-el" data-target=".block-5,.bl-title-4,.bl-title-3,.bl-title-2,.bl-title-1" data-index="5">
-              <div class="admin-slide admin-slide--primary-light">
-                <div class="t-1 advanse-slider__title">
-                 Снижение расходов
-                </div>
-
-                <div class="admin-slide__header">
-                  <div class="head-3">
-                    Снижение расходов
-                  </div>
-
-                 <img class="admin-slide__avatar advanse-slider__avatar" src="/slider/advanse-slider_4.png" alt="4">
-                </div>
-                <div class="advanse-slider__content t-1">
-                  <div>
-                  Для оптимизации корпоративного бюджета
-                  </div>
-                  <img class="advanse-slider__pic" src="/slider/advanse-slider_4.png" alt="4">
-                </div>
+            <div class="advanse-slider__content t-1">
+              <div>
+                Для оптимизации корпоративного бюджета
               </div>
+              <img class="advanse-slider__pic" src="/slider/advanse-slider_4.png" alt="4">
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="section section--white">
-      <div class="container">
-        <h2 class="head-2 activities__title">
-          Гарантия <span class="text-primary">результата</span>
+<section class="section section--white">
+  <div class="container">
+    <h2 class="head-2 activities__title">
+      Гарантия <span class="text-primary">результата</span>
+    </h2>
+    <div class="activities__list">
+      <div class="activities__item oracle-activities__item">
+        <div class="activities__number">
+          <div class="activities__number-text font-roboto t-5">01</div>
+        </div>
+        <div class="activities__content">
+          <div class="activities__text-2 head-3 text-primary">
+            Собственная система мониторинга
+          </div>
+          <div class="activities__text-2 t-2">
+            Используем систему, усиленную лучшим в классе решением <a class="txt-link" href="https://www.zabbix.com/ru/" target="_blank" rel="noopener noreferrer">Zabbix</a> (система мониторинга)
+          </div>
+        </div>
+      </div>
+
+      <div class="activities__item oracle-activities__item">
+        <div class="activities__number">
+          <div class="activities__number-text font-roboto t-5">02</div>
+        </div>
+        <div class="activities__content">
+          <div class="activities__text-2 head-3 text-primary">
+            Круглосуточная служба поддержки
+          </div>
+          <div class="activities__text-2 t-2">
+            Обратная связь от 15 минут по удобному для вас каналу связи
+          </div>
+        </div>
+      </div>
+
+      <div class="activities__item oracle-activities__item">
+        <div class="activities__number">
+          <div class="activities__number-text font-roboto t-5">03</div>
+        </div>
+        <div class="activities__content">
+          <div class="activities__text-2 head-3 text-primary">
+            Сильная команда профессионалов
+          </div>
+          <div class="activities__text-2 t-2">
+            Сертификаты <a class="txt-link" href="https://www.oracle.com" target="_blank" rel="noopener noreferrer">Oracle Database</a> (коммерческая СУБД Oracle), <a class="txt-link" href="https://www.microsoft.com" target="_blank" rel="noopener noreferrer">Microsoft SQL Server</a> (реляционная СУБД Microsoft), <a class="txt-link" href="https://www.oracle.com" target="_blank" rel="noopener noreferrer">MySQL</a> (свободная реляционная СУБД Oracle), <a class="txt-link" href="https://www.postgresql.org" target="_blank" rel="noopener noreferrer">PostgreSQL</a> (объектно-реляционная СУБД с открытым кодом)
+          </div>
+        </div>
+      </div>
+
+      <div class="activities__item oracle-activities__item">
+        <div class="activities__number">
+          <div class="activities__number-text font-roboto t-5">04</div>
+        </div>
+        <div class="activities__content">
+          <div class="activities__text-2 head-3 text-primary">
+            Проектирование и дизайн БД
+          </div>
+          <div class="activities__text-2 t-2">
+            Максимальная производительность базы данных благодаря новому дизайну и архитектуре
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--white">
+  <div class="container">
+    <div class="common-header">
+      <div class="common-header__label t-2 text-primary">
+        Что входит в обслуживание
+      </div>
+
+      <div class="common-header__title-wrapper">
+        <h2 class="head-2">
+          Ведение баз данных <span class="text-primary">для проектов любой сложности и объёма</span>
         </h2>
-        <div class="activities__list">
-          <div class="activities__item oracle-activities__item">
-            <div class="activities__number">
-              <div class="activities__number-text font-roboto t-5">01</div>
-            </div>
-            <div class="activities__content">
-              <div class="activities__text-2 head-3 text-primary">
-                Собственная система мониторинга
-
-              </div>
-              <div class="activities__text-2 t-2">
-                Используем систему, усиленную лучшим в классе решением Zabbix
-              </div>
-            </div>
-          </div>
-
-          <div class="activities__item oracle-activities__item">
-            <div class="activities__number">
-              <div class="activities__number-text font-roboto t-5">02</div>
-            </div>
-            <div class="activities__content">
-              <div class="activities__text-2 head-3 text-primary">
-                Круглосуточная служба поддержки
-
-
-              </div>
-              <div class="activities__text-2 t-2">
-                Обратная связь от 15 минут по удобному для вас каналу связи
-              </div>
-            </div>
-          </div>
-
-          <div class="activities__item oracle-activities__item">
-            <div class="activities__number">
-              <div class="activities__number-text font-roboto t-5">03</div>
-            </div>
-            <div class="activities__content">
-              <div class="activities__text-2 head-3 text-primary">
-               Сильная команда профессионалов
-
-              </div>
-              <div class="activities__text-2 t-2">
-                Сертификаты Oracle Database, Microsoft SQL Server, MySQL, PostgreSQL
-              </div>
-            </div>
-          </div>
-
-          <div class="activities__item oracle-activities__item">
-            <div class="activities__number">
-              <div class="activities__number-text font-roboto t-5">04</div>
-            </div>
-            <div class="activities__content">
-              <div class="activities__text-2 head-3 text-primary">
-                Проектирование и дизайн БД
-
-              </div>
-              <div class="activities__text-2 t-2">
-                Максимальная производительность базы данных благодаря новому дизайну и архитектуре
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
+    </div>
 
-    <section class="section section--white">
-      <div class="container">
-        <div class="common-header">
-          <div class="common-header__label t-2 text-primary">
-            Что входит в обслуживание
-          </div>
-
-          <div class="common-header__title-wrapper">
-            <h2 class="head-2">
-              Ведение баз данных <span class="text-primary">для проектов любой сложности и объёма</span>
-            </h2>
-          </div>
-        </div>
-
-        <div class="business-model__mobile-controls admin-slider__controls service-slider__controls">
-          <div class="business-model__arrow business-model__arrow--prev service-slider__prev">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.1016 6.08204L3.06594 6.08204L7.45034 1.5799C7.80074 1.2201 7.80074 0.629655 7.45034 0.269853C7.09995 -0.0899493 6.53393 -0.0899494 6.18354 0.269853L0.262794 6.34959C-0.0875995 6.70939 -0.0875996 7.29061 0.262793 7.65041L6.18354 13.7301C6.53393 14.09 7.09995 14.09 7.45034 13.7301C7.80074 13.3703 7.80074 12.7891 7.45034 12.4293L3.06594 7.92718L13.1016 7.92718C13.5957 7.92718 14 7.51203 14 7.00461C14 6.4972 13.5957 6.08204 13.1016 6.08204Z" fill="#A1EAF7"/>
-            </svg>
-          </div>
-          <div class="business-model__arrow business-model__arrow--next service-slider__next">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.898444 7.91796L10.9341 7.91796L6.54966 12.4201C6.19926 12.7799 6.19926 13.3703 6.54965 13.7301C6.90005 14.0899 7.46607 14.0899 7.81646 13.7301L13.7372 7.65041C14.0876 7.29061 14.0876 6.70939 13.7372 6.34959L7.81646 0.269852C7.46607 -0.0899502 6.90005 -0.0899502 6.54966 0.269852C6.19926 0.629654 6.19926 1.21087 6.54966 1.57068L10.9341 6.07282L0.898444 6.07282C0.404299 6.07282 -2.96952e-07 6.48797 -3.41312e-07 6.99539C-3.85671e-07 7.5028 0.404299 7.91796 0.898444 7.91796Z" fill="white"/>
-            </svg>
-          </div>
-        </div>
-        <div class="service-slider">
-          <div class="service-slider-wrapper">
-            <div class="service-slider__slide">
-              <div class="service-slide service-slide--gray">
-                <div class="service-slide__name">
-                  Анализ бд на наличие ошибок
-                </div>
-              </div>
-            </div>
-
-            <div class="service-slider__slide">
-              <div class="service-slide service-slide--bg-1">
-                <div class="service-slide__name">
-                  Установка обновления бд
-                </div>
-              </div>
-            </div>
-
-            <div class="service-slider__slide">
-              <div class="service-slide service-slide--bg-2">
-                <div class="service-slide__name">
-                  Проверка целостности бд
-                </div>
-              </div>
-            </div>
-
-            <div class="service-slider__slide">
-              <div class="service-slide">
-                <div class="service-slide__name">
-                  Построение структуры бд
-                </div>
-              </div>
-            </div>
-
-            <div class="service-slider__slide">
-              <div class="service-slide service-slide--gray">
-                <div class="service-slide__name">
-                  Разграничение прав доступа
-                </div>
-              </div>
-            </div>
-
-            <div class="service-slider__slide">
-              <div class="service-slide service-slide--bg-1">
-                <div class="service-slide__name">
-                 Резервное копирование
-                </div>
-              </div>
-            </div>
-
-            <div class="service-slider__slide">
-              <div class="service-slide service-slide--bg-2">
-                <div class="service-slide__name">
-                  Удаленное администрирование и обслуживание
-                </div>
-              </div>
-            </div>
-
-            <div class="service-slider__slide">
-              <div class="service-slide">
-                <div class="service-slide__name">
-                  Обучение вашего персонала
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
+    <div class="business-model__mobile-controls admin-slider__controls service-slider__controls">
+      <div class="business-model__arrow business-model__arrow--prev service-slider__prev">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.1016 6.08204L3.06594 6.08204L7.45034 1.5799C7.80074 1.2201 7.80074 0.629655 7.45034 0.269853C7.09995 -0.0899493 6.53393 -0.0899494 6.18354 0.269853L0.262794 6.34959C-0.0875995 6.70939 -0.0875996 7.29061 0.262793 7.65041L6.18354 13.7301C6.53393 14.09 7.09995 14.09 7.45034 13.7301C7.80074 13.3703 7.80074 12.7891 7.45034 12.4293L3.06594 7.92718L13.1016 7.92718C13.5957 7.92718 14 7.51203 14 7.00461C14 6.4972 13.5957 6.08204 13.1016 6.08204Z" fill="#A1EAF7"/>
+        </svg>
       </div>
-    </section>
-
-    <section class="realization">
-      <div class="realization__container container">
-        <div class="realization__content">
-          <div class="realization__text">
-            <h2 class="realization__title head-2">
-              <span class="realization__title-text">Реализуем</span>
-              <span class="realization__title-accent text-primary">все ваши идеи!</span>
-            </h2>
-          </div>
-          
-          <div class="realization__form">
-            <h3 class="realization__form-title head-3">
-              <span class="realization__form-accent text-primary">Оставьте контакты,</span> мы перезвоним
-            </h3>
-            <%- formBig %>
+      <div class="business-model__arrow business-model__arrow--next service-slider__next">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.898444 7.91796L10.9341 7.91796L6.54966 12.4201C6.19926 12.7799 6.19926 13.3703 6.54965 13.7301C6.90005 14.0899 7.46607 14.0899 7.81646 13.7301L13.7372 7.65041C14.0876 7.29061 14.0876 6.70939 13.7372 6.34959L7.81646 0.269852C7.46607 -0.0899502 6.90005 -0.0899502 6.54966 0.269852C6.19926 0.629654 6.19926 1.21087 6.54966 1.57068L10.9341 6.07282L0.898444 6.07282C0.404299 6.07282 -2.96952e-07 6.48797 -3.41312e-07 6.99539C-3.85671e-07 7.5028 0.404299 7.91796 0.898444 7.91796Z" fill="white"/>
+        </svg>
+      </div>
+    </div>
+    <div class="service-slider">
+      <div class="service-slider-wrapper">
+        <div class="service-slider__slide">
+          <div class="service-slide service-slide--gray">
+            <div class="service-slide__name">
+              Анализ бд на наличие ошибок
+            </div>
           </div>
         </div>
+
+        <div class="service-slider__slide">
+          <div class="service-slide service-slide--bg-1">
+            <div class="service-slide__name">
+              Установка обновления бд
+            </div>
+          </div>
+        </div>
+
+        <div class="service-slider__slide">
+          <div class="service-slide service-slide--bg-2">
+            <div class="service-slide__name">
+              Проверка целостности бд
+            </div>
+          </div>
+        </div>
+
+        <div class="service-slider__slide">
+          <div class="service-slide">
+            <div class="service-slide__name">
+              Построение структуры бд
+            </div>
+          </div>
+        </div>
+
+        <div class="service-slider__slide">
+          <div class="service-slide service-slide--gray">
+            <div class="service-slide__name">
+              Разграничение прав доступа
+            </div>
+          </div>
+        </div>
+
+        <div class="service-slider__slide">
+          <div class="service-slide service-slide--bg-1">
+            <div class="service-slide__name">
+              Резервное копирование
+            </div>
+          </div>
+        </div>
+
+        <div class="service-slider__slide">
+          <div class="service-slide service-slide--bg-2">
+            <div class="service-slide__name">
+              Удаленное администрирование и обслуживание
+            </div>
+          </div>
+        </div>
+
+        <div class="service-slider__slide">
+          <div class="service-slide">
+            <div class="service-slide__name">
+              Обучение вашего персонала
+            </div>
+          </div>
+        </div>
+
       </div>
-    </section>
-    <%- footer %>
-  </body>
+    </div>
+  </div>
+</section>
+
+<section class="realization">
+  <div class="realization__container container">
+    <div class="realization__content">
+      <div class="realization__text">
+        <h2 class="realization__title head-2">
+          <span class="realization__title-text">Реализуем</span>
+          <span class="realization__title-accent text-primary">все ваши идеи!</span>
+        </h2>
+      </div>
+
+      <div class="realization__form">
+        <h3 class="realization__form-title head-3">
+          <span class="realization__form-accent text-primary">Оставьте контакты,</span> мы перезвоним
+        </h3>
+        <%- formBig %>
+      </div>
+    </div>
+  </div>
+</section>
+<%- footer %>
+</body>
 </html>

@@ -1664,7 +1664,7 @@ body {
 @media (min-width: 768px) {
   .why-us__item {
     flex-direction: row;
-    height: 137px;
+    min-height: 137px;
   }
 }
 
@@ -3999,4 +3999,8 @@ blockquote::after {
       flex-direction: row;
       margin-bottom: 5rem;
     }
+}
+
+.txt-link {
+  color: inherit;
 }
