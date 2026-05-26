@@ -83,21 +83,21 @@ export default defineConfig({
           },
           
         },
-        {
-          entry: "src/main.js",
-          filename: "oracle.html",
-          template: "oracle.html",
-          injectOptions: {
-            data: {
-              title: "Мир данных ИТ",
-              headerNav: fs.readFileSync("./src/components/header-nav.html"),
-              footer: fs.readFileSync("./src/components/footer.html"),
-              form: fs.readFileSync("./src/components/form.html"),
-              formBig: fs.readFileSync("./src/components/form-big.html"),
-            },
-          },
-          
-        },
+        // {
+        //   entry: "src/main.js",
+        //   filename: "oracle.html",
+        //   template: "oracle.html",
+        //   injectOptions: {
+        //     data: {
+        //       title: "Мир данных ИТ",
+        //       headerNav: fs.readFileSync("./src/components/header-nav.html"),
+        //       footer: fs.readFileSync("./src/components/footer.html"),
+        //       form: fs.readFileSync("./src/components/form.html"),
+        //       formBig: fs.readFileSync("./src/components/form-big.html"),
+        //     },
+        //   },
+        //
+        // },
         {
           entry: "src/main.js",
           filename: "security.html",
